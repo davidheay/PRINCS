@@ -1,0 +1,162 @@
+may 02, 2019 9:42:02 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+may 02, 2019 9:42:02 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Global resources are available
+may 02, 2019 9:42:02 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:42:02 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:42:02 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context1031853447744074041.xml'
+may 02, 2019 9:42:03 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/Prueba'
+may 02, 2019 9:47:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:47:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:48:25 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:48:25 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/Prueba'
+may 02, 2019 9:48:30 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:48:30 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:48:30 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context1645938528088037228.xml'
+may 02, 2019 9:48:31 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/Prueba'
+may 02, 2019 9:48:57 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:48:57 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:51:35 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:51:35 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/Prueba'
+may 02, 2019 9:51:40 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:51:40 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:51:40 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context8091539101961836779.xml'
+may 02, 2019 9:51:40 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/Prueba'
+may 02, 2019 9:54:16 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:54:16 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/Prueba'
+may 02, 2019 9:54:21 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:54:21 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:54:21 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context598487755714332587.xml'
+may 02, 2019 9:54:21 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/Prueba'
+may 02, 2019 9:59:15 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:59:15 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/Prueba'
+may 02, 2019 9:59:20 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:59:20 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 9:59:20 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context1584785963827593544.xml'
+may 02, 2019 9:59:21 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/Prueba'
+may 02, 2019 10:00:17 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:00:17 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/Prueba'
+may 02, 2019 10:00:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+may 02, 2019 10:00:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Global resources are available
+may 02, 2019 10:00:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:00:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:00:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context503840214150059790.xml'
+may 02, 2019 10:00:53 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/Prueba'
+may 02, 2019 10:05:14 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:05:14 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/Prueba'
+may 02, 2019 10:05:18 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:05:18 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:05:18 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context6771394225381089408.xml'
+may 02, 2019 10:05:19 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/Prueba'
+may 02, 2019 10:07:29 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+may 02, 2019 10:07:29 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: init: Global resources are available
+may 02, 2019 10:07:29 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:07:44 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:08:03 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:09:29 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:09:35 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:09:35 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:10:04 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:10:26 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:10:27 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/Prueba'
+may 02, 2019 10:10:31 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:10:31 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:10:31 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context8485115834741923481.xml'
+may 02, 2019 10:10:31 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/Prueba'
+may 02, 2019 10:11:53 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+may 02, 2019 10:11:53 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Global resources are available
+may 02, 2019 10:11:53 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:11:53 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:12:20 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+may 02, 2019 10:12:20 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: init: Global resources are available
+may 02, 2019 10:12:20 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:12:40 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:12:48 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: stop: Stopping web application '/Prueba'
+may 02, 2019 10:12:48 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:13:05 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: start: Starting web application '/Prueba'
+may 02, 2019 10:13:05 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:13:20 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: sessions: Session action 'null' for web application '/manager'
+may 02, 2019 10:13:28 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: sessions: Session action 'null' for web application '/Prueba'
+may 02, 2019 10:13:35 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: sessions: Session action 'refreshSessions' for web application '/Prueba'
+may 02, 2019 10:13:39 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: sessions: Session action 'null' for web application '/Prueba'
+may 02, 2019 10:13:59 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 02, 2019 10:14:36 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
