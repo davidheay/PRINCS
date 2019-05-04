@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : index
     Created on : 03-may-2019, 20:00:49
     Author     : deha1
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>INDEX</h1>
     </body>
 </html>
