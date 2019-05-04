@@ -2063,3 +2063,213 @@ may 03, 2019 10:07:25 PM org.apache.catalina.startup.HostConfig deployDescriptor
 INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml has finished in 6.683 ms
 may 03, 2019 10:07:25 PM org.apache.catalina.util.LifecycleBase start
 INFORMACIÓN: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PRINCS]] after start() had already been called. The second call will be ignored.
+may 03, 2019 10:10:23 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 03, 2019 10:10:39 PM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 03, 2019 10:10:39 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 03, 2019 10:10:54 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 03, 2019 10:10:55 PM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 03, 2019 10:10:55 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 03, 2019 10:11:00 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 03, 2019 10:11:01 PM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 03, 2019 10:11:01 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 03, 2019 10:11:16 PM org.apache.catalina.util.LifecycleBase stop
+INFORMACIÓN: The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after stop() had already been called. The second call will be ignored.
+may 03, 2019 10:11:25 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 03, 2019 10:11:26 PM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 03, 2019 10:11:26 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 03, 2019 10:12:47 PM org.apache.catalina.util.LifecycleBase stop
+INFORMACIÓN: The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]] after stop() had already been called. The second call will be ignored.
+may 03, 2019 10:13:12 PM org.apache.catalina.util.LifecycleBase stop
+INFORMACIÓN: The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]] after stop() had already been called. The second call will be ignored.
+may 03, 2019 10:13:17 PM org.apache.catalina.core.StandardContext resourcesStart
+GRAVE: Error arrancando Recursos estáticos
+java.lang.IllegalArgumentException: El Documento base C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web no existe o no es un directorio legible
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5386)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1312)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:690)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:216)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:136)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:614)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+may 03, 2019 10:13:20 PM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 03, 2019 10:13:20 PM org.apache.catalina.util.LifecycleBase stop
+INFORMACIÓN: The stop() method was called on component [ProvisioningWebappLoader[/Prueba]] after stop() had already been called. The second call will be ignored.
+may 03, 2019 10:13:20 PM org.apache.catalina.core.StandardContext resourcesStart
+GRAVE: Error arrancando Recursos estáticos
+java.lang.IllegalArgumentException: El Documento base C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web no existe o no es un directorio legible
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5386)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1312)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:690)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:216)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:136)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:614)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+may 03, 2019 10:13:20 PM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 03, 2019 10:13:20 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 03, 2019 10:13:36 PM org.apache.catalina.util.LifecycleBase stop
+INFORMACIÓN: The stop() method was called on component [ProvisioningWebappLoader[/Prueba]] after stop() had already been called. The second call will be ignored.
+may 03, 2019 10:14:00 PM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 03, 2019 10:14:01 PM org.apache.catalina.core.StandardContext resourcesStart
+GRAVE: Error arrancando Recursos estáticos
+java.lang.IllegalArgumentException: El Documento base C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web no existe o no es un directorio legible
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5386)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1312)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:690)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:216)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:136)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:614)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+may 03, 2019 10:14:01 PM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 03, 2019 10:14:02 PM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 618 ms.
+may 03, 2019 10:14:03 PM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 03, 2019 10:14:03 PM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 03, 2019 10:14:23 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 03, 2019 10:14:23 PM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 03, 2019 10:14:23 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 03, 2019 10:14:24 PM org.apache.catalina.startup.HostConfig undeploy
+INFORMACIÓN: Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto /PRINCS
+may 03, 2019 10:16:31 PM org.apache.catalina.core.StandardServer await
+INFORMACIÓN: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+may 03, 2019 10:16:35 PM org.apache.coyote.AbstractProtocol pause
+INFORMACIÓN: Pausing ProtocolHandler ["http-bio-8080"]
+may 03, 2019 10:16:36 PM org.apache.coyote.AbstractProtocol pause
+INFORMACIÓN: Pausing ProtocolHandler ["ajp-bio-8009"]
+may 03, 2019 10:16:36 PM org.apache.catalina.core.StandardService stopInternal
+INFORMACIÓN: Parando servicio Catalina
+may 03, 2019 10:16:38 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 03, 2019 10:16:39 PM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 03, 2019 10:16:39 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 03, 2019 10:16:39 PM org.apache.coyote.AbstractProtocol stop
+INFORMACIÓN: Stopping ProtocolHandler ["http-bio-8080"]
+may 03, 2019 10:16:39 PM org.apache.coyote.AbstractProtocol stop
+INFORMACIÓN: Stopping ProtocolHandler ["ajp-bio-8009"]
+may 03, 2019 10:16:39 PM org.apache.openejb.server.SimpleServiceManager stop
+INFORMACIÓN: Stopping server services
+may 03, 2019 10:16:39 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: openejb
+may 03, 2019 10:16:39 PM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 03, 2019 10:16:39 PM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: openejb
+may 03, 2019 10:16:40 PM org.apache.coyote.AbstractProtocol destroy
+INFORMACIÓN: Destroying ProtocolHandler ["http-bio-8080"]
+may 03, 2019 10:16:40 PM org.apache.coyote.AbstractProtocol destroy
+INFORMACIÓN: Destroying ProtocolHandler ["ajp-bio-8009"]
+may 03, 2019 10:16:40 PM org.apache.catalina.util.LifecycleBase stop
+INFORMACIÓN: The stop() method was called on component [ProvisioningWebappLoader[/Prueba]] after stop() had already been called. The second call will be ignored.

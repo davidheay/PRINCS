@@ -423,3 +423,188 @@ may 03, 2019 10:07:18 PM org.apache.catalina.core.ApplicationContext log
 INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context8160716625825964797.xml'
 may 03, 2019 10:07:25 PM org.apache.catalina.core.ApplicationContext log
 INFORMACIÓN: Manager: start: Starting web application '/PRINCS'
+may 03, 2019 10:10:17 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:10:22 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: stop: Stopping web application '/PRINCS'
+may 03, 2019 10:10:39 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:10:39 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:10:51 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:10:54 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: stop: Stopping web application '/docs'
+may 03, 2019 10:10:55 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:10:58 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: stop: Stopping web application '/tomee'
+may 03, 2019 10:10:58 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:11:00 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: stop: Stopping web application '/'
+may 03, 2019 10:11:01 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:11:16 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: stop: Stopping web application '/'
+may 03, 2019 10:11:16 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:11:25 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: stop: Stopping web application '/host-manager'
+may 03, 2019 10:11:26 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:12:47 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: stop: Stopping web application '/host-manager'
+may 03, 2019 10:12:47 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:12:56 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: start: Starting web application '/PRINCS'
+may 03, 2019 10:13:12 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: stop: Stopping web application '/host-manager'
+may 03, 2019 10:13:12 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:13:17 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: start: Starting web application '/Prueba'
+may 03, 2019 10:13:17 PM org.apache.catalina.core.ApplicationContext log
+GRAVE: FALLO - No se pudo arrancar la aplicación en trayectoria de contexto /Prueba
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Prueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1312)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:690)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:216)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:136)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:614)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5387)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 32 more
+
+may 03, 2019 10:13:17 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:13:20 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: start: Starting web application '/Prueba'
+may 03, 2019 10:13:20 PM org.apache.catalina.core.ApplicationContext log
+GRAVE: FALLO - No se pudo arrancar la aplicación en trayectoria de contexto /Prueba
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Prueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1312)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:690)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:216)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:136)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:614)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5387)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 32 more
+
+may 03, 2019 10:13:20 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:13:23 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: undeploy: Undeploying web application at '/PRINCS'
+may 03, 2019 10:13:36 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: start: Starting web application '/Prueba'
+may 03, 2019 10:13:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:14:02 PM org.apache.catalina.core.ApplicationContext log
+GRAVE: FALLO - No se pudo arrancar la aplicación en trayectoria de contexto /Prueba
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Prueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1312)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:690)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:216)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:136)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:614)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5387)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 32 more
+
+may 03, 2019 10:14:02 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:14:21 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:14:25 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 03, 2019 10:14:31 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'

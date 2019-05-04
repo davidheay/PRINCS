@@ -186,3 +186,9 @@ may 03, 2019 10:02:39 PM org.apache.catalina.core.ApplicationContext log
 INFORMACIÓN: Cleaning up Shiro Environment
 may 03, 2019 10:07:24 PM org.apache.catalina.core.ApplicationContext log
 INFORMACIÓN: Initializing Shiro environment
+may 03, 2019 10:10:22 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Cleaning up Shiro Environment
+may 03, 2019 10:14:13 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Initializing Shiro environment
+may 03, 2019 10:14:23 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Cleaning up Shiro Environment
