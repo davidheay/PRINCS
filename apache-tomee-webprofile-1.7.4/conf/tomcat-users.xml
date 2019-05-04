@@ -26,19 +26,13 @@
   and thus are ignored when reading this file. Do not forget to remove
   <!.. ..> that surrounds them.
 -->
-    
-  <role rolename="tomcat"/>
-  <role rolename="role1"/>
-  <user username="tomcat" password="tomcat" roles="tomcat"/>
-  <user username="both" password="tomcat" roles="tomcat,role1"/>
-  <user username="role1" password="tomcat" roles="role1"/>
-
+    <role rolename="tomcat"/>
+    <role rolename="role1"/>
+    <user password="tomcat" roles="tomcat" username="tomcat"/>
+    <user password="tomcat" roles="tomcat,role1" username="both"/>
+    <user password="tomcat" roles="role1" username="role1"/>
     <!-- Activate those lines to get access to TomEE GUI -->
-    
-  <role rolename="tomee-admin" />
-  <user username="tomee" password="tomee1" roles="tomee-admin,manager-gui,admin-gui" />
-    
-
-    
-<user password="admin" roles="manager-script,admin" username="admin"/>
+    <role rolename="tomee-admin"/>
+    <user password="tomee1" roles="tomee-admin,manager-gui,admin-gui" username="tomee"/>
+    <user password="admin" roles="manager-script,admin" username="admin"/>
 </tomcat-users>
