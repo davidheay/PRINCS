@@ -280,3 +280,14 @@
 127.0.0.1 - - [04/May/2019:10:40:42 -0500] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - admin [04/May/2019:10:40:42 -0500] "GET /manager/text/list HTTP/1.1" 200 358
 127.0.0.1 - admin [04/May/2019:10:40:43 -0500] "GET /manager/text/undeploy?path=/PRINCS HTTP/1.1" 200 74
+127.0.0.1 - - [04/May/2019:10:41:15 -0500] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [04/May/2019:10:41:15 -0500] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [04/May/2019:10:41:15 -0500] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [04/May/2019:10:41:15 -0500] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - admin [04/May/2019:10:41:15 -0500] "GET /manager/text/list HTTP/1.1" 200 276
+127.0.0.1 - admin [04/May/2019:10:41:15 -0500] "GET /manager/text/list HTTP/1.1" 200 276
+127.0.0.1 - admin [04/May/2019:10:41:16 -0500] "GET /manager/text/deploy?config=file%3A%2FC%3A%2FUsers%2Fdeha1%2FAppData%2FLocal%2FTemp%2Fcontext4679039092011322255.xml&path=/PRINCS HTTP/1.1" 200 75
+127.0.0.1 - admin [04/May/2019:10:41:16 -0500] "GET /manager/text/start?path=/PRINCS HTTP/1.1" 200 74
+0:0:0:0:0:0:0:1 - - [04/May/2019:10:41:18 -0500] "GET /PRINCS HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [04/May/2019:10:41:18 -0500] "GET /PRINCS/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [04/May/2019:10:41:18 -0500] "GET /PRINCS/LoginController HTTP/1.1" 200 2661

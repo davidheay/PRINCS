@@ -1447,3 +1447,27 @@ may 04, 2019 10:40:43 AM org.apache.openejb.assembler.classic.Assembler destroyA
 INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
 may 04, 2019 10:40:43 AM org.apache.catalina.startup.HostConfig undeploy
 INFORMACIÓN: Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto /PRINCS
+may 04, 2019 10:41:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml
+may 04, 2019 10:41:15 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /PRINCS
+may 04, 2019 10:41:15 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:41:15 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 10:41:15 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:41:15 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 10:41:15 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 10:41:15 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 14 ms.
+may 04, 2019 10:41:15 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 10:41:15 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 10:41:16 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml has finished in 1.413 ms
+may 04, 2019 10:41:16 AM org.apache.catalina.util.LifecycleBase start
+INFORMACIÓN: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PRINCS]] after start() had already been called. The second call will be ignored.
