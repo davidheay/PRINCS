@@ -43,12 +43,13 @@ public class IndexController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        /*
+
         //Se obtienen los datos del usuario para colocar el nombre
         Subject currentUser = SecurityUtils.getSubject();
         Session session = currentUser.getSession();
         String nomusuario = (String) currentUser.getPrincipal();
         request.setAttribute("nomusuario", nomusuario);
+        /*
         //Crea un objeto asilamiento para listar los pabellones en el select
         AislamientoDao aislamientoDao = new AislamientoDaoImpl();
         request.setAttribute("lstPabellones", aislamientoDao.listarpabellones());
@@ -71,12 +72,13 @@ public class IndexController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        /*
+
         //Se obtienen los datos del usuario para colocar el nombre
         Subject currentUser = SecurityUtils.getSubject();
         Session session = currentUser.getSession();
         String nomusuario = (String) currentUser.getPrincipal();
         request.setAttribute("nomusuario", nomusuario);
+        /*
         //Crea un objeto para listar los pabellones en el lstbox
         AislamientoDao aislamientoDao = new AislamientoDaoImpl();
         request.setAttribute("lstPabellones", aislamientoDao.listarpabellones());

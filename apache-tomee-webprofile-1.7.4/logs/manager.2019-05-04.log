@@ -1,0 +1,98 @@
+may 04, 2019 8:18:08 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+may 04, 2019 8:18:08 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Global resources are available
+may 04, 2019 8:18:08 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:18:08 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:18:09 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context895707795901923302.xml'
+may 04, 2019 8:18:19 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/PRINCS'
+may 04, 2019 8:23:15 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+may 04, 2019 8:23:15 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: init: Global resources are available
+may 04, 2019 8:23:15 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:23:17 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: HTMLManager: sessions: Session action 'null' for web application '/PRINCS'
+may 04, 2019 8:25:27 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:25:42 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:25:56 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:26:10 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:26:17 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:26:17 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/PRINCS'
+may 04, 2019 8:26:55 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:26:55 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:26:55 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context6611680513121515482.xml'
+may 04, 2019 8:26:55 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:26:57 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: restart: Reloading web application '/PRINCS'
+may 04, 2019 8:26:58 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/PRINCS'
+may 04, 2019 8:27:49 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:28:14 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:28:14 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/PRINCS'
+may 04, 2019 8:28:32 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:28:32 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:28:32 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context2831904907853002748.xml'
+may 04, 2019 8:28:33 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/PRINCS'
+may 04, 2019 8:30:27 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:30:27 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: restart: Reloading web application '/PRINCS'
+may 04, 2019 8:30:42 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:30:42 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: restart: Reloading web application '/PRINCS'
+may 04, 2019 8:31:49 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+may 04, 2019 8:31:49 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Global resources are available
+may 04, 2019 8:31:49 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:31:49 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 8:31:49 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/PRINCS'
+may 04, 2019 8:31:50 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context6326278107814170447.xml'
+may 04, 2019 8:31:51 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/PRINCS'
+may 04, 2019 10:15:48 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+may 04, 2019 10:15:48 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: init: Global resources are available
+may 04, 2019 10:15:48 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 10:15:48 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 10:15:48 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/PRINCS'
+may 04, 2019 10:15:49 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: install: Installing context configuration at 'file:/C:/Users/deha1/AppData/Local/Temp/context1611646036674487544.xml'
+may 04, 2019 10:15:50 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: start: Starting web application '/PRINCS'
+may 04, 2019 10:40:42 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: list: Listing contexts for virtual host 'localhost'
+may 04, 2019 10:40:42 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Manager: undeploy: Undeploying web application at '/PRINCS'

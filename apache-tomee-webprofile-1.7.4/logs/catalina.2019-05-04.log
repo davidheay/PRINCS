@@ -1,0 +1,1449 @@
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server version:        Apache Tomcat (TomEE)/7.0.68 (1.7.4)
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server built:          Feb 8 2016 20:25:54 UTC
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server number:         7.0.68.0
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Name:               Windows 10
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Version:            10.0
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Architecture:          amd64
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Version:           1.8.0_191-b12
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Vendor:            Oracle Corporation
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_BASE:         C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_HOME:         C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -javaagent:C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\lib\openejb-javaagent.jar
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.config.file=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\logging.properties
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.endorsed.dirs=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\endorsed
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.base=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.home=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:17:52 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.io.tmpdir=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\temp
+may 04, 2019 8:17:52 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMACIÓN: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Git\cmd;C:\Users\deha1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_191\bin;;.
+may 04, 2019 8:17:54 AM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:17:54 AM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 8:17:57 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: ********************************************************************************
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: OpenEJB http://tomee.apache.org/
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Startup: Sat May 04 08:17:57 COT 2019
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Copyright 1999-2015 (C) Apache OpenEJB/TomEE Project, All Rights Reserved.
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Version: 4.7.4
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Build date: 20160304
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Build time: 09:05
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: ********************************************************************************
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: openejb.home = C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:17:57 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: openejb.base = C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:17:57 AM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFORMACIÓN: Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:17:57 AM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFORMACIÓN: Succeeded in installing singleton service
+may 04, 2019 8:17:58 AM org.apache.openejb.config.ConfigurationFactory init
+INFORMACIÓN: openejb configuration file is 'C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\tomee.xml'
+may 04, 2019 8:17:58 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFORMACIÓN: Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+may 04, 2019 8:17:58 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFORMACIÓN: Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+may 04, 2019 8:17:58 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openejb.system.apps=true'
+may 04, 2019 8:17:58 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: openejb
+may 04, 2019 8:17:59 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Using openejb.deploymentId.format '{ejbName}'
+may 04, 2019 8:17:59 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Auto-deploying ejb openejb/Deployer: EjbDeployment(deployment-id=openejb/Deployer)
+may 04, 2019 8:17:59 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Auto-deploying ejb openejb/ConfigurationInfo: EjbDeployment(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 8:17:59 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Auto-deploying ejb MEJB: EjbDeployment(deployment-id=MEJB)
+may 04, 2019 8:17:59 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFORMACIÓN: Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+may 04, 2019 8:17:59 AM org.apache.openejb.config.AutoConfig createContainer
+INFORMACIÓN: Auto-creating a container for bean openejb/Deployer: Container(type=STATELESS, id=Default Stateless Container)
+may 04, 2019 8:17:59 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "openejb" loaded.
+may 04, 2019 8:17:59 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating TransactionManager(id=Default Transaction Manager)
+may 04, 2019 8:17:59 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating SecurityService(id=Tomcat Security Service)
+may 04, 2019 8:18:00 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating Container(id=Default Stateless Container)
+may 04, 2019 8:18:00 AM org.apache.openejb.assembler.classic.Assembler createAppClassLoader
+INFORMACIÓN: Not creating another application classloader for openejb
+may 04, 2019 8:18:00 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: openejb
+may 04, 2019 8:18:01 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openejb.jndiname.format={deploymentId}{interfaceType.openejbLegacyName}'
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=openejb/DeployerBusinessRemote) --> Ejb(deployment-id=openejb/Deployer)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/Deployer!org.apache.openejb.assembler.Deployer) --> Ejb(deployment-id=openejb/Deployer)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/Deployer) --> Ejb(deployment-id=openejb/Deployer)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=openejb/ConfigurationInfoBusinessRemote) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/ConfigurationInfo!org.apache.openejb.assembler.classic.cmd.ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=MEJB) --> Ejb(deployment-id=MEJB)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/MEJB!javax.management.j2ee.ManagementHome) --> Ejb(deployment-id=MEJB)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/MEJB) --> Ejb(deployment-id=MEJB)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Created Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Created Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Created Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Started Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Started Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Started Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.Assembler deployMBean
+INFORMACIÓN: Deployed MBean(openejb.user.mbeans:application=openejb,group=org.apache.openejb.assembler.monitoring,name=JMXDeployer)
+may 04, 2019 8:18:01 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=openejb)
+may 04, 2019 8:18:02 AM org.apache.openejb.server.SimpleServiceManager start
+INFORMACIÓN:   ** Bound Services **
+may 04, 2019 8:18:02 AM org.apache.openejb.server.SimpleServiceManager printRow
+INFORMACIÓN:   NAME                 IP              PORT  
+may 04, 2019 8:18:02 AM org.apache.openejb.server.SimpleServiceManager start
+INFORMACIÓN: -------
+may 04, 2019 8:18:02 AM org.apache.openejb.server.SimpleServiceManager start
+INFORMACIÓN: Ready!
+may 04, 2019 8:18:02 AM org.apache.catalina.startup.Catalina load
+INFORMACIÓN: Initialization processed in 12341 ms
+may 04, 2019 8:18:02 AM org.apache.tomee.catalina.OpenEJBNamingContextListener bindResource
+INFORMACIÓN: Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+may 04, 2019 8:18:02 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating Resource(id=UserDatabase)
+may 04, 2019 8:18:02 AM org.apache.catalina.core.StandardService startInternal
+INFORMACIÓN: Arrancando servicio Catalina
+may 04, 2019 8:18:02 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMACIÓN: Starting Servlet Engine: Apache Tomcat (TomEE)/7.0.68 (1.7.4)
+may 04, 2019 8:18:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\Prueba.xml
+may 04, 2019 8:18:04 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /Prueba
+may 04, 2019 8:18:04 AM org.apache.openejb.util.JarExtractor extract
+INFORMACIÓN: Extracting jar: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web
+may 04, 2019 8:18:04 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+GRAVE: can't unpack 'C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web'
+may 04, 2019 8:18:04 AM org.apache.catalina.core.StandardContext resourcesStart
+GRAVE: Error arrancando Recursos estáticos
+java.lang.IllegalArgumentException: El Documento base C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web no existe o no es un directorio legible
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5386)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1962)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+may 04, 2019 8:18:04 AM org.apache.catalina.core.ContainerBase addChildInternal
+GRAVE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Prueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1962)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5387)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 10 more
+
+may 04, 2019 8:18:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+GRAVE: Error durante el despliegue del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\Prueba.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Prueba]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1962)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+may 04, 2019 8:18:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\Prueba.xml has finished in 377 ms
+may 04, 2019 8:18:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs de la aplicación web
+may 04, 2019 8:18:04 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /docs
+may 04, 2019 8:18:05 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 8:18:05 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs" loaded.
+may 04, 2019 8:18:05 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 8:18:05 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:18:05 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:18:05 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:18:05 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:18:06 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:18:06 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 160 ms.
+may 04, 2019 8:18:06 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs)
+may 04, 2019 8:18:06 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs has finished in 2.605 ms
+may 04, 2019 8:18:06 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager de la aplicación web
+may 04, 2019 8:18:06 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /host-manager
+may 04, 2019 8:18:07 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 8:18:07 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager" loaded.
+may 04, 2019 8:18:07 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 8:18:07 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:18:07 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:18:07 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:18:07 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:18:07 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:18:07 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 35 ms.
+may 04, 2019 8:18:07 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager\META-INF\context.xml
+may 04, 2019 8:18:07 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager)
+may 04, 2019 8:18:07 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager has finished in 681 ms
+may 04, 2019 8:18:07 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager de la aplicación web
+may 04, 2019 8:18:07 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /manager
+may 04, 2019 8:18:07 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 8:18:07 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager" loaded.
+may 04, 2019 8:18:07 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 8:18:07 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:18:07 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:18:07 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:18:07 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:18:07 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:18:07 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 14 ms.
+may 04, 2019 8:18:08 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager\META-INF\context.xml
+may 04, 2019 8:18:08 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager)
+may 04, 2019 8:18:08 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager has finished in 644 ms
+may 04, 2019 8:18:08 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT de la aplicación web
+may 04, 2019 8:18:08 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /
+may 04, 2019 8:18:08 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 8:18:08 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT" loaded.
+may 04, 2019 8:18:08 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 8:18:08 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:18:08 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:18:08 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:18:08 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:18:08 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:18:08 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 17 ms.
+may 04, 2019 8:18:08 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT)
+may 04, 2019 8:18:08 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT has finished in 483 ms
+may 04, 2019 8:18:08 AM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:18:08 AM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 8:18:08 AM org.apache.catalina.startup.Catalina start
+INFORMACIÓN: Server startup in 6539 ms
+may 04, 2019 8:18:09 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml
+may 04, 2019 8:18:09 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /PRINCS
+may 04, 2019 8:18:15 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:18:15 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 8:18:15 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:18:15 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:18:15 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:18:15 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:18:15 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:18:15 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:18:15 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 86 ms.
+may 04, 2019 8:18:15 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 8:18:15 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 8:18:16 AM org.apache.shiro.web.env.EnvironmentLoader initEnvironment
+INFORMACIÓN: Starting Shiro environment initialization.
+may 04, 2019 8:18:18 AM org.apache.shiro.realm.text.IniRealm onInit
+ADVERTENCIA: Users or Roles are already populated.  Configured Ini instance will be ignored.
+may 04, 2019 8:18:18 AM org.apache.shiro.web.env.EnvironmentLoader initEnvironment
+INFORMACIÓN: Shiro environment initialized in 2283 ms.
+may 04, 2019 8:18:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml has finished in 9.932 ms
+may 04, 2019 8:18:19 AM org.apache.catalina.util.LifecycleBase start
+INFORMACIÓN: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PRINCS]] after start() had already been called. The second call will be ignored.
+may 04, 2019 8:26:17 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:26:17 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:26:17 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:26:18 AM org.apache.catalina.startup.HostConfig undeploy
+INFORMACIÓN: Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto /PRINCS
+may 04, 2019 8:26:55 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml
+may 04, 2019 8:26:55 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /PRINCS
+may 04, 2019 8:26:56 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:26:56 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 8:26:56 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:26:56 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:26:56 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:26:56 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:26:56 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:26:56 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:26:56 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 29 ms.
+may 04, 2019 8:26:56 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 8:26:56 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 8:26:57 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml has finished in 1.870 ms
+may 04, 2019 8:26:57 AM org.apache.catalina.core.StandardContext reload
+INFORMACIÓN: Ha comenzado la recarga de Contexto [/PRINCS]
+may 04, 2019 8:26:57 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:26:57 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:26:57 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:26:58 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:26:58 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 8:26:58 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:26:58 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:26:58 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:26:58 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:26:58 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:26:58 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:26:58 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 10 ms.
+may 04, 2019 8:26:58 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 8:26:58 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 8:26:58 AM org.apache.catalina.core.StandardContext reload
+INFORMACIÓN: Se ha completado la recarga de este Contexto
+may 04, 2019 8:26:58 AM org.apache.catalina.util.LifecycleBase start
+INFORMACIÓN: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PRINCS]] after start() had already been called. The second call will be ignored.
+may 04, 2019 8:28:14 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:28:14 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:28:14 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:28:15 AM org.apache.catalina.startup.HostConfig undeploy
+INFORMACIÓN: Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto /PRINCS
+may 04, 2019 8:28:32 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml
+may 04, 2019 8:28:32 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /PRINCS
+may 04, 2019 8:28:32 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:28:32 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 8:28:32 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:28:32 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:28:32 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:28:32 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:28:32 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:28:32 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:28:32 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 16 ms.
+may 04, 2019 8:28:32 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 8:28:32 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 8:28:33 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml has finished in 875 ms
+may 04, 2019 8:28:33 AM org.apache.catalina.util.LifecycleBase start
+INFORMACIÓN: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PRINCS]] after start() had already been called. The second call will be ignored.
+may 04, 2019 8:30:27 AM org.apache.catalina.core.StandardContext reload
+INFORMACIÓN: Ha comenzado la recarga de Contexto [/PRINCS]
+may 04, 2019 8:30:28 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:30:28 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:30:28 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:30:28 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:30:29 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 8:30:29 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:30:29 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:30:29 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:30:29 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:30:29 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:30:29 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:30:29 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 70 ms.
+may 04, 2019 8:30:29 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 8:30:29 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 8:30:30 AM org.apache.catalina.core.StandardContext reload
+INFORMACIÓN: Se ha completado la recarga de este Contexto
+may 04, 2019 8:30:42 AM org.apache.catalina.core.StandardContext reload
+INFORMACIÓN: Ha comenzado la recarga de Contexto [/PRINCS]
+may 04, 2019 8:30:42 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:30:43 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:30:43 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:30:43 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:30:43 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 8:30:43 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:30:43 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:30:43 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:30:43 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:30:43 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:30:43 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:30:43 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 39 ms.
+may 04, 2019 8:30:43 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 8:30:43 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 8:30:44 AM org.apache.catalina.core.StandardContext reload
+INFORMACIÓN: Se ha completado la recarga de este Contexto
+may 04, 2019 8:31:05 AM org.apache.catalina.core.StandardServer await
+INFORMACIÓN: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+may 04, 2019 8:31:05 AM org.apache.coyote.AbstractProtocol pause
+INFORMACIÓN: Pausing ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:31:05 AM org.apache.coyote.AbstractProtocol pause
+INFORMACIÓN: Pausing ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 8:31:05 AM org.apache.catalina.core.StandardService stopInternal
+INFORMACIÓN: Parando servicio Catalina
+may 04, 2019 8:31:05 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 8:31:06 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:31:06 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 8:31:06 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 8:31:06 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:31:06 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 8:31:06 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 8:31:06 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:31:06 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 8:31:06 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 8:31:06 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:31:06 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 8:31:06 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:31:07 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:31:07 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:31:07 AM org.apache.coyote.AbstractProtocol stop
+INFORMACIÓN: Stopping ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:31:07 AM org.apache.coyote.AbstractProtocol stop
+INFORMACIÓN: Stopping ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 8:31:07 AM org.apache.openejb.server.SimpleServiceManager stop
+INFORMACIÓN: Stopping server services
+may 04, 2019 8:31:07 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: openejb
+may 04, 2019 8:31:07 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:31:07 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: openejb
+may 04, 2019 8:31:07 AM org.apache.coyote.AbstractProtocol destroy
+INFORMACIÓN: Destroying ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:31:07 AM org.apache.coyote.AbstractProtocol destroy
+INFORMACIÓN: Destroying ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server version:        Apache Tomcat (TomEE)/7.0.68 (1.7.4)
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server built:          Feb 8 2016 20:25:54 UTC
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server number:         7.0.68.0
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Name:               Windows 10
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Version:            10.0
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Architecture:          amd64
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Version:           1.8.0_191-b12
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Vendor:            Oracle Corporation
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_BASE:         C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_HOME:         C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -javaagent:C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\lib\openejb-javaagent.jar
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.config.file=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\logging.properties
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.endorsed.dirs=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\endorsed
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.base=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.home=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:31:39 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.io.tmpdir=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\temp
+may 04, 2019 8:31:39 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMACIÓN: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Git\cmd;C:\Users\deha1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_191\bin;;.
+may 04, 2019 8:31:40 AM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:31:40 AM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 8:31:41 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: ********************************************************************************
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: OpenEJB http://tomee.apache.org/
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Startup: Sat May 04 08:31:41 COT 2019
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Copyright 1999-2015 (C) Apache OpenEJB/TomEE Project, All Rights Reserved.
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Version: 4.7.4
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Build date: 20160304
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Build time: 09:05
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: ********************************************************************************
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: openejb.home = C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:31:41 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: openejb.base = C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 8:31:41 AM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFORMACIÓN: Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:31:41 AM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFORMACIÓN: Succeeded in installing singleton service
+may 04, 2019 8:31:41 AM org.apache.openejb.config.ConfigurationFactory init
+INFORMACIÓN: openejb configuration file is 'C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\tomee.xml'
+may 04, 2019 8:31:41 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFORMACIÓN: Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+may 04, 2019 8:31:41 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFORMACIÓN: Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+may 04, 2019 8:31:41 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openejb.system.apps=true'
+may 04, 2019 8:31:41 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: openejb
+may 04, 2019 8:31:42 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Using openejb.deploymentId.format '{ejbName}'
+may 04, 2019 8:31:42 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Auto-deploying ejb openejb/Deployer: EjbDeployment(deployment-id=openejb/Deployer)
+may 04, 2019 8:31:42 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Auto-deploying ejb openejb/ConfigurationInfo: EjbDeployment(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 8:31:42 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Auto-deploying ejb MEJB: EjbDeployment(deployment-id=MEJB)
+may 04, 2019 8:31:42 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFORMACIÓN: Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+may 04, 2019 8:31:42 AM org.apache.openejb.config.AutoConfig createContainer
+INFORMACIÓN: Auto-creating a container for bean openejb/Deployer: Container(type=STATELESS, id=Default Stateless Container)
+may 04, 2019 8:31:42 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "openejb" loaded.
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating TransactionManager(id=Default Transaction Manager)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating SecurityService(id=Tomcat Security Service)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating Container(id=Default Stateless Container)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler createAppClassLoader
+INFORMACIÓN: Not creating another application classloader for openejb
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: openejb
+may 04, 2019 8:31:42 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openejb.jndiname.format={deploymentId}{interfaceType.openejbLegacyName}'
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=openejb/DeployerBusinessRemote) --> Ejb(deployment-id=openejb/Deployer)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/Deployer!org.apache.openejb.assembler.Deployer) --> Ejb(deployment-id=openejb/Deployer)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/Deployer) --> Ejb(deployment-id=openejb/Deployer)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=openejb/ConfigurationInfoBusinessRemote) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/ConfigurationInfo!org.apache.openejb.assembler.classic.cmd.ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=MEJB) --> Ejb(deployment-id=MEJB)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/MEJB!javax.management.j2ee.ManagementHome) --> Ejb(deployment-id=MEJB)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/MEJB) --> Ejb(deployment-id=MEJB)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Created Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Created Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Created Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Started Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Started Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+may 04, 2019 8:31:42 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Started Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+may 04, 2019 8:31:43 AM org.apache.openejb.assembler.classic.Assembler deployMBean
+INFORMACIÓN: Deployed MBean(openejb.user.mbeans:application=openejb,group=org.apache.openejb.assembler.monitoring,name=JMXDeployer)
+may 04, 2019 8:31:43 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=openejb)
+may 04, 2019 8:31:43 AM org.apache.openejb.server.SimpleServiceManager start
+INFORMACIÓN:   ** Bound Services **
+may 04, 2019 8:31:43 AM org.apache.openejb.server.SimpleServiceManager printRow
+INFORMACIÓN:   NAME                 IP              PORT  
+may 04, 2019 8:31:43 AM org.apache.openejb.server.SimpleServiceManager start
+INFORMACIÓN: -------
+may 04, 2019 8:31:43 AM org.apache.openejb.server.SimpleServiceManager start
+INFORMACIÓN: Ready!
+may 04, 2019 8:31:43 AM org.apache.catalina.startup.Catalina load
+INFORMACIÓN: Initialization processed in 4501 ms
+may 04, 2019 8:31:43 AM org.apache.tomee.catalina.OpenEJBNamingContextListener bindResource
+INFORMACIÓN: Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+may 04, 2019 8:31:43 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating Resource(id=UserDatabase)
+may 04, 2019 8:31:43 AM org.apache.catalina.core.StandardService startInternal
+INFORMACIÓN: Arrancando servicio Catalina
+may 04, 2019 8:31:43 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMACIÓN: Starting Servlet Engine: Apache Tomcat (TomEE)/7.0.68 (1.7.4)
+may 04, 2019 8:31:43 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml
+may 04, 2019 8:31:43 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /PRINCS
+may 04, 2019 8:31:44 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:31:44 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 8:31:44 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:31:44 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:31:44 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:31:44 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:31:44 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:31:45 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:31:45 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 219 ms.
+may 04, 2019 8:31:45 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 8:31:45 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 8:31:45 AM org.apache.shiro.web.env.EnvironmentLoader initEnvironment
+INFORMACIÓN: Starting Shiro environment initialization.
+may 04, 2019 8:31:46 AM org.apache.shiro.realm.text.IniRealm onInit
+ADVERTENCIA: Users or Roles are already populated.  Configured Ini instance will be ignored.
+may 04, 2019 8:31:46 AM org.apache.shiro.web.env.EnvironmentLoader initEnvironment
+INFORMACIÓN: Shiro environment initialized in 1240 ms.
+may 04, 2019 8:31:47 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml has finished in 3.916 ms
+may 04, 2019 8:31:47 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\Prueba.xml
+may 04, 2019 8:31:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /Prueba
+may 04, 2019 8:31:47 AM org.apache.openejb.util.JarExtractor extract
+INFORMACIÓN: Extracting jar: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web
+may 04, 2019 8:31:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+GRAVE: can't unpack 'C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web'
+may 04, 2019 8:31:47 AM org.apache.catalina.core.StandardContext resourcesStart
+GRAVE: Error arrancando Recursos estáticos
+java.lang.IllegalArgumentException: El Documento base C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web no existe o no es un directorio legible
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5386)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1962)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+may 04, 2019 8:31:47 AM org.apache.catalina.core.ContainerBase addChildInternal
+GRAVE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Prueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1962)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5387)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 10 more
+
+may 04, 2019 8:31:47 AM org.apache.catalina.startup.HostConfig deployDescriptor
+GRAVE: Error durante el despliegue del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\Prueba.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Prueba]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1962)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+may 04, 2019 8:31:47 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\Prueba.xml has finished in 57 ms
+may 04, 2019 8:31:47 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs de la aplicación web
+may 04, 2019 8:31:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /docs
+may 04, 2019 8:31:47 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 8:31:47 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs" loaded.
+may 04, 2019 8:31:47 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 8:31:47 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:31:47 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:31:47 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:31:47 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:31:47 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:31:47 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 16 ms.
+may 04, 2019 8:31:47 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs)
+may 04, 2019 8:31:47 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs has finished in 456 ms
+may 04, 2019 8:31:47 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager de la aplicación web
+may 04, 2019 8:31:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /host-manager
+may 04, 2019 8:31:47 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 8:31:47 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager" loaded.
+may 04, 2019 8:31:47 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 8:31:47 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:31:47 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:31:47 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:31:47 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:31:47 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:31:47 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 17 ms.
+may 04, 2019 8:31:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager\META-INF\context.xml
+may 04, 2019 8:31:47 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager)
+may 04, 2019 8:31:47 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager has finished in 273 ms
+may 04, 2019 8:31:47 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager de la aplicación web
+may 04, 2019 8:31:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /manager
+may 04, 2019 8:31:48 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 8:31:48 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager" loaded.
+may 04, 2019 8:31:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 8:31:48 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:31:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:31:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:31:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:31:48 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:31:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 14 ms.
+may 04, 2019 8:31:48 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager\META-INF\context.xml
+may 04, 2019 8:31:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager)
+may 04, 2019 8:31:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager has finished in 273 ms
+may 04, 2019 8:31:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT de la aplicación web
+may 04, 2019 8:31:48 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /
+may 04, 2019 8:31:48 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 8:31:48 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT" loaded.
+may 04, 2019 8:31:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 8:31:48 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:31:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:31:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 8:31:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 8:31:48 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 8:31:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 14 ms.
+may 04, 2019 8:31:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT)
+may 04, 2019 8:31:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT has finished in 191 ms
+may 04, 2019 8:31:48 AM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:31:48 AM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 8:31:48 AM org.apache.catalina.startup.Catalina start
+INFORMACIÓN: Server startup in 5354 ms
+may 04, 2019 8:31:49 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:31:49 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:31:49 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:31:50 AM org.apache.catalina.startup.HostConfig undeploy
+INFORMACIÓN: Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto /PRINCS
+may 04, 2019 8:31:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml
+may 04, 2019 8:31:50 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /PRINCS
+may 04, 2019 8:31:50 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:31:50 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 8:31:50 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:31:50 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 8:31:50 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 8:31:50 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 14 ms.
+may 04, 2019 8:31:50 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 8:31:50 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 8:31:51 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml has finished in 1.152 ms
+may 04, 2019 8:31:51 AM org.apache.catalina.util.LifecycleBase start
+INFORMACIÓN: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PRINCS]] after start() had already been called. The second call will be ignored.
+may 04, 2019 8:32:39 AM org.apache.catalina.core.StandardServer await
+INFORMACIÓN: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+may 04, 2019 8:32:39 AM org.apache.coyote.AbstractProtocol pause
+INFORMACIÓN: Pausing ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:32:39 AM org.apache.coyote.AbstractProtocol pause
+INFORMACIÓN: Pausing ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 8:32:39 AM org.apache.catalina.core.StandardService stopInternal
+INFORMACIÓN: Parando servicio Catalina
+may 04, 2019 8:32:39 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 8:32:40 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 8:32:40 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 8:32:40 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 8:32:40 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:32:40 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 8:32:40 AM org.apache.coyote.AbstractProtocol stop
+INFORMACIÓN: Stopping ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:32:40 AM org.apache.coyote.AbstractProtocol stop
+INFORMACIÓN: Stopping ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 8:32:40 AM org.apache.openejb.server.SimpleServiceManager stop
+INFORMACIÓN: Stopping server services
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: openejb
+may 04, 2019 8:32:40 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 8:32:40 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: openejb
+may 04, 2019 8:32:40 AM org.apache.coyote.AbstractProtocol destroy
+INFORMACIÓN: Destroying ProtocolHandler ["http-bio-8080"]
+may 04, 2019 8:32:40 AM org.apache.coyote.AbstractProtocol destroy
+INFORMACIÓN: Destroying ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server version:        Apache Tomcat (TomEE)/7.0.68 (1.7.4)
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server built:          Feb 8 2016 20:25:54 UTC
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server number:         7.0.68.0
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Name:               Windows 10
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Version:            10.0
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Architecture:          amd64
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Version:           1.8.0_191-b12
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Vendor:            Oracle Corporation
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_BASE:         C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_HOME:         C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -javaagent:C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\lib\openejb-javaagent.jar
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.config.file=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\logging.properties
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.endorsed.dirs=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\endorsed
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.base=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.home=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 10:15:40 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.io.tmpdir=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\temp
+may 04, 2019 10:15:40 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMACIÓN: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Git\cmd;C:\Users\deha1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_191\bin;;.
+may 04, 2019 10:15:41 AM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["http-bio-8080"]
+may 04, 2019 10:15:41 AM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 10:15:42 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: ********************************************************************************
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: OpenEJB http://tomee.apache.org/
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Startup: Sat May 04 10:15:42 COT 2019
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Copyright 1999-2015 (C) Apache OpenEJB/TomEE Project, All Rights Reserved.
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Version: 4.7.4
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Build date: 20160304
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: Build time: 09:05
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: ********************************************************************************
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: openejb.home = C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 10:15:42 AM org.apache.openejb.OpenEJB$Instance <init>
+INFORMACIÓN: openejb.base = C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4
+may 04, 2019 10:15:42 AM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFORMACIÓN: Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 10:15:42 AM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFORMACIÓN: Succeeded in installing singleton service
+may 04, 2019 10:15:42 AM org.apache.openejb.config.ConfigurationFactory init
+INFORMACIÓN: openejb configuration file is 'C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\tomee.xml'
+may 04, 2019 10:15:42 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFORMACIÓN: Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+may 04, 2019 10:15:42 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFORMACIÓN: Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+may 04, 2019 10:15:42 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openejb.system.apps=true'
+may 04, 2019 10:15:42 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: openejb
+may 04, 2019 10:15:43 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Using openejb.deploymentId.format '{ejbName}'
+may 04, 2019 10:15:43 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Auto-deploying ejb openejb/Deployer: EjbDeployment(deployment-id=openejb/Deployer)
+may 04, 2019 10:15:43 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Auto-deploying ejb openejb/ConfigurationInfo: EjbDeployment(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 10:15:43 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFORMACIÓN: Auto-deploying ejb MEJB: EjbDeployment(deployment-id=MEJB)
+may 04, 2019 10:15:43 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFORMACIÓN: Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+may 04, 2019 10:15:43 AM org.apache.openejb.config.AutoConfig createContainer
+INFORMACIÓN: Auto-creating a container for bean openejb/Deployer: Container(type=STATELESS, id=Default Stateless Container)
+may 04, 2019 10:15:43 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "openejb" loaded.
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating TransactionManager(id=Default Transaction Manager)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating SecurityService(id=Tomcat Security Service)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating Container(id=Default Stateless Container)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.Assembler createAppClassLoader
+INFORMACIÓN: Not creating another application classloader for openejb
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: openejb
+may 04, 2019 10:15:43 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openejb.jndiname.format={deploymentId}{interfaceType.openejbLegacyName}'
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=openejb/DeployerBusinessRemote) --> Ejb(deployment-id=openejb/Deployer)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/Deployer!org.apache.openejb.assembler.Deployer) --> Ejb(deployment-id=openejb/Deployer)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/Deployer) --> Ejb(deployment-id=openejb/Deployer)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=openejb/ConfigurationInfoBusinessRemote) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/ConfigurationInfo!org.apache.openejb.assembler.classic.cmd.ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/openejb/ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=MEJB) --> Ejb(deployment-id=MEJB)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/MEJB!javax.management.j2ee.ManagementHome) --> Ejb(deployment-id=MEJB)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFORMACIÓN: Jndi(name=global/openejb/MEJB) --> Ejb(deployment-id=MEJB)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Created Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Created Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+may 04, 2019 10:15:43 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Created Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+may 04, 2019 10:15:44 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Started Ejb(deployment-id=MEJB, ejb-name=MEJB, container=Default Stateless Container)
+may 04, 2019 10:15:44 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Started Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=Default Stateless Container)
+may 04, 2019 10:15:44 AM org.apache.openejb.assembler.classic.Assembler startEjbs
+INFORMACIÓN: Started Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Stateless Container)
+may 04, 2019 10:15:44 AM org.apache.openejb.assembler.classic.Assembler deployMBean
+INFORMACIÓN: Deployed MBean(openejb.user.mbeans:application=openejb,group=org.apache.openejb.assembler.monitoring,name=JMXDeployer)
+may 04, 2019 10:15:44 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=openejb)
+may 04, 2019 10:15:44 AM org.apache.openejb.server.SimpleServiceManager start
+INFORMACIÓN:   ** Bound Services **
+may 04, 2019 10:15:44 AM org.apache.openejb.server.SimpleServiceManager printRow
+INFORMACIÓN:   NAME                 IP              PORT  
+may 04, 2019 10:15:44 AM org.apache.openejb.server.SimpleServiceManager start
+INFORMACIÓN: -------
+may 04, 2019 10:15:44 AM org.apache.openejb.server.SimpleServiceManager start
+INFORMACIÓN: Ready!
+may 04, 2019 10:15:44 AM org.apache.catalina.startup.Catalina load
+INFORMACIÓN: Initialization processed in 4198 ms
+may 04, 2019 10:15:44 AM org.apache.tomee.catalina.OpenEJBNamingContextListener bindResource
+INFORMACIÓN: Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+may 04, 2019 10:15:44 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFORMACIÓN: Creating Resource(id=UserDatabase)
+may 04, 2019 10:15:44 AM org.apache.catalina.core.StandardService startInternal
+INFORMACIÓN: Arrancando servicio Catalina
+may 04, 2019 10:15:44 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMACIÓN: Starting Servlet Engine: Apache Tomcat (TomEE)/7.0.68 (1.7.4)
+may 04, 2019 10:15:44 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml
+may 04, 2019 10:15:44 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /PRINCS
+may 04, 2019 10:15:45 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:15:45 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 10:15:45 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:15:45 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 10:15:45 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 10:15:45 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 10:15:45 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 10:15:45 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 10:15:45 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 183 ms.
+may 04, 2019 10:15:45 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 10:15:45 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 10:15:46 AM org.apache.shiro.web.env.EnvironmentLoader initEnvironment
+INFORMACIÓN: Starting Shiro environment initialization.
+may 04, 2019 10:15:47 AM org.apache.shiro.realm.text.IniRealm onInit
+ADVERTENCIA: Users or Roles are already populated.  Configured Ini instance will be ignored.
+may 04, 2019 10:15:47 AM org.apache.shiro.web.env.EnvironmentLoader initEnvironment
+INFORMACIÓN: Shiro environment initialized in 1245 ms.
+may 04, 2019 10:15:47 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml has finished in 3.201 ms
+may 04, 2019 10:15:47 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\Prueba.xml
+may 04, 2019 10:15:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /Prueba
+may 04, 2019 10:15:47 AM org.apache.openejb.util.JarExtractor extract
+INFORMACIÓN: Extracting jar: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web
+may 04, 2019 10:15:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+GRAVE: can't unpack 'C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web'
+may 04, 2019 10:15:47 AM org.apache.catalina.core.StandardContext resourcesStart
+GRAVE: Error arrancando Recursos estáticos
+java.lang.IllegalArgumentException: El Documento base C:\Users\deha1\Documents\NetBeansProjects\Prueba\build\web no existe o no es un directorio legible
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5386)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1962)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+may 04, 2019 10:15:47 AM org.apache.catalina.core.ContainerBase addChildInternal
+GRAVE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Prueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1962)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5387)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 10 more
+
+may 04, 2019 10:15:47 AM org.apache.catalina.startup.HostConfig deployDescriptor
+GRAVE: Error durante el despliegue del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\Prueba.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Prueba]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1962)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+may 04, 2019 10:15:47 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\Prueba.xml has finished in 46 ms
+may 04, 2019 10:15:47 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs de la aplicación web
+may 04, 2019 10:15:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /docs
+may 04, 2019 10:15:47 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 10:15:47 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs" loaded.
+may 04, 2019 10:15:47 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs
+may 04, 2019 10:15:47 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 10:15:47 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 10:15:47 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 10:15:47 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 10:15:47 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 10:15:47 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 33 ms.
+may 04, 2019 10:15:47 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs)
+may 04, 2019 10:15:47 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\docs has finished in 420 ms
+may 04, 2019 10:15:47 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager de la aplicación web
+may 04, 2019 10:15:47 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /host-manager
+may 04, 2019 10:15:48 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 10:15:48 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager" loaded.
+may 04, 2019 10:15:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager
+may 04, 2019 10:15:48 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 10:15:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 10:15:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 10:15:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 10:15:48 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 10:15:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 21 ms.
+may 04, 2019 10:15:48 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager\META-INF\context.xml
+may 04, 2019 10:15:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager)
+may 04, 2019 10:15:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\host-manager has finished in 216 ms
+may 04, 2019 10:15:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager de la aplicación web
+may 04, 2019 10:15:48 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /manager
+may 04, 2019 10:15:48 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 10:15:48 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager" loaded.
+may 04, 2019 10:15:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager
+may 04, 2019 10:15:48 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 10:15:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 10:15:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 10:15:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 10:15:48 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 10:15:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 13 ms.
+may 04, 2019 10:15:48 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager\META-INF\context.xml
+may 04, 2019 10:15:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager)
+may 04, 2019 10:15:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\manager has finished in 182 ms
+may 04, 2019 10:15:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT de la aplicación web
+may 04, 2019 10:15:48 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /
+may 04, 2019 10:15:48 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 10:15:48 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT" loaded.
+may 04, 2019 10:15:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT
+may 04, 2019 10:15:48 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 10:15:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 10:15:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [CdiPlugin]
+may 04, 2019 10:15:48 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFORMACIÓN: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+may 04, 2019 10:15:48 AM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
+INFORMACIÓN: All injection points were validated successfully.
+may 04, 2019 10:15:48 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 12 ms.
+may 04, 2019 10:15:48 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT)
+may 04, 2019 10:15:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\webapps\ROOT has finished in 159 ms
+may 04, 2019 10:15:48 AM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["http-bio-8080"]
+may 04, 2019 10:15:48 AM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["ajp-bio-8009"]
+may 04, 2019 10:15:48 AM org.apache.catalina.startup.Catalina start
+INFORMACIÓN: Server startup in 4373 ms
+may 04, 2019 10:15:48 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:15:48 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 10:15:49 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:15:49 AM org.apache.catalina.startup.HostConfig undeploy
+INFORMACIÓN: Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto /PRINCS
+may 04, 2019 10:15:49 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Desplieque del descriptor de configuración C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml
+may 04, 2019 10:15:49 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFORMACIÓN: ------------------------- localhost -> /PRINCS
+may 04, 2019 10:15:49 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFORMACIÓN: Configuring enterprise application: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:15:50 AM org.apache.openejb.config.AppInfoBuilder build
+INFORMACIÓN: Enterprise application "C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS" loaded.
+may 04, 2019 10:15:50 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Assembling app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:15:50 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFORMACIÓN: Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@1068e947
+may 04, 2019 10:15:50 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container is starting...
+may 04, 2019 10:15:50 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFORMACIÓN: OpenWebBeans Container has started, it took 24 ms.
+may 04, 2019 10:15:50 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFORMACIÓN: using context file C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS\META-INF\context.xml
+may 04, 2019 10:15:50 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFORMACIÓN: Deployed Application(path=C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS)
+may 04, 2019 10:15:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMACIÓN: Deployment of configuration descriptor C:\Users\deha1\Documents\NetBeansProjects\PRINCS\apache-tomee-webprofile-1.7.4\conf\Catalina\localhost\PRINCS.xml has finished in 1.250 ms
+may 04, 2019 10:15:50 AM org.apache.catalina.util.LifecycleBase start
+INFORMACIÓN: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/PRINCS]] after start() had already been called. The second call will be ignored.
+may 04, 2019 10:40:42 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeploying app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:40:43 AM org.apache.openejb.util.OptionsLog info
+INFORMACIÓN: Using 'openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory'
+may 04, 2019 10:40:43 AM org.apache.openejb.assembler.classic.Assembler destroyApplication
+INFORMACIÓN: Undeployed app: C:\Users\deha1\Documents\NetBeansProjects\PRINCS\target\PRINCS
+may 04, 2019 10:40:43 AM org.apache.catalina.startup.HostConfig undeploy
+INFORMACIÓN: Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto /PRINCS

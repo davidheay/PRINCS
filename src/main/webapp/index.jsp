@@ -9,7 +9,7 @@
 <html>
     <head>
         <%@include file="/Templates/head.jsp" %>
-        <title>Aislamientos</title>
+        <title>PRINCS - MAIN</title>
         <style>
             .modal-header, h4, .close {
                 background-color: #3256B7;
@@ -194,12 +194,12 @@
         //Comentado, despliegue solo pabellon hospitalizacion
         window.onload = function() {
         <%  String strSelPab = null;
-        if (request.getParameter("selPa    bellon") != null) {
-            strSelPab = request.getParameter("selPabellon");%>//
+            if (request.getParameter("selPa    bellon") != null) {
+                strSelPab = request.getParameter("selPabellon");%>//
             document.getElementById("selPabellon").value = <%=strSelPab%>;
         <%}%><%
-        if (request.getAttribute("selPab    ellon2") != null) {
-            strSelPab = (String) request.getAttribute("selPabellon2");%>//
+            if (request.getAttribute("selPab    ellon2") != null) {
+                strSelPab = (String) request.getAttribute("selPabellon2");%>//
             document.getElementById("selPabellon").value = <%=strSelPab%>;
         <%}%>
         };
