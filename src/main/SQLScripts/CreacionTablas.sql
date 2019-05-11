@@ -6,7 +6,8 @@ create table Lote(
 	ID_Lote int primary key NOT NULL,
 	nombre varchar(50) NOT NULL,
 	capacidad varchar(50) NOT NULL,
-	lugar varchar(50)NOT NULL);
+	lugar varchar(50)NOT NULL
+	);
 
 create table Mercancia(
 	ID_Mercancia int primary key NOT NULL,
@@ -18,7 +19,7 @@ create table Mercancia(
 	ID_In int NOT NULL,
 	ID_Out int NOT NULL,
 	valor int NOT NULL,
-	moneda int NOT NULL);
+	moneda varchar(50) NOT NULL);
 
 create table Reserva(
 	ID_Reserva int primary key NOT NULL,
@@ -30,8 +31,8 @@ create table Reserva(
 	placa varchar(20) NOT NULL,
 	ID_Transportadora int NOT NULL,
 	N_Piezas int NOT NULL,
-	/*NOM_COM ???*/
-	/*cc_con ???*/
+	Nombre_Conductor varchar(50) NOT NULL,
+	cedula_Conductor varchar(50) NOT NULL,
 	documentos varchar(50),
 	peso float NOT NULL,
 	valor int NOT NULL,
