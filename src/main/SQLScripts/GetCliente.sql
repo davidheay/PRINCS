@@ -1,4 +1,4 @@
-CREATE PROCEDURE getCliente 
+CREATE PROCEDURE GetCliente 
  @ID_Cliente int,
  @nombre varchar(50) out,
  @direccion varchar(50) out,
