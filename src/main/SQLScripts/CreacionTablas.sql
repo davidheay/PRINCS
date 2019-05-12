@@ -58,6 +58,7 @@ create table Empleado(
 	nombre varchar(50) NOT NULL,
 	correo varchar(50) NOT NULL,
 	Tipo_Permiso varchar(20) NOT NULL,
+	Usuario varchar(50) NOT NULL,
 	contraseña varchar(20));
 
 create table Transportadora(

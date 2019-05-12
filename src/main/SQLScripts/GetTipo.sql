@@ -1,13 +1,14 @@
-CREATE PROCEDURE  GetEstado
- @ID_Estado int,
- @Estado varchar(20) out 
+CREATE PROCEDURE  GetTipo
+ @ID_Tipo int,
+ @Nombre varchar(50) out
+
  AS 
 
  BEGIN TRANSACTION
 
  BEGIN TRY
 
- select @Estado = Estado from Estado where @ID_Estado = ID_Estado
+ select @Nombre = Nombre from Tipo where @ID_Tipo = ID_Tipo
 
  COMMIT TRANSACTION
 
