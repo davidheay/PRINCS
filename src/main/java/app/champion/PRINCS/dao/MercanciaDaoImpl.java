@@ -21,7 +21,11 @@ public class MercanciaDaoImpl implements MercanciaDao {
 
         List<Mercancia> mercancias = new ArrayList<>();
         try {
+<<<<<<< HEAD
             String sql = "select * from Mercancia";
+=======
+            String sql = "select Mercancia.ID_Mercancia,Cliente.Nombre,Tipo.Nombre,Estado.estado,observaciones,N_Piezas,Lote.lugar,RESERVA_IN,RESERVA_OUT,valor,moneda from Mercancia,Cliente,Tipo,Estado,Lote where Mercancia.ID_CLIENTE=Cliente.ID_Cliente and Mercancia.ID_Tipo=Tipo.ID_Tipo and Mercancia.estado=Estado.ID_Estado and Mercancia.ID_Lote=Lote.ID_Lote";
+>>>>>>> 70fb4bd38f9e35721f7d1f9de5dcd0c950acf4e7
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             ResultSet resultSet = prepareStatemente.executeQuery();
             while (resultSet.next()) {

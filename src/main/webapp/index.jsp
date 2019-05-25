@@ -129,7 +129,7 @@
                 <div class="modal-content">
                     <div class="modal-header" style="padding:5px 10px;">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3>Registrar Aislamiento</h3>
+                        <h3>Actualizar estado</h3>
                     </div>
                     <div class="modal-body" style="padding:5px 50px;">
                         <form role="form" name='frmPte' id = 'frmPte' action="/PRINCS/IndexController" method="POST">
@@ -160,7 +160,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        ¡Esta seguro de asignar el aislamiento!
+                                        ¡Esta seguro de cambiar el estado!
                                     </p>
                                 </div>
                                 <input type="hidden" id="hidIngreso" name="hidIngreso" >
