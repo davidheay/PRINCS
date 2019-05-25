@@ -10,8 +10,8 @@ import java.sql.SQLException;
  */
 public class Conn {
 
-    private final String connectionUrl = "jdbc:sqlserver://orion:1433;"
-            + "databaseName=kfir;user=developer;password=DesCUS!2016;";
+    private final String connectionUrl = "jdbc:sqlserver://localhost:1433;"
+            + "databaseName=PRINCS_DB;user=admin;password=admin;";
     private Connection conexion = null;
 
     public Conn() {
