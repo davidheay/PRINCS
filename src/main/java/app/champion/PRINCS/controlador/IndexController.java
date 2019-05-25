@@ -40,7 +40,7 @@ public class IndexController extends HttpServlet {
 
          */
         request.getRequestDispatcher("index.jsp").forward(request, response);
-        System.out.println("do get");
+
     }
 
     @Override
@@ -53,6 +53,8 @@ public class IndexController extends HttpServlet {
         String nomusuario = (String) currentUser.getPrincipal();
         request.setAttribute("nomusuario", nomusuario);
         MercanciaDao mercanciaDao = new MercanciaDaoImpl();
+        String idMercancia = (String) request.getParameter("idMercancia");
+        System.out.println(idMercancia);
         /*
         //Crea un objeto para listar los pabellones en el lstbox
         AislamientoDao aislamientoDao = new AislamientoDaoImpl();
@@ -61,7 +63,12 @@ public class IndexController extends HttpServlet {
         String pabellon = (String) request.getParameter("selPabellon");
         //Se envia la lista de los pacientes del pabellon seleccionado para llenar la tabla
          */
-        request.setAttribute("lstMercancias", mercanciaDao.listarMercancias());
+        if (idMercancia == null || idMercancia.equals("")) {
+            request.setAttribute("lstMercancias", mercanciaDao.listarMercancias());
+        } else {
+            request.setAttribute("lstMercancias", mercanciaDao.listarMercancia(idMercancia));
+        }
+
         /*
 //Enviar nombre y id del pabellon
         request.setAttribute("dePab", request.getParameter("hidNomPabellon"));

@@ -37,7 +37,6 @@
         </style>
     </head>
     <body>
-
         <%@include file="/Templates/header.jsp" %>
 
         <div class="container">
@@ -47,22 +46,29 @@
 
                 </div>
                 <!--                    Despliegue por pabellones pendientes-->
-                <div class="col-md-3">
+                <div class="col-md-3"><!--
                     <form name='frmPab' class="form-inline" id = 'frmPab' action="/PRINCS/IndexController" method="POST">
                         <input type="hidden" name="hidPab" id ="hidPab" >
                         <input type="hidden" id="hidNomPabellon" name="hidNomPabellon" >
                         <select name="selPabellon" id = 'selPabellon' onchange ='clickselect()' class="input-xs "  style="font-size:xx-small">
                             <option selected disabled hidden>Seleccione un pabellón</option>
-                            <c:forEach var='item' items='${lstPabellones}' >
-                                <option value='${item.getCodPabellon()}'>${item.getDescPabellon()}</option>
-                            </c:forEach>
-                        </select>
+                    <c:forEach var='item' items='${lstPabellones}' >
+                        <option value='${item.getCodPabellon()}'>${item.getDescPabellon()}</option>
+                    </c:forEach>
+                </select>
 
+            </form>
+                    -->
+                </div>
+                <div class="col-md-3"><!--
+                    <%= request.getAttribute("dePab")%>
+                    -->
+                    <form action="/PRINCS/IndexController" method="POST">
+                        <input type="text" name="idMercancia" placeholder="ID de mercancia">
+                        <button onclick="submit" value="submit" >Buscar ID</button>
                     </form>
                 </div>
-                <div class="col-md-3">
-                    <%= request.getAttribute("dePab")%>
-                </div>
+
                 <div class="col-md-3">
                     <a href="/PRINCS/LogoutController"  class="btn btn-xs btn-danger pull-right"> Cerrar Sesión </a>
                 </div>
