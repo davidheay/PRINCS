@@ -2,6 +2,8 @@ package app.champion.PRINCS.controlador;
 
 import app.champion.PRINCS.dao.AislamientoDao;
 import app.champion.PRINCS.dao.AislamientoDaoImpl;
+import app.champion.PRINCS.dao.MercanciaDao;
+import app.champion.PRINCS.dao.MercanciaDaoImpl;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -26,6 +28,8 @@ public class IndexController extends HttpServlet {
         Session session = currentUser.getSession();
         String nomusuario = (String) currentUser.getPrincipal();
         request.setAttribute("nomusuario", nomusuario);
+        MercanciaDao mercanciaDao = new MercanciaDaoImpl();
+        request.setAttribute("lstMercancias", mercanciaDao.listarMercancias());
         /*
         //Crea un objeto asilamiento para listar los pabellones en el select
         AislamientoDao aislamientoDao = new AislamientoDaoImpl();
@@ -36,6 +40,7 @@ public class IndexController extends HttpServlet {
 
          */
         request.getRequestDispatcher("index.jsp").forward(request, response);
+
     }
 
     @Override
@@ -47,6 +52,9 @@ public class IndexController extends HttpServlet {
         Session session = currentUser.getSession();
         String nomusuario = (String) currentUser.getPrincipal();
         request.setAttribute("nomusuario", nomusuario);
+        MercanciaDao mercanciaDao = new MercanciaDaoImpl();
+        String idMercancia = (String) request.getParameter("idMercancia");
+        System.out.println(idMercancia);
         /*
         //Crea un objeto para listar los pabellones en el lstbox
         AislamientoDao aislamientoDao = new AislamientoDaoImpl();
@@ -54,8 +62,15 @@ public class IndexController extends HttpServlet {
         //Se guarda el dato enviado despues de la seleccion del pabellon
         String pabellon = (String) request.getParameter("selPabellon");
         //Se envia la lista de los pacientes del pabellon seleccionado para llenar la tabla
-        request.setAttribute("lstPacientes", aislamientoDao.listarPacientes(pabellon));
-        //Enviar nombre y id del pabellon
+         */
+        if (idMercancia == null || idMercancia.equals("")) {
+            request.setAttribute("lstMercancias", mercanciaDao.listarMercancias());
+        } else {
+            request.setAttribute("lstMercancias", mercanciaDao.listarMercancia(idMercancia));
+        }
+
+        /*
+//Enviar nombre y id del pabellon
         request.setAttribute("dePab", request.getParameter("hidNomPabellon"));
         request.setAttribute("selPabellon", request.getParameter(pabellon));
         //Se valida si se envio el campo oculto en el formulario de inserción para separar los dos submits

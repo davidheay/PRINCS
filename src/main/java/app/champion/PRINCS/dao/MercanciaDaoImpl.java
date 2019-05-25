@@ -21,8 +21,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
 
         List<Mercancia> mercancias = new ArrayList<>();
         try {
-            String sql = "select m1.mpcodp,(select m.MPNomP from maepab m where m1.mpcodp = m.MPCodP) as Pabellon\n"
-                    + "from maepab1 m1 where MPActCam <> 'S' and m1.MPCodP not in ('98','4','18','8','13','17')  group by m1.MPCodP  order by 2";
+            String sql = "exec getMercancias";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             ResultSet resultSet = prepareStatemente.executeQuery();
             while (resultSet.next()) {
@@ -52,7 +51,37 @@ public class MercanciaDaoImpl implements MercanciaDao {
 
     @Override
     public List<Mercancia> listarMercancia(String idMercancia) {
-        return null;
+        Conn conexion = new Conn();
+
+        List<Mercancia> mercancias = new ArrayList<>();
+        try {
+            String sql = "exec getMercancia ?";
+            PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
+            prepareStatemente.setString(1, idMercancia);
+            ResultSet resultSet = prepareStatemente.executeQuery();
+            while (resultSet.next()) {
+                Mercancia mercancia = new Mercancia();
+                mercancia.setIdMercancia(resultSet.getString(1));
+                mercancia.setIdCliente(resultSet.getString(2));
+                mercancia.setIdTipo(resultSet.getString(3));
+                mercancia.setEstado(resultSet.getString(4));
+                mercancia.setObservaciones(resultSet.getString(5));
+                mercancia.setnPiezas(resultSet.getString(6));
+                mercancia.setIdLote(resultSet.getString(7));
+                mercancia.setReservaIn(resultSet.getString(8));
+                mercancia.setReservaOut(resultSet.getString(9));
+                mercancia.setValor(resultSet.getInt(10));
+                mercancia.setMoneda(resultSet.getString(11));
+                mercancias.add(mercancia);
+            }
+            prepareStatemente.close();
+            resultSet.close();
+        } catch (Exception ex) {
+            logger.error(ex.getMessage());
+        } finally {
+            conexion.cerrarConexion();
+        }
+        return mercancias;
 
     }
 
