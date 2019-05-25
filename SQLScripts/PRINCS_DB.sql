@@ -1,6 +1,6 @@
-﻿USE [master]
+USE [master]
 GO
-/****** Object:  Database [PRINCS_DB]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  Database [PRINCS_DB]    Script Date: 25/05/2019 06:47:31 p. m. ******/
 CREATE DATABASE [PRINCS_DB]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -77,7 +77,10 @@ ALTER DATABASE [PRINCS_DB] SET QUERY_STORE = OFF
 GO
 USE [PRINCS_DB]
 GO
-/****** Object:  Table [dbo].[Cliente]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  User [admin]    Script Date: 25/05/2019 06:47:31 p. m. ******/
+CREATE USER [admin] FOR LOGIN [admin] WITH DEFAULT_SCHEMA=[dbo]
+GO
+/****** Object:  Table [dbo].[Cliente]    Script Date: 25/05/2019 06:47:31 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -93,7 +96,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Empleado]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  Table [dbo].[Empleado]    Script Date: 25/05/2019 06:47:31 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -111,7 +114,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Estado]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  Table [dbo].[Estado]    Script Date: 25/05/2019 06:47:31 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -125,7 +128,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Lote]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  Table [dbo].[Lote]    Script Date: 25/05/2019 06:47:31 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -141,7 +144,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Mercancia]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  Table [dbo].[Mercancia]    Script Date: 25/05/2019 06:47:31 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -153,7 +156,6 @@ CREATE TABLE [dbo].[Mercancia](
 	[estado] [varchar](20) NOT NULL,
 	[observaciones] [varchar](50) NOT NULL,
 	[N_Piezas] [int] NOT NULL,
-	[ID_Lote] [varchar](5) NOT NULL,
 	[RESERVA_IN] [varchar](5) NOT NULL,
 	[RESERVA_OUT] [varchar](5) NOT NULL,
 	[valor] [int] NOT NULL,
@@ -164,7 +166,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Reserva]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  Table [dbo].[Reserva]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -179,6 +181,8 @@ CREATE TABLE [dbo].[Reserva](
 	[placa] [varchar](20) NOT NULL,
 	[ID_Transportadora] [varchar](5) NOT NULL,
 	[N_Piezas] [int] NOT NULL,
+	[ID_Lote] [varchar](5) NOT NULL,
+	[Estiba] [varchar](5) NOT NULL,
 	[Nombre_Conductor] [varchar](50) NOT NULL,
 	[cedula_Conductor] [varchar](50) NOT NULL,
 	[documentos] [varchar](50) NULL,
@@ -199,7 +203,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Tipo]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  Table [dbo].[Tipo]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -213,7 +217,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Transportadora]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  Table [dbo].[Transportadora]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -248,27 +252,26 @@ INSERT [dbo].[Estado] ([ID_Estado], [estado]) VALUES (N'ES2', N'IN STOCK')
 INSERT [dbo].[Estado] ([ID_Estado], [estado]) VALUES (N'ES3', N'CLOSED')
 INSERT [dbo].[Lote] ([ID_Lote], [nombre], [capacidad], [lugar]) VALUES (N'L1', N'BODEGA 1', N'100', N'PUERTA DEL SOL')
 INSERT [dbo].[Lote] ([ID_Lote], [nombre], [capacidad], [lugar]) VALUES (N'L2', N'BODEGA 2', N'100', N'INTEXONA')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M001', N'C1', N'T1', N'ES1', N'LLEGA EL DIA 31/05/2019 EN LAS HORAS DE LA MAÑANA', 50, N'L1', N'NULL', N'NULL', 12000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M002', N'C4', N'T1', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 100, N'L2', N'R2', N'NULL', 5000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M003', N'C10', N'T3', N'ES1', N'LLEGADA EL DIA 05/06/2019 EN LA TARDE', 70, N'L1', N'NULL', N'NULL', 15000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M004', N'C3', N'T1', N'ES3', N'SALIDA EL DIA 20/05/2019 EN LA MAÑANA', 20, N'L1', N'R4', N'R15', 7000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M005', N'C2', N'T1', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA MAÑANA', 60, N'L1', N'R5', N'NULL', 17000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M006', N'C5', N'T5', N'ES1', N'LLEGADA EL DIA 31/05/2019 EN LA TARDE', 25, N'L2', N'NULL', N'NULL', 70000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M007', N'C6', N'T1', N'ES3', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 150, N'L1', N'R7', N'R16', 10000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M008', N'C7', N'T2', N'ES2', N'SALIDA EL DIA 04/06/2019 EN LA MAÑANA', 200, N'L2', N'R8', N'NULL', 11000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M009', N'C8', N'T2', N'ES2', N'SALIDA EL DIA 29/05/2019 EN LA TARDE', 80, N'L2', N'R9', N'NULL', 3000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M010', N'C9', N'T1', N'ES2', N'SALIDA EL DIA 02/06/2019 EN LA TARDE', 40, N'L1', N'R10', N'NULL', 8000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M011', N'C11', N'T2', N'ES2', N'SALIDA EL DIA 09/06/2019 EN LA MAÑANA', 37, N'L2', N'R11', N'NULL', 2000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M012', N'C1', N'T1', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 15, N'L1', N'R12', N'NULL', 1500000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M013', N'C4', N'T1', N'ES3', N'SALIDA EL DIA 19/05/2019 EN LA TARDE', 25, N'L1', N'R12', N'NULL', 4500000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M014', N'C7', N'T2', N'ES1', N'LLEGADA EL DIA 29/06/2019 EN LA TARDE', 24, N'L2', N'R14', N'NULL', 7000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M015', N'C5', N'T5', N'ES2', N'SALIDA EL DIA 30/05/2019 EN LA TARDE', 41, N'L2', N'R17', N'NULL', 140000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M016', N'C7', N'T3', N'ES3', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 55, N'L2', N'R18', N'R23', 50000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M017', N'C6', N'T3', N'ES2', N'SALIDA EL DIA 17/05/2019 EN LA MAÑANA', 70, N'L1', N'R19', N'NULL', 2500000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M018', N'C10', N'T4', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 33, N'L2', N'R20', N'NULL', 4000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M019', N'C11', N'T2', N'ES1', N'LLEGADA EL DIA 08/06/2019 EN LA MAÑANA', 56, N'L2', N'R21', N'NULL', 56000000, N'COP')
-INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [ID_Lote], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M020', N'C8', N'T2', N'ES3', N'SALIDA EL DIA 19/05/2019 EN LA TARDE', 35, N'L1', N'R22', N'R24', 7500000, N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R2', N'M002', N'ACTA IN', N'C4', N'E5', CAST(N'2019-06-18' AS Date), N'PQR-554', N'T1', 100, N'PEPITO PEREZ', N'419846784', N'DOCUMENTOS', 100, 50000000, 4, N'ETIQUETAS', N'FOTO.JPEG', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', N'PEPITO PEREZ', N'NICOLE CERINZA', N'5679832', N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M002', N'C4', N'T1', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 100, N'R2', N'NULL', 5000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M003', N'C10', N'T3', N'ES1', N'LLEGADA EL DIA 05/06/2019 EN LA TARDE', 70, N'NULL', N'NULL', 15000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M004', N'C3', N'T1', N'ES3', N'SALIDA EL DIA 20/05/2019 EN LA MAÑANA', 20, N'R4', N'R15', 7000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M005', N'C2', N'T1', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA MAÑANA', 60, N'R5', N'NULL', 17000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M006', N'C5', N'T5', N'ES1', N'LLEGADA EL DIA 31/05/2019 EN LA TARDE', 25, N'NULL', N'NULL', 70000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M007', N'C6', N'T1', N'ES3', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 150, N'R7', N'R16', 10000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M008', N'C7', N'T2', N'ES2', N'SALIDA EL DIA 04/06/2019 EN LA MAÑANA', 200, N'R8', N'NULL', 11000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M009', N'C8', N'T2', N'ES2', N'SALIDA EL DIA 29/05/2019 EN LA TARDE', 80, N'R9', N'NULL', 3000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M010', N'C9', N'T1', N'ES2', N'SALIDA EL DIA 02/06/2019 EN LA TARDE', 40, N'R10', N'NULL', 8000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M011', N'C11', N'T2', N'ES2', N'SALIDA EL DIA 09/06/2019 EN LA MAÑANA', 37, N'R11', N'NULL', 2000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M012', N'C1', N'T1', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 15, N'R12', N'NULL', 1500000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M013', N'C4', N'T1', N'ES3', N'SALIDA EL DIA 19/05/2019 EN LA TARDE', 25, N'R12', N'NULL', 4500000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M014', N'C7', N'T2', N'ES1', N'LLEGADA EL DIA 29/06/2019 EN LA TARDE', 24, N'R14', N'NULL', 7000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M015', N'C5', N'T5', N'ES2', N'SALIDA EL DIA 30/05/2019 EN LA TARDE', 41, N'R17', N'NULL', 140000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M016', N'C7', N'T3', N'ES3', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 55, N'R18', N'R23', 50000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M017', N'C6', N'T3', N'ES2', N'SALIDA EL DIA 17/05/2019 EN LA MAÑANA', 70, N'R19', N'NULL', 2500000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M018', N'C10', N'T4', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 33, N'R20', N'NULL', 4000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M019', N'C11', N'T2', N'ES1', N'LLEGADA EL DIA 08/06/2019 EN LA MAÑANA', 56, N'R21', N'NULL', 56000000, N'COP')
+INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M020', N'C8', N'T2', N'ES3', N'SALIDA EL DIA 19/05/2019 EN LA TARDE', 35, N'R22', N'R24', 7500000, N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R2', N'M002', N'ACTA IN', N'C4', N'E5', CAST(N'2019-06-18' AS Date), N'PQR-554', N'T1', 100, N'L2', N'5', N'PEPITO PEREZ', N'419846784', N'DOCUMENTOS', 100, 50000000, 4, N'ETIQUETAS', N'FOTO.JPEG', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', N'PEPITO PEREZ', N'NICOLE CERINZA', N'5679832', N'COP')
 INSERT [dbo].[Tipo] ([ID_Tipo], [Nombre]) VALUES (N'T1', N'CARGA_SECA')
 INSERT [dbo].[Tipo] ([ID_Tipo], [Nombre]) VALUES (N'T2', N'PERECEDEROS')
 INSERT [dbo].[Tipo] ([ID_Tipo], [Nombre]) VALUES (N'T3', N'CARGA FRAGIL')
@@ -279,23 +282,20 @@ INSERT [dbo].[Transportadora] ([ID_Transportadora], [Nombre]) VALUES (N'TR2', N'
 INSERT [dbo].[Transportadora] ([ID_Transportadora], [Nombre]) VALUES (N'TR3', N'INTER RAPIDISIMO')
 INSERT [dbo].[Transportadora] ([ID_Transportadora], [Nombre]) VALUES (N'TR4', N'DHL')
 INSERT [dbo].[Transportadora] ([ID_Transportadora], [Nombre]) VALUES (N'TR5', N'SERVIENTREGA')
-/****** Object:  StoredProcedure [dbo].[GetCliente]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetCliente]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[GetCliente] 
- @ID_Cliente vARCHAR(5),
- @nombre varchar(50) out,
- @correo varchar(50) out,
- @telefono varchar(50) out
+ @ID_Cliente vARCHAR(5)
  AS 
 
  BEGIN TRANSACTION
 
  BEGIN TRY
 
- select @nombre = nombre, @correo = correo, @telefono = telefono 
+ select ID_Cliente, nombre,correo, telefono 
 		from Cliente where @ID_Cliente = ID_Cliente
 
  COMMIT TRANSACTION
@@ -309,7 +309,7 @@ CREATE PROCEDURE [dbo].[GetCliente]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetClientes]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetClientes]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -319,26 +319,20 @@ as begin
 select * from Cliente
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetEmpleado]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetEmpleado]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE  [dbo].[GetEmpleado]
- @ID_Empleado varchar(5),
- @Usuario varchar(20) out,
- @nombre varchar(50) out,
- @correo varchar(50) out,
- @tipo_permisos varchar(20) out,
- @contraseña varchar(20) out
+ @ID_Empleado varchar(5)
  AS 
 
  BEGIN TRANSACTION
 
  BEGIN TRY
 
- select @nombre = nombre, @correo = correo, @tipo_permisos = Tipo_Permiso,
-		@contraseña = contraseña, @Usuario = Usuario
+ select ID_Empleado, nombre, correo,  Tipo_Permiso, contraseña,  Usuario
 		from Empleado where @ID_Empleado = ID_Empleado
 
  COMMIT TRANSACTION
@@ -352,21 +346,20 @@ CREATE PROCEDURE  [dbo].[GetEmpleado]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetEstado]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetEstado]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE  [dbo].[GetEstado]
- @ID_Estado varchar(5),
- @Estado varchar(20) out 
+ @ID_Estado varchar(5) 
  AS 
 
  BEGIN TRANSACTION
 
  BEGIN TRY
 
- select @Estado = Estado from Estado where @ID_Estado = ID_Estado
+ select ID_Estado, Estado from Estado where @ID_Estado = ID_Estado
 
  COMMIT TRANSACTION
 
@@ -379,7 +372,7 @@ CREATE PROCEDURE  [dbo].[GetEstado]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetEstados]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetEstados]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -389,16 +382,13 @@ GO
  select * from Estado
  end
 GO
-/****** Object:  StoredProcedure [dbo].[GetLote]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetLote]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE  [dbo].[GetLote]
- @ID_Lote varchar(5),
- @nombre varchar(50) ,
- @capacidad varchar(50) ,
- @lugar varchar(20) 
+ @ID_Lote varchar(5)
 
  AS 
 
@@ -406,8 +396,7 @@ CREATE PROCEDURE  [dbo].[GetLote]
 
  BEGIN TRY
 
- select @nombre = nombre, @capacidad = capacidad, @lugar = lugar
-		from Lote where @ID_Lote = ID_Lote
+ select nombre, capacidad, lugar, ID_Lote from Lote where @ID_Lote = ID_Lote
 
  COMMIT TRANSACTION
 
@@ -420,7 +409,7 @@ CREATE PROCEDURE  [dbo].[GetLote]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetLotes]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetLotes]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -431,33 +420,20 @@ as begin
 select * from Lote
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetMercancia]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetMercancia]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE  [dbo].[GetMercancia]
- @ID_Mercancia varchar(5),
- @ID_Tipo varchar(5),
- @estado varchar(20),
- @observaciones varchar(50),
- @N_piezas int,
- @ID_Lote varchar(5),
- @reserva_In varchar(5),
- @reserva_Out varchar(5),
- @valor int,
- @moneda varchar(50)
+ @ID_Mercancia varchar(5)
  AS 
 
  BEGIN TRANSACTION
 
  BEGIN TRY
 
- select @ID_Tipo = ID_Tipo,				@estado = estado,
-		@observaciones = observaciones, @N_piezas = N_Piezas,
-		@ID_Lote = ID_Lote,				@reserva_In = RESERVA_IN, 
-		@reserva_Out = reserva_Out,				@valor = valor,
-		@moneda = moneda
+ select ID_Mercancia, ID_Tipo,estado,observaciones, N_Piezas, ID_Lote, RESERVA_IN, reserva_Out, valor, moneda
 		from Mercancia where @ID_Mercancia = ID_Mercancia
 
  COMMIT TRANSACTION
@@ -471,7 +447,7 @@ CREATE PROCEDURE  [dbo].[GetMercancia]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetMercancias]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetMercancias]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -481,52 +457,22 @@ as begin
 select * from mercancia
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetReserva]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetReserva]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE  [dbo].[GetReserva]
- @ID_Reserva varchar(5),
- @ID_Mercancia varchar(5) ,
- @Tipo_Acta varchar(20) ,
- @ID_Cliente varchar(5),
- @ID_Empleado varchar(5),
- @Fecha date,
- @Placa varchar(20),
- @ID_Transportadora varchar(5),
- @N_piezas int ,
- @Nombre_Conductor varchar(50) ,
- @Cedula_Conductor varchar(50) ,
- @Documentos varchar(50),
- @Peso float ,
- @valor int,
- @ID_Embalaje int,
- @Etiquetas varchar(40) ,
- @Reg_Fotografico varchar(40) ,
- @ID_Estado varchar(5),
- @Observaciones varchar(255),
- @firma varchar(30) ,
- @Entrega_NOM varchar(50) ,
- @CC_Entrega varchar(50),
- @moneda varchar(50) 
+ @ID_Reserva varchar(5) 
  AS 
 
  BEGIN TRANSACTION
 
  BEGIN TRY
 
- select @ID_Mercancia = ID_Mercancia,			@Tipo_Acta = tipo_Acta, 
-		@ID_Cliente = ID_Cliente,				@ID_Empleado = ID_Empleado,
-		@Fecha = fecha,							@Placa = placa,
-		@ID_Transportadora = ID_Transportadora, @N_piezas = N_Piezas,
-		@Nombre_Conductor = Nombre_Conductor,   @Cedula_Conductor = cedula_Conductor,
-		@Documentos = documentos,				@Peso = peso,
-		@valor = valor,							@ID_Embalaje = ID_Embalaje,
-		@Etiquetas = etiquetas,					@Reg_Fotografico = reg_Fotografico,
-		@ID_Estado = ID_Estado,					@Observaciones = observaciones,
-		@firma = firma,							@Entrega_NOM = Entrega_NOM,
-		@CC_Entrega = cc_entrega,				@moneda = moneda
+ select  ID_Mercancia,	tipo_Acta,  ID_Cliente,	 ID_Empleado,fecha,	placa, ID_Transportadora, N_Piezas,ID_Lote,Estiba,
+  Nombre_Conductor, cedula_Conductor, documentos, peso,valor, ID_Embalaje,etiquetas, reg_Fotografico,
+	 ID_Estado,	 observaciones, firma,Entrega_NOM, cc_entrega, moneda
 		from Reserva where @ID_Reserva = ID_Reserva
 
  COMMIT TRANSACTION
@@ -540,7 +486,7 @@ CREATE PROCEDURE  [dbo].[GetReserva]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetReservas]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetReservas]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -550,14 +496,13 @@ as begin
 select * from Reserva
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetTipo]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetTipo]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE  [dbo].[GetTipo]
- @ID_Tipo varchar(5),
- @Nombre varchar(50) 
+ @ID_Tipo varchar(5) 
 
  AS 
 
@@ -565,7 +510,7 @@ CREATE PROCEDURE  [dbo].[GetTipo]
 
  BEGIN TRY
 
- select @Nombre = Nombre from Tipo where @ID_Tipo = ID_Tipo
+ select ID_Tipo, Nombre from Tipo where @ID_Tipo = ID_Tipo
 
  COMMIT TRANSACTION
 
@@ -578,7 +523,7 @@ CREATE PROCEDURE  [dbo].[GetTipo]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetTipos]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetTipos]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -588,14 +533,13 @@ as begin
 select * from Tipo
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetTransportadora]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetTransportadora]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE  [dbo].[GetTransportadora]
- @ID_Transportadora varchar(5),
- @Nombre varchar(50)
+ @ID_Transportadora varchar(5)
 
  AS 
 
@@ -603,7 +547,7 @@ CREATE PROCEDURE  [dbo].[GetTransportadora]
 
  BEGIN TRY
 
- select @Nombre = Nombre from Transportadora where @ID_Transportadora = ID_Transportadora
+ select ID_Transportadora, Nombre from Transportadora where @ID_Transportadora = ID_Transportadora
 
  COMMIT TRANSACTION
 
@@ -616,7 +560,7 @@ CREATE PROCEDURE  [dbo].[GetTransportadora]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetTransportadoras]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetTransportadoras]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -626,7 +570,7 @@ GO
  select  * from Transportadora
  end
 GO
-/****** Object:  StoredProcedure [dbo].[InsertCliente]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertCliente]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -642,7 +586,7 @@ CREATE PROCEDURE [dbo].[InsertCliente]
 
  BEGIN TRY
 
- select @ID_Cliente = ID_Cliente from Cliente where ID_Cliente = @ID_Cliente
+
 
  IF NOT EXISTS (select ID_Cliente from Cliente where ID_Cliente = @ID_Cliente )
 	begin 
@@ -672,7 +616,7 @@ CREATE PROCEDURE [dbo].[InsertCliente]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertEmpleado]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertEmpleado]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -717,7 +661,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertEstado]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertEstado]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -759,7 +703,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertLote]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertLote]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -802,7 +746,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertMercancia]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertMercancia]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -858,7 +802,7 @@ CREATE PROCEDURE [dbo].[InsertMercancia]
  END CATCH
 
 GO
-/****** Object:  StoredProcedure [dbo].[InsertReserva]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertReserva]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -873,6 +817,8 @@ CREATE PROCEDURE [dbo].[InsertReserva]
  @placa varchar(20),
  @ID_Transportadora varchar(5),
  @N_Piezas int,
+ @ID_Lote varchar(5),
+ @estiba varchar(5),
  @Nombre_Conductor varchar(50),
  @Cedula_Conductor varchar(50),
  @documentos varchar(50),
@@ -900,13 +846,13 @@ CREATE PROCEDURE [dbo].[InsertReserva]
 		
 		insert into Reserva(ID_Reserva,ID_Mercancia, tipo_Acta, ID_Cliente,
 							ID_Empleado, fecha, placa, ID_Transportadora, 
-							N_Piezas, Nombre_Conductor, cedula_Conductor,
+							N_Piezas,ID_Lote,Estiba, Nombre_Conductor, cedula_Conductor,
 							documentos, peso, valor, ID_Embalaje, etiquetas,
 							reg_Fotografico, ID_Estado, observaciones, firma,
 							Entrega_NOM, cc_entrega, moneda) 
 				values(@ID_Reserva, @ID_Mercancia, @tipo_Acta, @ID_Cliente,
 							@ID_Empleado, @fecha, @placa, @ID_Transportadora, 
-							@N_Piezas, @Nombre_Conductor, @Cedula_Conductor,
+							@N_Piezas,@ID_Lote,@Estiba, @Nombre_Conductor, @Cedula_Conductor,
 							@documentos, @peso, @valor, @ID_Embalaje, @etiquetas,
 							@reg_Fotografico, @ID_Estado, @observaciones, @firma,
 							@Entrega_NOM, @cc_Entrega, @moneda);
@@ -933,7 +879,7 @@ CREATE PROCEDURE [dbo].[InsertReserva]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertTipo]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertTipo]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -977,7 +923,7 @@ CREATE PROCEDURE [dbo].[InsertTipo]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertTransportadora]    Script Date: 25/05/2019 11:18:36 a. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertTransportadora]    Script Date: 25/05/2019 06:47:32 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1025,4 +971,3 @@ USE [master]
 GO
 ALTER DATABASE [PRINCS_DB] SET  READ_WRITE 
 GO
-
