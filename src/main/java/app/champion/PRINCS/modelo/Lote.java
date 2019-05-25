@@ -10,52 +10,56 @@ package app.champion.PRINCS.modelo;
  * @author Usuario
  */
 public class Lote {
+
     String idLote;
     String NombreL;
     String Capacidad;
     String Lugar;
-    
-        public Lote(String idLote, String NombreL) {
-    this.idLote = idLote;
-    this.NombreL = NombreL;
-}
-    
-    
+
+    public Lote(String idLote, String NombreL) {
+        this.idLote = idLote;
+        this.NombreL = NombreL;
+    }
+
     public Lote() {
-    
-}
-       public String getIDLote() {
+
+    }
+
+    public String getIDLote() {
         return idLote;
     }
-            public void setIdLote(String idLote) {
+
+    public void setIdLote(String idLote) {
         this.idLote = idLote;
     }
 
-       
-       public String getNombreL() {
-           return NombreL;
-       }
-               public void setNombreL(String NombreL) {
+    public String getNombreL() {
+        return NombreL;
+    }
+
+    public void setNombreL(String NombreL) {
         this.NombreL = NombreL;
     }
-               public String getCapacidad() {
+
+    public String getCapacidad() {
         return Capacidad;
     }
-            public void setCapacidad(String Capacidad) {
+
+    public void setCapacidad(String Capacidad) {
         this.Capacidad = Capacidad;
     }
 
-       
-       public String getLugar() {
-           return Lugar;
-       }
-               public void setLugar(String Lugar) {
+    public String getLugar() {
+        return Lugar;
+    }
+
+    public void setLugar(String Lugar) {
         this.Lugar = Lugar;
     }
-       @Override
+
+    @Override
     public String toString() {
         return "Lote{" + "idLote=" + idLote + ", Nombre=" + NombreL + ", Capacidad=" + Capacidad + ", Lugar=" + Lugar + '}';
     }
-    
-    
+
 }

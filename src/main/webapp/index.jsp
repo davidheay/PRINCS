@@ -111,8 +111,9 @@
                                     <td><c:out value="${item.getMoneda()}"></c:out></td>
 
                                         <td>
-                                            <span class="glyphicon glyphicon-check"></span>
-
+                                            <a id="go" name="go" data-target="#myModal" class="btn btn-xs btn-success" href="#myModal"  onclick="btnDetalle('<c:out value='${item.getIdMercancia()}'></c:out>', '<c:out value='${item.getIdCliente()}'></c:out>', '<c:out value='${item.getIdTipo()}'></c:out>', '<c:out value='${item.getEstado()}'></c:out>', '<c:out value='${item.getObservaciones()}'></c:out>', '<c:out value='${item.getnPiezas()}'></c:out>', '<c:out value='${item.getIdLote()}'></c:out>', '<%= request.getAttribute("dePab")%>')">
+                                                <span class="glyphicon glyphicon-check"></span>
+                                            </a>
                                         </td>
                                     </tr>
                             </c:forEach>

@@ -21,8 +21,22 @@ public class LoginController extends HttpServlet {
         /**
          * Se valida las credenciales ingresadas para la posterior redireccion
          */
+        System.out.println("hola get");
+
+        System.out.println(SecurityUtils.getSubject().getPrincipal());
+
         if (SecurityUtils.getSubject().isAuthenticated()) {
-            response.sendRedirect("/PRINCS/IndexController");
+            if (SecurityUtils.getSubject().hasRole("ROLE_ADMIN")) {
+                System.out.println("ROLE_ADMIN");
+                response.sendRedirect("/PRINCS/IndexController");
+
+            }
+            if (SecurityUtils.getSubject().hasRole("ROLE_USER")) {
+
+                System.out.println("ROLE_USER");
+                response.sendRedirect("/PRINCS/IndexControllerasd");
+            }
+
         } else {
             request.getRequestDispatcher("login.jsp").forward(request, response);
         }
@@ -35,8 +49,22 @@ public class LoginController extends HttpServlet {
         /**
          * Se valida las credenciales ingresadas para la posterior redireccion
          */
+        System.out.println("hola post");
+
+        System.out.println(SecurityUtils.getSubject().getPrincipal());
+
         if (SecurityUtils.getSubject().isAuthenticated()) {
-            response.sendRedirect("/PRINCS/IndexController");
+            if (SecurityUtils.getSubject().hasRole("ROLE_ADMIN")) {
+                System.out.println("ROLE_ADMIN");
+                response.sendRedirect("/PRINCS/IndexController");
+
+            }
+            if (SecurityUtils.getSubject().hasRole("ROLE_USER")) {
+
+                System.out.println("ROLE_USER");
+                response.sendRedirect("/PRINCS/IndexControllerasd");
+            }
+
         } else {
             request.getRequestDispatcher("login.jsp").forward(request, response);
         }

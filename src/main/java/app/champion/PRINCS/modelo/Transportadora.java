@@ -10,36 +10,38 @@ package app.champion.PRINCS.modelo;
  * @author Usuario
  */
 public class Transportadora {
+
     String idTransportadora;
     String Nom_Transportadora;
-    
-        public Transportadora(String idTransportadora, String Nom_Transportadora) {
-    this.idTransportadora = idTransportadora;
-    this.Nom_Transportadora = Nom_Transportadora;
-}
-    
-    
+
+    public Transportadora(String idTransportadora, String Nom_Transportadora) {
+        this.idTransportadora = idTransportadora;
+        this.Nom_Transportadora = Nom_Transportadora;
+    }
+
     public Transportadora() {
-    
-}
-       public String getIDTransportadora() {
+
+    }
+
+    public String getIDTransportadora() {
         return idTransportadora;
     }
-            public void setIdTransportadora(String idTransportadora) {
+
+    public void setIdTransportadora(String idTransportadora) {
         this.idTransportadora = idTransportadora;
     }
 
-       
-       public String getNomTransportadora() {
-           return Nom_Transportadora;
-       }
-               public void setNomTransportadora(String Nom_Transportadora) {
+    public String getNomTransportadora() {
+        return Nom_Transportadora;
+    }
+
+    public void setNomTransportadora(String Nom_Transportadora) {
         this.Nom_Transportadora = Nom_Transportadora;
     }
-       @Override
+
+    @Override
     public String toString() {
         return "Transportadora{" + "idTransportadora=" + idTransportadora + ", Transportadora=" + Nom_Transportadora + '}';
     }
-    
-    
+
 }
