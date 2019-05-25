@@ -74,7 +74,10 @@ public class IndexController extends HttpServlet {
         request.setAttribute("dePab", request.getParameter("hidNomPabellon"));
         request.setAttribute("selPabellon", request.getParameter(pabellon));
         //Se valida si se envio el campo oculto en el formulario de inserción para separar los dos submits
+         */
         if (request.getParameter("hidInsertar") != null) {
+            System.out.println("cambio de estado");
+            /*
             //Almacenado de los datos enviados en el formulario en variables
             String tipoDoc = (String) request.getParameter("hidTipoDocumento");
             String numDoc = (String) request.getParameter("documento");
@@ -89,9 +92,9 @@ public class IndexController extends HttpServlet {
             request.setAttribute("selPabellon2", idPab);
             request.setAttribute("lstPacientes", aislamientoDao.listarPacientes(idPab));
             request.setAttribute("dePab", nomPab);
+             */
         }
 
-         */
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 

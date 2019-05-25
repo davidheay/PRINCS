@@ -132,31 +132,30 @@
                         <h3>Registrar Aislamiento</h3>
                     </div>
                     <div class="modal-body" style="padding:5px 50px;">
-                        <form role="form" name='frmPte' id = 'frmPte' action="/aislamientos-cus/IndexController" method="POST">
+                        <form role="form" name='frmPte' id = 'frmPte' action="/PRINCS/IndexController" method="POST">
                             <div class="form-group">
-                                <label for="cama">Cama: </label>
+                                <label for="cama">ID Mercancia: </label>
                                 <input class="form-control input-sm" id="cama" name="cama" type="text" readonly>
                                 <div class="form-group">
-                                    <label for="documento">Documento:  </label>
+                                    <label for="documento">ID Cliente:  </label>
                                     <input class="form-control input-sm" id="documento" name="documento" type="text" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label for="nombre">Nombre: </label>
+                                    <label for="nombre">Tipo ID: </label>
                                     <input class="form-control input-sm" id="nombre" type="text" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label for="aislamiento">Aislamiento actual: </label>
+                                    <label for="aislamiento">Estado : </label>
                                     <input class="form-control input-sm" id="aislamiento" type="text" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label for="usrname">Seleccione Aislamiento: </label>
+                                    <label for="usrname">Seleccione Estado: </label>
                                     <select class="form-control input-sm" required name="selAisla" id="selAisla" name="selAisla">
                                         <option value="">--Seleccione Opción--</option>
-                                        <option value='aerosoles'>Aerosoles</option>
-                                        <option value='contacto'>Contacto</option>
-                                        <option value='gotas'>Gotas</option>
-                                        <option value='protector'>Protector</option>
-                                        <option value='sinaislamiento'>Sin Aislamiento</option>
+                                        <option value='aerosoles'>En espera</option>
+                                        <option value='contacto'>En inventario</option>
+                                        <option value='gotas'>Cerrado</option>
+
                                     </select>
                                 </div>
                                 <div>
@@ -176,7 +175,7 @@
                                     <div class="col-md-2">
                                     </div>
                                     <div class="col-md-5">
-                                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok"></span> Asignar Aislamiento</button>
+                                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok"></span> Asignar Estado</button>
                                     </div>
                                 </div>
                             </div>
@@ -186,10 +185,10 @@
             </div>
 
             <script>
-                function btnDetalle(cama, documento, nombre, aislamiento, ingreso, tipodocumento, pabellon, nompab) {
-                    document.getElementById("cama").value = cama;
-                    document.getElementById("documento").value = documento;
-                    document.getElementById("nombre").value = nombre;
+                function btnDetalle(IDMErcancia, IDCliente, IDTipo, aislamiento, ingreso, tipodocumento, pabellon, nompab) {
+                    document.getElementById("cama").value = IDMErcancia;
+                    document.getElementById("documento").value = IDCliente;
+                    document.getElementById("nombre").value = IDTipo;
                     document.getElementById("aislamiento").value = aislamiento;
                     document.getElementById("hidIngreso").value = ingreso;
                     document.getElementById("hidTipoDocumento").value = tipodocumento;
