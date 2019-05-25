@@ -21,8 +21,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
 
         List<Mercancia> mercancias = new ArrayList<>();
         try {
-            String sql = "select m1.mpcodp,(select m.MPNomP from maepab m where m1.mpcodp = m.MPCodP) as Pabellon\n"
-                    + "from maepab1 m1 where MPActCam <> 'S' and m1.MPCodP not in ('98','4','18','8','13','17')  group by m1.MPCodP  order by 2";
+            String sql = "select * from Mercancia";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             ResultSet resultSet = prepareStatemente.executeQuery();
             while (resultSet.next()) {

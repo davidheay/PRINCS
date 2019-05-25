@@ -57,6 +57,7 @@
                                 <option value='${item.getCodPabellon()}'>${item.getDescPabellon()}</option>
                             </c:forEach>
                         </select>
+
                     </form>
                 </div>
                 <div class="col-md-3">
@@ -74,121 +75,122 @@
                     <table class="table table-condensed table-striped table-sm" id="tablePtes">
                         <thead>
                             <tr>
-                                <th>Cama</th>
-                                <th>Documento</th>
-                                <th>Nombre</th>
-                                <th>Edad</th>
-                                <th>Fecha Ingreso</th>
-                                <th>Dias Est</th>
-                                <th>Aislamiento</th>
+                                <th>ID Mercancia</th>
+                                <th>ID Cliente</th>
+                                <th>ID Tipo</th>
+                                <th>Estado</th>
+                                <th>Observaciones</th>
+                                <th>#Piezas</th>
+                                <th>ID Lote</th>
+                                <th>Reserva IN</th>
+                                <th>Reserva OUT</th>
+                                <th>Valor</th>
+                                <th>Moneda</th>
                                 <th><span class="glyphicon glyphicon-check"></span></th>
                             </tr>
                         </thead>
-                        <tbody> <c:forEach var="item" items="${lstPacientes}">
-                                <c:set var="aisla" scope="session" value="${item.gettipoAislamiento()}"/>
-                                <c:set var="ingreso" scope="session" value="${item.getingreso()}"/>
-                                <c:set var="tipodocumento" scope="session" value="${item.gettipoDoc()}"/>
-                                <c:set var="pabellon" scope="session" value="${item.getpabellonPte()}"/>
+                        <tbody>
+                            <c:forEach var="item" items="${lstMercancias}">
                                 <tr>
-                                    <td><c:out value="${item.getcama()}"></c:out></td>
-                                    <td><c:out value="${item.getnumero()}"></c:out></td>
-                                    <td><c:out value="${item.getnombre()}"></c:out></td>
-                                    <td><c:out value="${item.getedad()}"></c:out></td>
-                                    <td><c:out value="${item.getfechaAdmision()}"></c:out></td>
-                                    <td><c:out value="${item.getdiasEst()}"></c:out></td>
-                                    <td <c:choose>
-                                            <c:when test="${aisla == 'contacto'}"> class="danger"</c:when>
-                                            <c:when test="${aisla == 'aerosoles'}">   class="aerosol" </c:when>
-                                            <c:when test="${aisla == 'gotas'}">   class="success"  </c:when>
-                                            <c:when test="${aisla == 'protector'}"> class="protector" </c:when>
-                                            <c:otherwise>  </c:otherwise> </c:choose> ><c:out value="${item.gettipoAislamiento()}"></c:out></td>
-                                            <td>
-                                                    <a id="go" name="go" data-target="#myModal" class="btn btn-xs btn-success" href="#myModal"  onclick="btnDetalle('<c:out value='${item.getcama()}'></c:out>', '<c:out value='${item.getnumero()}'></c:out>', '<c:out value='${item.getnombre()}'></c:out>', '<c:out value='${item.gettipoAislamiento()}'></c:out>', '<c:out value='${item.getingreso()}'></c:out>', '<c:out value='${item.gettipoDoc()}'></c:out>', '<c:out value='${item.getpabellonPte()}'></c:out>', '<%= request.getAttribute("dePab")%>')">
-                                                <span class="glyphicon glyphicon-check"></span>
-                                            </a>
+                                    <td><c:out value="${item.getIdMercancia()}"></c:out></td>
+                                    <td><c:out value="${item.getIdCliente()}"></c:out></td>
+                                    <td><c:out value="${item.getIdTipo()}"></c:out></td>
+                                    <td><c:out value="${item.getEstado()}"></c:out></td>
+                                    <td><c:out value="${item.getObservaciones()}"></c:out></td>
+                                    <td><c:out value="${item.getnPiezas()}"></c:out></td>
+                                    <td><c:out value="${item.getIdLote()}"></c:out></td>
+                                    <td><c:out value="${item.getReservaIn()}"></c:out></td>
+                                    <td><c:out value="${item.getReservaOut()}"></c:out></td>
+                                    <td><c:out value="${item.getValor()}"></c:out></td>
+                                    <td><c:out value="${item.getMoneda()}"></c:out></td>
+
+                                        <td>
+                                            <span class="glyphicon glyphicon-check"></span>
+
                                         </td>
-                                                            </tr>   </c:forEach>
-                            </tbody>
-                        </table>
+                                    </tr>
+                            </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:5px 10px;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3>Registrar Aislamiento</h3>
+                    </div>
+                    <div class="modal-body" style="padding:5px 50px;">
+                        <form role="form" name='frmPte' id = 'frmPte' action="/aislamientos-cus/IndexController" method="POST">
+                            <div class="form-group">
+                                <label for="cama">Cama: </label>
+                                <input class="form-control input-sm" id="cama" name="cama" type="text" readonly>
+                                <div class="form-group">
+                                    <label for="documento">Documento:  </label>
+                                    <input class="form-control input-sm" id="documento" name="documento" type="text" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nombre">Nombre: </label>
+                                    <input class="form-control input-sm" id="nombre" type="text" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="aislamiento">Aislamiento actual: </label>
+                                    <input class="form-control input-sm" id="aislamiento" type="text" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usrname">Seleccione Aislamiento: </label>
+                                    <select class="form-control input-sm" required name="selAisla" id="selAisla" name="selAisla">
+                                        <option value="">--Seleccione Opción--</option>
+                                        <option value='aerosoles'>Aerosoles</option>
+                                        <option value='contacto'>Contacto</option>
+                                        <option value='gotas'>Gotas</option>
+                                        <option value='protector'>Protector</option>
+                                        <option value='sinaislamiento'>Sin Aislamiento</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p>
+                                        ¡Esta seguro de asignar el aislamiento!
+                                    </p>
+                                </div>
+                                <input type="hidden" id="hidIngreso" name="hidIngreso" >
+                                <input type="hidden" id="hidTipoDocumento" name="hidTipoDocumento" >
+                                <input type="hidden" id="hidPabellon" name="hidPabellon" >
+                                <input type="hidden" id="hidInsertar" name="hidInsertar" value="Insertar">
+                                <input type="hidden" id="hidNomPab2" name="hidNomPab2">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <button type="submit" class="btn btn-danger btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                                    </div>
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok"></span> Asignar Aislamiento</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header" style="padding:5px 10px;">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3>Registrar Aislamiento</h3>
-                        </div>
-                        <div class="modal-body" style="padding:5px 50px;">
-                            <form role="form" name='frmPte' id = 'frmPte' action="/aislamientos-cus/IndexController" method="POST">
-                                <div class="form-group">
-                                    <label for="cama">Cama: </label>
-                                    <input class="form-control input-sm" id="cama" name="cama" type="text" readonly>
-                                    <div class="form-group">
-                                        <label for="documento">Documento:  </label>
-                                        <input class="form-control input-sm" id="documento" name="documento" type="text" readonly>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="nombre">Nombre: </label>
-                                        <input class="form-control input-sm" id="nombre" type="text" readonly>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="aislamiento">Aislamiento actual: </label>
-                                        <input class="form-control input-sm" id="aislamiento" type="text" readonly>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="usrname">Seleccione Aislamiento: </label>
-                                        <select class="form-control input-sm" required name="selAisla" id="selAisla" name="selAisla">
-                                            <option value="">--Seleccione Opción--</option>
-                                            <option value='aerosoles'>Aerosoles</option>
-                                            <option value='contacto'>Contacto</option>
-                                            <option value='gotas'>Gotas</option>
-                                            <option value='protector'>Protector</option>
-                                            <option value='sinaislamiento'>Sin Aislamiento</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            ¡Esta seguro de asignar el aislamiento!
-                                        </p>
-                                    </div>
-                                    <input type="hidden" id="hidIngreso" name="hidIngreso" >
-                                    <input type="hidden" id="hidTipoDocumento" name="hidTipoDocumento" >
-                                    <input type="hidden" id="hidPabellon" name="hidPabellon" >
-                                    <input type="hidden" id="hidInsertar" name="hidInsertar" value="Insertar">
-                                    <input type="hidden" id="hidNomPab2" name="hidNomPab2">
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <button type="submit" class="btn btn-danger btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                                        </div>
-                                        <div class="col-md-2">
-                                        </div>
-                                        <div class="col-md-5">
-                                            <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok"></span> Asignar Aislamiento</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
-                <script>
-                    function btnDetalle(cama, documento, nombre, aislamiento, ingreso, tipodocumento, pabellon, nompab) {
-                        document.getElementById("cama").value = cama;
-                        document.getElementById("documento").value = documento;
-                        document.getElementById("nombre").value = nombre;
-                        document.getElementById("aislamiento").value = aislamiento;
-                        document.getElementById("hidIngreso").value = ingreso;
-                        document.getElementById("hidTipoDocumento").value = tipodocumento;
-                        document.getElementById("hidPabellon").value = pabellon;
-                        document.getElementById("hidNomPab2").value = nompab;
-                        $("#myModal").modal();
-                    }
-                </script>
+            <script>
+                function btnDetalle(cama, documento, nombre, aislamiento, ingreso, tipodocumento, pabellon, nompab) {
+                    document.getElementById("cama").value = cama;
+                    document.getElementById("documento").value = documento;
+                    document.getElementById("nombre").value = nombre;
+                    document.getElementById("aislamiento").value = aislamiento;
+                    document.getElementById("hidIngreso").value = ingreso;
+                    document.getElementById("hidTipoDocumento").value = tipodocumento;
+                    document.getElementById("hidPabellon").value = pabellon;
+                    document.getElementById("hidNomPab2").value = nompab;
+                    $("#myModal").modal();
+                }
+            </script>
             <%@include file="/Templates/footer.jsp" %>
     </body>
     <script>
