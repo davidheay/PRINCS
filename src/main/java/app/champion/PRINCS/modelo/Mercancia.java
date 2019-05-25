@@ -17,20 +17,20 @@ public class Mercancia {
     String estado;
     String observaciones;
     String nPiezas;
-    String idLote;
+    
     String reservaIn;
     String reservaOut;
     int valor;
     String moneda;
 
-    public Mercancia(String idMercancia, String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String idLote, String reservaIn, String reservaOut, int valor, String moneda) {
+    public Mercancia(String idMercancia, String idCliente, String idTipo, String estado, String observaciones, String nPiezas,  String reservaIn, String reservaOut, int valor, String moneda) {
         this.idMercancia = idMercancia;
         this.idCliente = idCliente;
         this.idTipo = idTipo;
         this.estado = estado;
         this.observaciones = observaciones;
         this.nPiezas = nPiezas;
-        this.idLote = idLote;
+      
         this.reservaIn = reservaIn;
         this.reservaOut = reservaOut;
         this.valor = valor;
@@ -88,13 +88,7 @@ public class Mercancia {
         this.nPiezas = nPiezas;
     }
 
-    public String getIdLote() {
-        return idLote;
-    }
 
-    public void setIdLote(String idLote) {
-        this.idLote = idLote;
-    }
 
     public String getReservaIn() {
         return reservaIn;
@@ -130,7 +124,7 @@ public class Mercancia {
 
     @Override
     public String toString() {
-        return "Mercancia{" + "idMercancia=" + idMercancia + ", idCliente=" + idCliente + ", idTipo=" + idTipo + ", estado=" + estado + ", observaciones=" + observaciones + ", nPiezas=" + nPiezas + ", idLote=" + idLote + ", reservaIn=" + reservaIn + ", reservaOut=" + reservaOut + ", valor=" + valor + ", moneda=" + moneda + '}';
+        return "Mercancia{" + "idMercancia=" + idMercancia + ", idCliente=" + idCliente + ", idTipo=" + idTipo + ", estado=" + estado + ", observaciones=" + observaciones + ", nPiezas=" + nPiezas + ", reservaIn=" + reservaIn + ", reservaOut=" + reservaOut + ", valor=" + valor + ", moneda=" + moneda + '}';
     }
 
 }

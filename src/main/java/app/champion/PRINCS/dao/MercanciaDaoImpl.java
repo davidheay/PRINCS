@@ -21,7 +21,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
 
         List<Mercancia> mercancias = new ArrayList<>();
         try {
-            String sql = "select Mercancia.ID_Mercancia,Cliente.Nombre,Tipo.Nombre,Estado.estado,observaciones,N_Piezas,Lote.nombre,RESERVA_IN,RESERVA_OUT,valor,moneda from Mercancia,Cliente,Tipo,Estado,Lote where Mercancia.ID_CLIENTE=Cliente.ID_Cliente and Mercancia.ID_Tipo=Tipo.ID_Tipo and Mercancia.estado=Estado.ID_Estado and Mercancia.ID_Lote=Lote.ID_Lote ";
+            String sql = "select * from Mercancia";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             ResultSet resultSet = prepareStatemente.executeQuery();
             while (resultSet.next()) {
@@ -32,11 +32,11 @@ public class MercanciaDaoImpl implements MercanciaDao {
                 mercancia.setEstado(resultSet.getString(4));
                 mercancia.setObservaciones(resultSet.getString(5));
                 mercancia.setnPiezas(resultSet.getString(6));
-                mercancia.setIdLote(resultSet.getString(7));
-                mercancia.setReservaIn(resultSet.getString(8));
-                mercancia.setReservaOut(resultSet.getString(9));
-                mercancia.setValor(resultSet.getInt(10));
-                mercancia.setMoneda(resultSet.getString(11));
+                mercancia.setIdLote("ninguno");
+                mercancia.setReservaIn(resultSet.getString(7));
+                mercancia.setReservaOut(resultSet.getString(8));
+                mercancia.setValor(resultSet.getInt(9));
+                mercancia.setMoneda(resultSet.getString(10));
                 mercancias.add(mercancia);
             }
             prepareStatemente.close();
