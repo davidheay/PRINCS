@@ -9,12 +9,6 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/**
- * Dao Implement Class para el acceso a los metodos a implementar por la
- * interfaz
- *
- * @author Innovación y Desarrollo – Clínica Universidad de La Sabana
- */
 public class AislamientoDaoImpl implements AislamientoDao {
 
     private static final Logger logger = LogManager.getLogger();

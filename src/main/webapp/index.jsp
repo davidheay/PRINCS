@@ -44,6 +44,7 @@
             <div class="row">
                 <div class="col-md-3">
                     Bienvenido: <%=request.getAttribute("nomusuario")%>
+
                 </div>
                 <!--                    Despliegue por pabellones pendientes-->
                 <div class="col-md-3">
@@ -169,26 +170,26 @@
                                             <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok"></span> Asignar Aislamiento</button>
                                         </div>
                                     </div>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <script>
-                function btnDetalle(cama, documento, nombre, aislamiento, ingreso, tipodocumento, pabellon, nompab) {
-                    document.getElementById("cama").value = cama;
-                    document.getElementById("documento").value = documento;
-                    document.getElementById("nombre").value = nombre;
-                    document.getElementById("aislamiento").value = aislamiento;
-                    document.getElementById("hidIngreso").value = ingreso;
-                    document.getElementById("hidTipoDocumento").value = tipodocumento;
-                    document.getElementById("hidPabellon").value = pabellon;
-                    document.getElementById("hidNomPab2").value = nompab;
-                    $("#myModal").modal();
-                }
-            </script>
-        <%@include file="/Templates/footer.jsp" %>
+                <script>
+                    function btnDetalle(cama, documento, nombre, aislamiento, ingreso, tipodocumento, pabellon, nompab) {
+                        document.getElementById("cama").value = cama;
+                        document.getElementById("documento").value = documento;
+                        document.getElementById("nombre").value = nombre;
+                        document.getElementById("aislamiento").value = aislamiento;
+                        document.getElementById("hidIngreso").value = ingreso;
+                        document.getElementById("hidTipoDocumento").value = tipodocumento;
+                        document.getElementById("hidPabellon").value = pabellon;
+                        document.getElementById("hidNomPab2").value = nompab;
+                        $("#myModal").modal();
+                    }
+                </script>
+            <%@include file="/Templates/footer.jsp" %>
     </body>
     <script>
         //Comentado, despliegue solo pabellon hospitalizacion
