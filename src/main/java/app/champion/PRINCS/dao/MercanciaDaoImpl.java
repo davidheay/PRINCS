@@ -21,7 +21,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
 
         List<Mercancia> mercancias = new ArrayList<>();
         try {
-            String sql = "select * from Mercancia";
+            String sql = "exec getMercancias";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             ResultSet resultSet = prepareStatemente.executeQuery();
             while (resultSet.next()) {
@@ -55,7 +55,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
 
         List<Mercancia> mercancias = new ArrayList<>();
         try {
-            String sql = "select * from Mercancia where ID_Mercancia=?";
+            String sql = "exec getMercancia ?";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             prepareStatemente.setString(1, idMercancia);
             ResultSet resultSet = prepareStatemente.executeQuery();
