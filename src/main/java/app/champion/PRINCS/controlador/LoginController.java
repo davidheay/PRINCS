@@ -21,9 +21,9 @@ public class LoginController extends HttpServlet {
         /**
          * Se valida las credenciales ingresadas para la posterior redireccion
          */
-
+        System.out.println("hola get login");
         if (SecurityUtils.getSubject().isAuthenticated()) {
-            response.sendRedirect("/PRINCS/IndexController");
+            request.getRequestDispatcher("menuAdmin.jsp").forward(request, response);
         } else {
             request.getRequestDispatcher("login.jsp").forward(request, response);
         }
@@ -36,9 +36,9 @@ public class LoginController extends HttpServlet {
         /**
          * Se valida las credenciales ingresadas para la posterior redireccion
          */
-        System.out.println("hola post");
+        System.out.println("hola post login");
         if (SecurityUtils.getSubject().isAuthenticated()) {
-            response.sendRedirect("/PRINCS/IndexController");
+            request.getRequestDispatcher("menuAdmin.jsp").forward(request, response);
         } else {
             request.getRequestDispatcher("login.jsp").forward(request, response);
         }

@@ -2,7 +2,7 @@
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <listener>
         <listener-class>
-                org.apache.shiro.web.env.EnvironmentLoaderListener
+            org.apache.shiro.web.env.EnvironmentLoaderListener
         </listener-class>
     </listener>
     <filter>
@@ -30,6 +30,14 @@
         <servlet-name>LogoutController</servlet-name>
         <servlet-class>app.champion.PRINCS.controlador.LogoutController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>consultaMercanciaController</servlet-name>
+        <servlet-class>app.champion.PRINCS.controlador.consultaMercanciaController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>menuAdminController</servlet-name>
+        <servlet-class>app.champion.PRINCS.controlador.menuAdminController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/LoginController</url-pattern>
@@ -42,8 +50,16 @@
         <url-pattern>/IndexController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>menuAdminController</servlet-name>
+        <url-pattern>/menuAdminController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>LogoutController</servlet-name>
         <url-pattern>/LogoutController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>consultaMercanciaController</servlet-name>
+        <url-pattern>/consultaMercanciaController</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>LoginController</welcome-file>

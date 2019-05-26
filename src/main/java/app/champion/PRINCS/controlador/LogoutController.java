@@ -25,7 +25,7 @@ public class LogoutController extends HttpServlet {
         String nomusuario = (String) currentUser.getPrincipal();
         currentUser.logout();
         //request.getRequestDispatcher("login.jsp").forward(request, response);
-        response.sendRedirect("/PRINCS/IndexController");
+        response.sendRedirect("/PRINCS/LoginController");
     }
 
     @Override
@@ -38,7 +38,7 @@ public class LogoutController extends HttpServlet {
         currentUser.logout();
         SecurityUtils.getSubject().logout();
         //request.getRequestDispatcher("login.jsp").forward(request, response);
-        response.sendRedirect("/PRINCS/IndexController");
+        response.sendRedirect("/PRINCS/LoginController");
     }
 
     @Override
