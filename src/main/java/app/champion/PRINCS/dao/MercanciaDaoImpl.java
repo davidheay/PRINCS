@@ -23,7 +23,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
         try {
 
             //String sql = "select * from Mercancia";
-            String sql = "select Mercancia.ID_Mercancia,Cliente.Nombre,Tipo.Nombre,Estado.estado,observaciones,N_Piezas,RESERVA_IN,RESERVA_OUT,valor,moneda from Mercancia,Cliente,Tipo,Estado where Mercancia.ID_CLIENTE=Cliente.ID_Cliente and Mercancia.ID_Tipo=Tipo.ID_Tipo and Mercancia.estado=Estado.ID_Estado";
+            String sql = "exec GetMercancias";
 
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             ResultSet resultSet = prepareStatemente.executeQuery();
@@ -57,7 +57,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
 
         List<Mercancia> mercancias = new ArrayList<>();
         try {
-            String sql = "select Mercancia.ID_Mercancia,Cliente.Nombre,Tipo.Nombre,Estado.estado,observaciones,N_Piezas,RESERVA_IN,RESERVA_OUT,valor,moneda from Mercancia,Cliente,Tipo,Estado where Mercancia.ID_CLIENTE=Cliente.ID_Cliente and Mercancia.ID_Tipo=Tipo.ID_Tipo and Mercancia.estado=Estado.ID_Estado and ID_Mercancia=?";
+            String sql = "exec getMercancia ? ";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             prepareStatemente.setString(1, idMercancia);
             ResultSet resultSet = prepareStatemente.executeQuery();
@@ -96,12 +96,12 @@ public class MercanciaDaoImpl implements MercanciaDao {
         Conn conexion = new Conn();
         try {
 
-            String sql = "update Mercancia set estado=? where ID_Mercancia=?";
+            String sql = "exec ActualizarEstadoMercancia ?,?";
 
             PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
-            preparedStatement.setString(1, idTipo);
-            preparedStatement.setString(2, idMercancia);
-
+            
+            preparedStatement.setString(1, idMercancia);
+            preparedStatement.setString(2, idTipo);
             preparedStatement.execute();
 
             preparedStatement.close();
