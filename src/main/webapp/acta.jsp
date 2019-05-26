@@ -168,8 +168,14 @@
 
                                             <div class="seleccion pull-right">
                                                 <div class="btn-group" role="group" aria-label="...">
-                                                    <button type="button" class="btn btn-default btn-df">IN</button>
-                                                    <button type="button" class="btn btn-primary btn-df">OUT</button>
+                                                    <button type="button" class="btn btn-primary btn-df"><%= request.getAttribute("tipoActa")%></button>
+                                                    <form action="/PRINCS/actaController" method="POST">
+                                                        <button type="submit"  onclick="Document.getElementById('pdf').value = 'pdf'" class="btn btn-default btn-df">Generar PDF</button>
+                                                        <input type="hidden" id="idActa" name="idActa" value="<%= request.getAttribute("idReserva")%>" >
+                                                        <input type="hidden" id="pdf" name="pdf" value="" >
+
+                                                    </form>
+
                                                 </div>
                                             </div>
                                             <br>

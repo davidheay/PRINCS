@@ -11,6 +11,7 @@ import app.champion.PRINCS.dao.ReservaDao;
 import app.champion.PRINCS.dao.ReservaDaoImpl;
 import app.champion.PRINCS.modelo.Mercancia;
 import app.champion.PRINCS.modelo.Reserva;
+import app.champion.PRINCS.util.Pdf;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -63,6 +64,12 @@ public class actaController extends HttpServlet {
         request.setAttribute("ccEntrega", reserva.getccEntrega());
         request.setAttribute("moneda", reserva.getMoneda());
         request.setAttribute("frima", reserva.getFirma());
+        if (request.getParameter("pdf") != null) {
+            Pdf pdf = new Pdf();
+            System.out.println("generar pdf");
+            //
+        }
+
         request.getRequestDispatcher("acta.jsp").forward(request, response);
 
     }
@@ -102,6 +109,12 @@ public class actaController extends HttpServlet {
         request.setAttribute("ccEntrega", reserva.getccEntrega());
         request.setAttribute("moneda", reserva.getMoneda());
         request.setAttribute("frima", reserva.getFirma());
+        if (request.getParameter("pdf") != null) {
+            Pdf pdf = new Pdf();
+            System.out.println("generar pdf");
+            //
+        }
+
         request.getRequestDispatcher("acta.jsp").forward(request, response);
 
     }
