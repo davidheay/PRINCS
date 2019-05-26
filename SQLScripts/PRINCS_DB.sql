@@ -1,4 +1,4 @@
-USE [master]
+﻿USE [master]
 GO
 /****** Object:  Database [PRINCS_DB]    Script Date: 25/05/2019 06:47:31 p. m. ******/
 CREATE DATABASE [PRINCS_DB]
@@ -78,7 +78,7 @@ GO
 USE [PRINCS_DB]
 GO
 /****** Object:  User [admin]    Script Date: 25/05/2019 06:47:31 p. m. ******/
-CREATE USER [admin] FOR LOGIN [admin] WITH DEFAULT_SCHEMA=[dbo]
+
 GO
 /****** Object:  Table [dbo].[Cliente]    Script Date: 25/05/2019 06:47:31 p. m. ******/
 SET ANSI_NULLS ON
@@ -433,7 +433,7 @@ CREATE PROCEDURE  [dbo].[GetMercancia]
 
  BEGIN TRY
 
- select ID_Mercancia, ID_Tipo,estado,observaciones, N_Piezas, ID_Lote, RESERVA_IN, reserva_Out, valor, moneda
+ select *
 		from Mercancia where @ID_Mercancia = ID_Mercancia
 
  COMMIT TRANSACTION
@@ -775,9 +775,9 @@ CREATE PROCEDURE [dbo].[InsertMercancia]
 	begin 
 		
 		insert into Mercancia(ID_Mercancia, ID_Tipo, estado, observaciones,
-							  N_Piezas, ID_Lote, RESERVA_In, RESERVA_OUT, valor, moneda) 
+							  N_Piezas, RESERVA_In, RESERVA_OUT, valor, moneda) 
 				values(@ID_Mercancia, @ID_Tipo, @estado, @observaciones,
-						@N_Piezas, @ID_Lote, @ID_In, @ID_Out, @valor, @moneda);
+						@N_Piezas, @ID_In, @ID_Out, @valor, @moneda);
 
 		
 		save transaction InsertComplited
