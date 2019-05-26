@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="bootstrap admin template">
+	<meta name="author" content="">
+
+	<title>Inventario | Histórico</title>
+
+	<link href="lib/dataTable/css/jquery.dataTables.css" rel="stylesheet">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="lib/metisMenu/metisMenu.min.css" rel="stylesheet">
+	<link href="css/scss/style.min.css" rel="stylesheet">
+	<link href="lib/expandingSearchBar/component.css" rel="stylesheet">
+	<link href="lib/customScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+	<link href="lib/hover/hover.css" rel="stylesheet">
+	<link href="lib/waves/waves.css" rel="stylesheet">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<link href="lib/sweetalert/sweetalert.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="preloader">
+		<div class="la-ball-pulse la-2x">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<header>
+		<div id="headerMain">
+			<div id="header">
+				<div class="nawbarMain  headerWrapper clearfix">
+					<div class="nawbarMainLeft ">
+						<div class="champion">
+						<img src="img/championpeque.PNG" alt=""/ width=30%>
+						</div>
+					</div>
+					<div id="sb-search" class="sb-search" style="visibility: hidden">
+						<form>
+							<input class="sb-search-input" placeholder="Enter search" type="search" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+					
+				<!--nawbarMain-->
+			</div>
+			<!--header-->
+		</div>
+        </div>
+		<!--headerMain -->
+	</header>
+
+	<div class="mainWrapper">
+		<div id="sideBarWrapper">
+			<div id="sideBarContent">
+				<div id="bar" class="sideBar sideBarDark">
+					<!-- start sitebar-->
+					<div class="sideBarUser">
+						<div class="sideBarUserConteiner">
+							<div class="sideBarUserConteinerImg">
+								<img src="img/user.png" alt="UserInfo" class="userimg">
+							</div>
+							<!--sideBarUserConteinerImg-->
+							<div class="sideBarUserConteinerText">
+								<span class="userInfo"><a href="user.html">Administrador </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+							</div>
+							<!--sideBarUserConteinerText-->
+						</div>
+						<!--sideBarUserConteiner-->
+					</div>
+					<div id="menuContent">
+						<div id="menuSize">
+							<aside class="sidebar">
+								<nav class="sidebar-nav">
+									<ul class="metismenu" id="menu">
+										<li>
+											<a href="#" aria-expanded="true">
+												<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+												<span class="sidebar-nav-item">Menú Principal</span>
+												<span class="fa arrow"></span>
+											</a>
+											<ul aria-expanded="true" class="collapse">
+												<li>
+													<a href="consultamercancia.html">Consulta de Mercancía</a>
+												</li>
+												<li>
+													<a href="manalisis.html">Análisis de Inventario</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#" aria-expanded="true">
+												<span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+												<span class="sidebar-nav-item">Consulta de Inventario</span>
+												<span class="fa arrow"></span>
+											</a>
+											<ul aria-expanded="false" class="collapse">
+												<li>
+													<a href="inventarioactual.html">
+                                                      Inventario actual
+                                                    </a>
+												</li>
+											</ul>
+										</li>
+											<li>
+												<a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                Cerrar Sesión
+                                            </a>
+											</li>
+									</ul>
+								</nav>
+							</aside>
+						</div>
+						<!--menuSize-->
+					</div>
+					<div class="timeWrapper colorTheme">
+						<div class="menuTime2">
+							<span class="current-time2"></span>
+						</div>
+						<div class="menuTime">
+							<span class="current-time"></span>
+						</div>
+					</div>
+				</div>
+				<!--menuSize-->
+			</div>
+			<!--sideBar-->
+		</div>
+		<!--sideBarContent-->
+	</div>
+	<!--sideBarWrapper-->
+	<div id="mainWrapper" class="mainConteiner column">
+		<!--start nainconteiner-->
+		<div class="mainConteinerConten">
+			
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-default">
+						<div class="panel-heading clearfix">
+								<div class="titulo">
+									<h3 style="text-align:-webkit-center">Inventario Histórico</h3>
+								</div>
+							
+							</div>
+							<div class="panel-body topSellingHeader">
+								<br>
+								<nav class="navbar navbar-default">
+									<div class="container-fluid">
+										<!-- Brand and toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+										<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="#">WEEK <span class="sr-only">(current)</span></a></li>
+												<li><a href="#">MONTH</a></li>
+												<li><a href="#">YEAR</a></li>
+											</ul>
+										</div>
+										<!-- /.navbar-collapse -->
+									</div>
+									<!-- /.container-fluid -->
+								</nav>
+								<br>
+								<div class="dataTableWrapper">
+	<table id="example1" class="display tableWrapper">
+										<thead>
+											<tr>
+												<th>ID Mercancía</th>
+												<th>Cliente</th>
+												<th>Tipo de Mercancía</th>
+												<th>Acta</th>
+												<th>Fecha</th>												
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th>ID Mercancía</th>
+												<th>Cliente</th>
+												<th>Tipo de Mercancía</th>
+												<th>Actas</th>
+												<th>Fecha</th>												
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Tiger Nixon</a></td>
+												<td>System Architect</td>
+												<td>Edinburgh</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2011/04/25</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Garrett Winters</a></td>
+												<td>Accountant</td>
+												<td>Tokyo</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2011/07/25</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Ashton Cox</a></td>
+												<td>Junior Technical Author</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2009/01/12</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Cedric Kelly</a></td>
+												<td>Senior Javascript Developer</td>
+												<td>Edinburgh</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2012/03/29</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Airi Satou</a></td>
+												<td>Accountant</td>
+												<td>Tokyo</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2008/11/28</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Brielle Williamson</a></td>
+												<td>Integration Specialist</td>
+												<td>New York</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2012/12/02</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Herrod Chandler</a></td>
+												<td>Sales Assistant</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2012/08/06</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Rhona Davidson</a></td>
+												<td>Integration Specialist</td>
+												<td>Tokyo</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2010/10/14</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Javascript Developer</a></td>
+                                                <td>Colleen Hurst</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2009/09/15</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Sonya Frost</a></td>
+												<td>Software Engineer</td>
+												<td>Edinburgh</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2008/12/13</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Jena Gaines</a></td>
+												<td>Office Manager</td>
+												<td>London</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2008/12/19</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Quinn Flynn</a></td>
+												<td>Support Lead</td>
+												<td>Edinburgh</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2013/03/03</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Charde Marshall</a></td>
+												<td>Regional Director</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2008/10/16</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Haley Kennedy</a></td>
+												<td>Senior Marketing Designer</td>
+												<td>London</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2012/12/18</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Tatyana Fitzpatrick</a></td>
+												<td>Regional Director</td>
+												<td>London</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2010/03/17</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Michael Silva </a></td>
+												<td>Marketing Designer</td>
+												<td>London</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2012/11/27</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Paul Byrd</a></td>
+												<td>Chief Financial Officer (CFO)</td>
+												<td>New York</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2010/06/09</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Gloria Little</a></td>
+												<td>Systems Administrator</td>
+												<td>New York</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2009/04/10</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Bradley Greer</a></td>
+												<td>Software Engineer</td>
+												<td>London</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2012/10/13</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Dai Rios</a></td>
+												<td>Personnel Lead</td>
+												<td>Edinburgh</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2012/09/26</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Jenette Caldwell</a></td>
+												<td>Development Lead</td>
+												<td>New York</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2011/09/03</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Yuri Berry</a></td>
+												<td>Chief Marketing Officer (CMO)</td>
+												<td>New York</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2009/06/25</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Caesar Vance</a></td>
+												<td>Pre-Sales Support</td>
+												<td>New York</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2011/12/12</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Doris Wilder</a></td>
+												<td>Sales Assistant</td>
+												<td>Sidney</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2010/09/20</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Angelica Ramos</a></td>
+												<td>Chief Executive Officer (CEO)</td>
+												<td>London</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2009/10/09</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Gavin Joyce</a></td>
+												<td>Developer</td>
+												<td>Edinburgh</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2010/12/22</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Jennifer Chang</a></td>
+												<td>Regional Director</td>
+												<td>Singapore</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2010/11/14</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Brenden Wagner</a></td>
+												<td>Software Engineer</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2011/06/07</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Fiona Green</a></td>
+												<td>Chief Operating Officer (COO)</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2010/03/11</td>
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Shou Itou</a></td>
+												<td>Regional Marketing</td>
+												<td>Tokyo</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2011/08/14</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Michelle House</a></td>
+												<td>Integration Specialist</td>
+												<td>Sidney</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2011/06/02</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Suki Burks</a></td>
+												<td>Developer</td>
+												<td>London</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2009/10/22</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Prescott Bartlett</a></td>
+												<td>Technical Author</td>
+												<td>London</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2011/05/07</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Gavin Cortez</a></td>
+												<td>Team Leader</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2008/10/26</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Martena Mccray</a></td>
+												<td>Post-Sales support</td>
+												<td>Edinburgh</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2011/03/09</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Unity Butler</a></td>
+												<td>Marketing Designer</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2009/12/09</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Howard Hatfield</a></td>
+												<td>Office Manager</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2008/12/16</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Hope Fuentes</a></td>
+												<td>Secretary</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2010/02/12</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Vivian Harrell</a></td>
+												<td>Financial Controller</td>
+												<td>San Francisco</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2009/02/14</td>
+												
+											</tr>
+											<tr>
+                                                <td><a href="especificacionmercancia.html">Timothy Mooney</a></td>
+												<td>Office Manager</td>
+												<td>London</td>
+												<td class="text-center">
+													<a href="acta.html">
+													<button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                    </a>                                                   
+												</td>
+												<td>2008/12/11</td>
+												
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--row-->
+				<!--MEIN CONTENT -->
+			</div>
+			<!--container-fluid-->
+		<!--mainConteinerConten-->
+		<div class="fotterWrapper">
+			© 2019 Copyright.
+		</div>
+		<!--fotterWrapper-->
+	<!--mainConteinerConten-->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/sparklineChart/sparkline.min.js"></script>
+	<script type="text/javascript" src="lib/sparklineChart/sparklineant.js"></script>
+	<script type="text/javascript" src="lib/expandingSearchBar/uisearch.js"></script>
+	<script type="text/javascript" src="lib/expandingSearchBar/classie.js"></script>
+	<script type="text/javascript" src="lib/slimscroll/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="lib/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="lib/metisMenu/metisMenu.min.js"></script>
+	<script type="text/javascript" src="lib/momentjs/moment.min.js"></script>
+	<script type="text/javascript" src="lib/waves/waves.min.js"></script>
+	<script type="text/javascript" src="lib/sweetalert/sweetalert.min.js"></script>
+	<script type="text/javascript" src="js/alertsFunctions.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>	
+	<script type="text/javascript" src="lib/dataTable/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/dataTableFunctions.js"></script>
+	<script type="text/javascript" src="js/ordersFunctions.js"></script>
+    <script type="text/javascript" src="lib/icheck/icheck.js"></script>
+	<script type="text/javascript" src="lib/icheck/custom.js"></script>
+</body>
+
+</html>
