@@ -34,13 +34,13 @@ public class Pdf {
     /**
      * @param args the command line arguments
      */
-    public static void generar(String idReserva) throws FileNotFoundException, DocumentException {
+    public  void generar(String idReserva) throws FileNotFoundException, DocumentException {
         FileOutputStream archivo = new FileOutputStream(idReserva + ".pdf");
         Document documento = new Document();
         PdfWriter.getInstance(documento, archivo);
         documento.open();
         ReservaDao reservaDao = new ReservaDaoImpl();
-        List<Reserva> reserva = reservaDao.listarReserva(idReserva);
+        Reserva reserva = reservaDao.listarReserva(idReserva).get(0);
 
         Paragraph parrafo = new Paragraph("Acta de la Reserva");
         parrafo.setAlignment(1);
@@ -48,37 +48,37 @@ public class Pdf {
 
         documento.add(new Paragraph("ID Reserva: " + idReserva));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("ID MERCANCIA: " + reserva.get(0).getIdMercancia()));
+        documento.add(new Paragraph("ID MERCANCIA: " + reserva.getIdMercancia()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("ID del Cliente: " + idCliente + "                                   "
+        documento.add(new Paragraph("ID del Cliente: " + reserva.getIdCliente() + "                                   "
                 + "               " + "Nombre del Cliente: "));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("ID del empleado: " + idEmpleado + "                                          "
-                + "            " + "Fecha: " + fecha));
+        documento.add(new Paragraph("ID del empleado: " + reserva.getIdEmpleado() + "                                          "
+                + "            " + "Fecha: " + reserva.getFecha()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Transportadora: " + idTransportadora + "                                         "
-                + "               " + "Placa: " + placa));
+        documento.add(new Paragraph("Transportadora: " + reserva.getIdTransportadora()+ "                                         "
+                + "               " + "Placa: " + reserva.getPlaca()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Lote: " + Id_Lote + "                             "
-                + "                                            " + "Estiba: " + Estiba));
+        documento.add(new Paragraph("Lote: " + reserva.getIdLote() + "                             "
+                + "                                            " + "Estiba: " + reserva.getEstiba()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Nombre del Conductor: " + nombreConductor));
+        documento.add(new Paragraph("Nombre del Conductor: " + reserva.getNombreConductor()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Cedula del Conductor: " + cedulaConductor));
+        documento.add(new Paragraph("Cedula del Conductor: " + reserva.getCedulaConductor()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Peso: " + peso));
+        documento.add(new Paragraph("Peso: " + reserva.getPeso()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Valor: " + valor + "                                          "
-                + "                             " + "Moneda: " + Moneda));
+        documento.add(new Paragraph("Valor: " + reserva.getValor() + "                                          "
+                + "                             " + "Moneda: " + reserva.getMoneda()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Foto: " + Reg_Fotografico));
+        documento.add(new Paragraph("Foto: " + reserva.getRegFotografico()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Observaciones: " + observaciones));
+        documento.add(new Paragraph("Observaciones: " + reserva.getoobservaciones()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Firma: " + Firma));
+        documento.add(new Paragraph("Firma: " + reserva.getFirma()));
 
         documento.close();
-        JOptionPane.showMessageDialog(null, "Archivo PDF creado correctamente", "Información", 1);
+        System.out.println("se genero correctamente");
 
         try {
             File path = new File(idReserva + ".pdf");
