@@ -42,43 +42,47 @@
                 </div>
                 <!--registrationHeader-->
                 <br>
-                <div class="row inputWrapper ">
+                <form action="" method="post">
+                    <div class="row inputWrapper ">
 
 
-                    <br>
-                    <div class="col-md-12">
-                        <div class="left-inner-addon ">
-                            <i class="fa fa-envelope"></i>
-                            <input type="text" class="form-control" placeholder="Usuario">
+                        <br>
+                        <div class="col-md-12">
+                            <div class="left-inner-addon ">
+                                <i class="fa fa-envelope"></i>
+                                <input class="form-control" id="username" name="username" placeholder="usuario" type="text">
+                            </div>
                         </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="col-md-12 ">
-                        <div class="left-inner-addon ">
-                            <i class="fa fa-key"></i>
-                            <input type="text" class="form-control" placeholder="Contraseña">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="col-md-12 ">
+                            <div class="left-inner-addon ">
+                                <i class="fa fa-key"></i>
+                                <input class="form-control" id="password" name="password" placeholder="**********" type="password">
+                            </div>
                         </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="col-md-12">
-
                         <br>
                         <br>
                         <br>
+                        <div class="col-md-12">
+
+                            <br>
+                            <% String errorDescription = (String) request.getAttribute("shiroLoginFailure");
+                                if (errorDescription != null) {   %>
+                            <p class="text-danger">Error de acceso</p>  <%}%>
+                            <br>
+
+                        </div>
+                        <div class="registrationButtonPlaseholder">
+                            <button type="submit" style="background-color: #0064b2; color: #ffff" name="submit" class="btn  btn-df float-button-light">INGRESAR</button>
+
+                        </div>
+                        <!--registrationButtonPlaseholder-->
+                        <br>
 
                     </div>
-                    <div class="registrationButtonPlaseholder">
-                        <button type="button" style="background-color: #0064b2; color: #ffff" class="btn  btn-df float-button-light">INGRESAR</button>
-
-                    </div>
-                    <!--registrationButtonPlaseholder-->
-                    <br>
-
-                </div>
+                </form>
                 <!--registrationContent-->
             </div>
             <!--registrationWrapper-->
@@ -90,6 +94,7 @@
                 Waves.attach('.float-button-light', ['waves-button', 'waves-float', 'waves-light']);
                 Waves.init();
             </script>
+            <%@include file="/Templates/footer.jsp" %>
     </body>
 
 </html>
