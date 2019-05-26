@@ -10,9 +10,7 @@
         <meta name="description" content="bootstrap admin template">
         <meta name="author" content="">
 
-        <title>Inventario | Histórico</title>
-
-        <link href="lib/dataTable/css/jquery.dataTables.css" rel="stylesheet">
+        <title>Inventario | Actual</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -24,8 +22,15 @@
         <link href="lib/waves/waves.css" rel="stylesheet">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <link href="lib/sweetalert/sweetalert.css" rel="stylesheet">
 
+        <link href="lib/dataTable/css/jquery.dataTables.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via  -->
+        <!--[if lt IE 9]>
+                <script src="lib/html5shiv/html5shiv.min.js"></script>
+                <script src="lib/respondjs/respond.min.js"></script>
+        <![endif]-->
     </head>
 
     <body>
@@ -44,7 +49,11 @@
                             <div class="champion">
                                 <img src="img/championpeque.png" alt="" width=30%>
                             </div>
+                            <!--mainLogo-->
+                            <!--headerLogo-->
                         </div>
+                        <!--nawbarMainLeft-->
+                        <!--nawbarMainRight-->
                         <div id="sb-search" class="sb-search" style="visibility: hidden">
                             <form>
                                 <input class="sb-search-input" placeholder="Enter search" type="search" value="" name="search" id="search">
@@ -73,7 +82,7 @@
                                 </div>
                                 <!--sideBarUserConteinerImg-->
                                 <div class="sideBarUserConteinerText">
-                                    <span class="userInfo"><a href="user.html">Administrador </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+                                    <span class="userInfo"><a href="user.html">Administrador</a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
                                 </div>
                                 <!--sideBarUserConteinerText-->
                             </div>
@@ -92,7 +101,7 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="/PRINCS/consultaMercanciaController">Consulta de Mercancía</a>
+                                                        <a href="consultamercancia.html">Consulta de Mercancía</a>
                                                     </li>
                                                     <li>
                                                         <a href="manalisis.html">Análisis de Inventario</a>
@@ -107,14 +116,14 @@
                                                 </a>
                                                 <ul aria-expanded="false" class="collapse">
                                                     <li>
-                                                        <a href="inventarioactual.html">
-                                                            Inventario actual
+                                                        <a href="inventariohistorico.html">
+                                                            Inventario Histórico
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
+                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>
                                             </li>
@@ -124,6 +133,9 @@
                             </div>
                             <!--menuSize-->
                         </div>
+                        <!--	menuContent-->
+
+
                         <div class="timeWrapper colorTheme">
                             <div class="menuTime2">
                                 <span class="current-time2"></span>
@@ -144,64 +156,70 @@
             <!--start nainconteiner-->
             <div class="mainConteinerConten">
 
+                <!--	MEIN CONTENT  -->
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 ">
                         <div class="panel panel-default">
                             <div class="panel-heading clearfix">
                                 <div class="titulo">
-                                    <h3 style="text-align:-webkit-center">Inventario Histórico</h3>
+                                    <h3 style="text-align:-webkit-center">Inventario en Bodega</h3>
                                 </div>
 
                             </div>
-                            <div class="panel-body topSellingHeader">
-                                <br>
 
-                                <br>
+                            <div class="panel-body">
                                 <div class="dataTableWrapper">
                                     <table id="example1" class="display tableWrapper">
                                         <thead>
                                             <tr>
                                                 <th>ID Mercancía</th>
                                                 <th>Cliente</th>
-                                                <th>Placa</th>
-                                                <th>Acta</th>
-                                                <th>Fecha</th>
+                                                <th>Tipo de Mercancía</th>
+                                                <th>Acta IN</th>
+                                                <th># Piezas</th>
+
                                             </tr>
                                         </thead>
 
                                         <tbody>
-                                            <c:forEach var="item" items="${lstReservas}">
+
+                                            <c:forEach var="item" items="${lstMercancias}">
                                                 <tr>
                                                     <td><c:out value="${item.getIdMercancia()}"></c:out></td>
                                                     <td><c:out value="${item.getIdCliente()}"></c:out></td>
-                                                    <td><c:out value="${item.getPlaca()}"></c:out></td>
-                                                        <td class="text-center">
+                                                    <td><c:out value="${item.getIdTipo()}"></c:out></td>
+                                                        <td>
                                                             <form action="/PRINCS/actaController" method="POST">
-                                                                <input type="hidden" id="idActa" name="idActa" value="${item.getIdReserva()}" >
+                                                                <input type="hidden" id="idActa" name="idActa" value="${item.getReservaIn()}" >
                                                             <button type="submit" class="btn btn-info btn-sm  float-button-light">Ver</button>
                                                         </form>
-
                                                     </td>
-                                                    <td><c:out value="${item.getFecha()}"></c:out></td>
+                                                    <td><c:out value="${item.getnPiezas()}"></c:out></td>
+
+
                                                     </tr>
                                             </c:forEach>
+
+
+
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
+                        <!--panel-body-->
                     </div>
                 </div>
+                <!--row-->
+
+                <!--MEIN CONTENT-->
+                <!--container-fluid-->
+            </div><!--mainConteinerConten-->
+            <div class="fotterWrapper">
+                © 2019 Copyright.
             </div>
-            <!--row-->
-            <!--MEIN CONTENT -->
+            <!--fotterWrapper-->
         </div>
-        <!--container-fluid-->
-        <!--mainConteinerConten-->
-        <div class="fotterWrapper">
-            © 2019 Copyright.
-        </div>
-        <!--fotterWrapper-->
         <!--mainConteinerConten-->
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -214,14 +232,8 @@
         <script type="text/javascript" src="lib/metisMenu/metisMenu.min.js"></script>
         <script type="text/javascript" src="lib/momentjs/moment.min.js"></script>
         <script type="text/javascript" src="lib/waves/waves.min.js"></script>
-        <script type="text/javascript" src="lib/sweetalert/sweetalert.min.js"></script>
-        <script type="text/javascript" src="js/alertsFunctions.js"></script>
-        <script type="text/javascript" src="js/functions.js"></script>
         <script type="text/javascript" src="lib/dataTable/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="js/dataTableFunctions.js"></script>
-        <script type="text/javascript" src="js/ordersFunctions.js"></script>
-        <script type="text/javascript" src="lib/icheck/icheck.js"></script>
-        <script type="text/javascript" src="lib/icheck/custom.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
     </body>
-
 </html>

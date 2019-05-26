@@ -160,7 +160,7 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-3 alertWrapper ">
-                                            <a href="inventarioactual.html">
+                                            <a href="/PRINCS/inventarioBodegaController">
                                                 <div class="actual">
                                                     <center>
                                                         <img src = "img/actual.jpg" alt="" />

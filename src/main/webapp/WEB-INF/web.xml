@@ -54,6 +54,10 @@
         <servlet-name>inventarioHistoricoController</servlet-name>
         <servlet-class>app.champion.PRINCS.controlador.inventarioHistoricoController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>inventarioBodegaController</servlet-name>
+        <servlet-class>app.champion.PRINCS.controlador.inventarioBodegaController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/LoginController</url-pattern>
@@ -95,6 +99,10 @@
     <servlet-mapping>
         <servlet-name>inventarioHistoricoController</servlet-name>
         <url-pattern>/inventarioHistoricoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>inventarioBodegaController</servlet-name>
+        <url-pattern>/inventarioBodegaController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
