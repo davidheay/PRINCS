@@ -1,46 +1,95 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="windows-1252" %>
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
     <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script type="text/javascript"  src="js/bootstrap.js"></script>
+        <meta name="description" content="bootstrap admin template">
+        <meta name="author" content="">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Ingreso</title>
         <link href="css/bootstrap.css" rel="stylesheet">
-        <title>PRINCS - LOGIN</title>
+        <link href="css/scss/style.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/scss/_bootstrapComponents.scss" rel="stylesheet" type="text/scss">
+        <!-- BUTTONS EFFECT -->
+        <link href="lib/waves/waves.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+
     </head>
+
     <body>
-        <div id="main">
-            <div id="login">
-                <%@include file="/Templates/header.jsp" %>
-                <div class="section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4">
-                                <h3>Login</h3>
-                                <form action="" method="post">
-                                    <div class="form-group">
-                                        <label class="control-label" for="name">Usuario :</label>
-                                        <input class="form-control" id="username" name="username" placeholder="usuario" type="text">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="password">Password :</label>
-                                        <input class="form-control" id="password" name="password" placeholder="**********" type="password">
-                                    </div>
-                                    <button type="submit" class="btn btn-default" name="submit" >Login</button>
-                                </form>  <% String errorDescription = (String) request.getAttribute("shiroLoginFailure");
-                                    if (errorDescription != null) {   %>
-                                <p class="text-danger">Error de acceso</p>  <%}%>
-                            </div>
-                            <div class="col-md-4"></div>
+
+
+
+
+        <div class="registrationWrapper clearfix">
+            <div class="championlogin" style="margin-left: 10px; margin-top: 20px">
+                <img src="img/championpeque.png" width=20% alt=""/>
+            </div>
+            <div class="registrationContent">
+
+                <div class="registrationHeader">
+                    <h1>BIENVENIDO</h1>
+                    <br>
+                    <p>Para continuar por favor ingrese su usuario y contraseña</p>
+                </div>
+                <!--registrationHeader-->
+                <br>
+                <div class="row inputWrapper ">
+
+
+                    <br>
+                    <div class="col-md-12">
+                        <div class="left-inner-addon ">
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" class="form-control" placeholder="Usuario">
                         </div>
                     </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-md-12 ">
+                        <div class="left-inner-addon ">
+                            <i class="fa fa-key"></i>
+                            <input type="text" class="form-control" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+
+                        <br>
+                        <br>
+                        <br>
+
+                    </div>
+                    <div class="registrationButtonPlaseholder">
+                        <button type="button" style="background-color: #0064b2; color: #ffff" class="btn  btn-df float-button-light">INGRESAR</button>
+
+                    </div>
+                    <!--registrationButtonPlaseholder-->
+                    <br>
+
                 </div>
+                <!--registrationContent-->
             </div>
-        </div>
-        <%@include file="/Templates/footer.jsp" %>
+            <!--registrationWrapper-->
+
+            <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+            <script type="text/javascript" src="lib/waves/waves.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script>
+                Waves.attach('.float-button-light', ['waves-button', 'waves-float', 'waves-light']);
+                Waves.init();
+            </script>
     </body>
+
 </html>
