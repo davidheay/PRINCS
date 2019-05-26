@@ -34,7 +34,7 @@ public class actaController extends HttpServlet {
         ReservaDao reservaDao = new ReservaDaoImpl();
 
         String idReserva = (String) request.getParameter("idActa");
-        System.out.println(idReserva);
+
         Reserva reserva = reservaDao.listarReserva(idReserva).get(0);
 
         request.setAttribute("reserva", reserva);
@@ -73,7 +73,7 @@ public class actaController extends HttpServlet {
         ReservaDao reservaDao = new ReservaDaoImpl();
 
         String idReserva = (String) request.getParameter("idActa");
-        System.out.println(idReserva);
+
         Reserva reserva = reservaDao.listarReserva(idReserva).get(0);
 
         request.setAttribute("reserva", reserva);

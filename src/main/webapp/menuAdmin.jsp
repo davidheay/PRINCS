@@ -117,7 +117,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-lg-3 alertWrapper">
-                                                <a href="menuinventario.html">
+                                                <a href="menuinventario.jsp">
                                                     <div class="inventario">
                                                         <center>
                                                             <img src="img/inventario.PNG" alt=""/>

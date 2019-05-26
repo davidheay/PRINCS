@@ -50,6 +50,10 @@
         <servlet-name>actaController</servlet-name>
         <servlet-class>app.champion.PRINCS.controlador.actaController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>inventarioHistoricoController</servlet-name>
+        <servlet-class>app.champion.PRINCS.controlador.inventarioHistoricoController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/LoginController</url-pattern>
@@ -87,6 +91,10 @@
     <servlet-mapping>
         <servlet-name>actaController</servlet-name>
         <url-pattern>/actaController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>inventarioHistoricoController</servlet-name>
+        <url-pattern>/inventarioHistoricoController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
