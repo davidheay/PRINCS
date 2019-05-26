@@ -52,6 +52,8 @@ public class especificacionMercanciaController extends HttpServlet {
         request.setAttribute("nPiezas", mercancia.getnPiezas());
         request.setAttribute("valor", mercancia.getValor());
         request.setAttribute("moneda", mercancia.getMoneda());
+        request.setAttribute("reservaIn", mercancia.getReservaIn());
+        request.setAttribute("reservaOut", mercancia.getReservaOut());
         request.setAttribute("observaciones", mercancia.getObservaciones());
         request.getRequestDispatcher("especificacionmercancia.jsp").forward(request, response);
 
@@ -74,6 +76,8 @@ public class especificacionMercanciaController extends HttpServlet {
         request.setAttribute("nPiezas", mercancia.getnPiezas());
         request.setAttribute("valor", mercancia.getValor());
         request.setAttribute("moneda", mercancia.getMoneda());
+        request.setAttribute("reservaIn", mercancia.getReservaIn());
+        request.setAttribute("reservaOut", mercancia.getReservaOut());
         request.setAttribute("observaciones", mercancia.getObservaciones());
         request.getRequestDispatcher("especificacionmercancia.jsp").forward(request, response);
 

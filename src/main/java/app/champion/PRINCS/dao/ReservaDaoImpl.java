@@ -4,20 +4,24 @@
  * and open the template in the editor.
  */
 package app.champion.PRINCS.dao;
+
 import app.champion.PRINCS.modelo.Reserva;
 import app.champion.PRINCS.util.Conn;
-import java.sql.Date;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-public class ReservaDaoImpl implements ReservaDao{
+
+public class ReservaDaoImpl implements ReservaDao {
+
     private static final Logger logger = LogManager.getLogger();
-    
-    
+
     @Override
     public List<Reserva> listarReservas() {
 
@@ -38,7 +42,7 @@ public class ReservaDaoImpl implements ReservaDao{
                 Reserva.setTipoActa(resultSet.getString(3));
                 Reserva.setIdCliente(resultSet.getString(4));
                 Reserva.setIdEmpleado(resultSet.getString(5));
-                Reserva.setFecha(resultSet.getDate(6));
+                Reserva.setFecha(resultSet.getString(6));
                 Reserva.setPlaca(resultSet.getString(7));
                 Reserva.setIdTransportadora(resultSet.getString(8));
                 Reserva.setnPiezas(resultSet.getInt(9));
@@ -52,17 +56,13 @@ public class ReservaDaoImpl implements ReservaDao{
                 Reserva.setIdEmbalaje(resultSet.getInt(17));
                 Reserva.setEtiquetas(resultSet.getString(18));
                 Reserva.setRegFotografico(resultSet.getString(19));
-                Reserva.setIDEstado(resultSet.getString(20)); 
+                Reserva.setIDEstado(resultSet.getString(20));
                 Reserva.setobservaciones(resultSet.getString(21));
                 Reserva.setFirma(resultSet.getString(22));
                 Reserva.setEntregaNom(resultSet.getString(23));
                 Reserva.setccEntrega(resultSet.getString(24));
                 Reserva.setMoneda(resultSet.getString(25));
-    
-                
-                
-                
-                
+
                 Reservas.add(Reserva);
             }
             prepareStatemente.close();
@@ -74,14 +74,15 @@ public class ReservaDaoImpl implements ReservaDao{
         }
         return Reservas;
     }
-    
-     @Override
+
+    @Override
     public List<Reserva> listarReserva(String idReserva) {
         Conn conexion = new Conn();
 
         List<Reserva> Reservas = new ArrayList<>();
         try {
-            String sql = "exec getReserva ? ";
+            System.out.println("hola listar reserva");
+            String sql = "select * from Reserva where ID_Reserva=?";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             prepareStatemente.setString(1, idReserva);
             ResultSet resultSet = prepareStatemente.executeQuery();
@@ -92,7 +93,7 @@ public class ReservaDaoImpl implements ReservaDao{
                 Reserva.setTipoActa(resultSet.getString(3));
                 Reserva.setIdCliente(resultSet.getString(4));
                 Reserva.setIdEmpleado(resultSet.getString(5));
-                Reserva.setFecha(resultSet.getDate(6));
+                Reserva.setFecha(resultSet.getString(6));
                 Reserva.setPlaca(resultSet.getString(7));
                 Reserva.setIdTransportadora(resultSet.getString(8));
                 Reserva.setnPiezas(resultSet.getInt(9));
@@ -106,7 +107,7 @@ public class ReservaDaoImpl implements ReservaDao{
                 Reserva.setIdEmbalaje(resultSet.getInt(17));
                 Reserva.setEtiquetas(resultSet.getString(18));
                 Reserva.setRegFotografico(resultSet.getString(19));
-                Reserva.setIDEstado(resultSet.getString(20)); 
+                Reserva.setIDEstado(resultSet.getString(20));
                 Reserva.setobservaciones(resultSet.getString(21));
                 Reserva.setFirma(resultSet.getString(22));
                 Reserva.setEntregaNom(resultSet.getString(23));
@@ -121,17 +122,16 @@ public class ReservaDaoImpl implements ReservaDao{
         } finally {
             conexion.cerrarConexion();
         }
-        return  Reservas;
+        return Reservas;
 
     }
-    
-      @Override
-    public void insertarReserva(String idReserva, String idMercancia, String tipoActa, String idCliente, 
-            String idEmpleado, Date fecha, String placa, String idTransportadora, Integer nPiezas, String Id_Lote,String Estiba,
+
+    @Override
+    public void insertarReserva(String idReserva, String idMercancia, String tipoActa, String idCliente,
+            String idEmpleado, Date fecha, String placa, String idTransportadora, Integer nPiezas, String Id_Lote, String Estiba,
             String nombreConductor, String cedulaConductor, String documentos, Float peso, Integer valor, Integer idEmbalaje, String Etiquetas,
-            String Reg_Fotografico,String ID_Estado, String observaciones, String Firma,String Entrega_Nom, String cc_Entrega,String Moneda) {
+            String Reg_Fotografico, String ID_Estado, String observaciones, String Firma, String Entrega_Nom, String cc_Entrega, String Moneda) {
 
     }
-    
-    
+
 }

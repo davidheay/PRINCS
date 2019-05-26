@@ -101,7 +101,7 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>
                                             </li>
@@ -202,9 +202,13 @@
                                                 <div class="Estado pull-left" style="padding-top: 10px;padding-left: 1px">
                                                     <label>Acta Ingreso &nbsp; &nbsp; </label>
                                                 </div>
-                                                <a href="acta.html">
-                                                    <button type="button" class="btn btn-info btn-df  float-button-light"> Ver</button>
-                                                </a>
+
+                                                <form action="/PRINCS/actaController" method="POST">
+                                                    <input type="hidden" id="idActa" name="idActa" value="<%= request.getAttribute("reservaIn")%> " >
+
+                                                    <button type="submit" class="btn btn-info btn-df  float-button-light"> Ver</button>
+
+                                                </form>
                                                 <br>
                                             </div>
                                             <div class="buttonWrapper" style="padding: inherit" >
