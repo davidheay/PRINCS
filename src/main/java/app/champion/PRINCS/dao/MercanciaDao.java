@@ -10,4 +10,6 @@ public interface MercanciaDao {
     public List<Mercancia> listarMercancia(String idMercancia);
 
     public void insertarMercancia(String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String idLote, String reservaIn, String reservaOut, Integer valor, String moneda);
+
+    public void actualizarEstadoMercancia(String idMercancia, String idTipo);
 }

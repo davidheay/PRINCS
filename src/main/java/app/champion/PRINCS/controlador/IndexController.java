@@ -75,24 +75,15 @@ public class IndexController extends HttpServlet {
         request.setAttribute("selPabellon", request.getParameter(pabellon));
         //Se valida si se envio el campo oculto en el formulario de inserción para separar los dos submits
          */
-        if (request.getParameter("hidInsertar") != null) {
-            System.out.println("cambio de estado");
-            /*
+        if (request.getParameter("hidCambio") != null) {
+            System.out.println("cambio");
             //Almacenado de los datos enviados en el formulario en variables
-            String tipoDoc = (String) request.getParameter("hidTipoDocumento");
-            String numDoc = (String) request.getParameter("documento");
-            String Ing = (String) request.getParameter("hidIngreso");
-            String cama = (String) request.getParameter("cama");
-            String idPab = (String) request.getParameter("hidPabellon");
-            String aisla = (String) request.getParameter("selAisla");
-            String nomPab = (String) request.getParameter("hidNomPab2");
-            //insercion de datos del formulario
-            aislamientoDao.insertarAislamientos(tipoDoc, numDoc, Ing, cama, idPab, aisla);
+            String estado = (String) request.getParameter("selEstado");
+            String idMerc = (String) request.getParameter("IDMercancia");
+            mercanciaDao.actualizarEstadoMercancia(idMerc, estado);
             //envio de de datos para visualizacion
-            request.setAttribute("selPabellon2", idPab);
-            request.setAttribute("lstPacientes", aislamientoDao.listarPacientes(idPab));
-            request.setAttribute("dePab", nomPab);
-             */
+            request.setAttribute("lstMercancias", mercanciaDao.listarMercancias());
+
         }
 
         request.getRequestDispatcher("index.jsp").forward(request, response);

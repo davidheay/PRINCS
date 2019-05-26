@@ -87,7 +87,6 @@
                                 <th>Estado</th>
                                 <th>Observaciones</th>
                                 <th>#Piezas</th>
-                                <th>ID Lote</th>
                                 <th>Reserva IN</th>
                                 <th>Reserva OUT</th>
                                 <th>Valor</th>
@@ -104,14 +103,13 @@
                                     <td><c:out value="${item.getEstado()}"></c:out></td>
                                     <td><c:out value="${item.getObservaciones()}"></c:out></td>
                                     <td><c:out value="${item.getnPiezas()}"></c:out></td>
-                                    <td><c:out value="${item.getIdLote()}"></c:out></td>
                                     <td><c:out value="${item.getReservaIn()}"></c:out></td>
                                     <td><c:out value="${item.getReservaOut()}"></c:out></td>
                                     <td><c:out value="${item.getValor()}"></c:out></td>
                                     <td><c:out value="${item.getMoneda()}"></c:out></td>
 
                                         <td>
-                                            <a id="go" name="go" data-target="#myModal" class="btn btn-xs btn-success" href="#myModal"  onclick="btnDetalle('<c:out value='${item.getIdMercancia()}'></c:out>', '<c:out value='${item.getIdCliente()}'></c:out>', '<c:out value='${item.getIdTipo()}'></c:out>', '<c:out value='${item.getEstado()}'></c:out>', '<c:out value='${item.getObservaciones()}'></c:out>', '<c:out value='${item.getnPiezas()}'></c:out>', '<c:out value='${item.getIdLote()}'></c:out>', '<%= request.getAttribute("dePab")%>')">
+                                            <a id="go" name="go" data-target="#myModal" class="btn btn-xs btn-success" href="#myModal"  onclick="btnDetalle('<c:out value='${item.getIdMercancia()}'></c:out>', '<c:out value='${item.getIdCliente()}'></c:out>', '<c:out value='${item.getIdTipo()}'></c:out>', '<c:out value='${item.getEstado()}'></c:out>', '<c:out value='${item.getObservaciones()}'></c:out>', '<c:out value='${item.getnPiezas()}'></c:out>', '', '<%= request.getAttribute("dePab")%>')">
                                                 <span class="glyphicon glyphicon-check"></span>
                                             </a>
                                         </td>
@@ -134,27 +132,27 @@
                     <div class="modal-body" style="padding:5px 50px;">
                         <form role="form" name='frmPte' id = 'frmPte' action="/PRINCS/IndexController" method="POST">
                             <div class="form-group">
-                                <label for="cama">ID Mercancia: </label>
-                                <input class="form-control input-sm" id="cama" name="cama" type="text" readonly>
+                                <label for="IDMErcancia">ID Mercancia: </label>
+                                <input class="form-control input-sm" id="IDMercancia" name="IDMercancia" type="text" readonly>
                                 <div class="form-group">
-                                    <label for="documento">ID Cliente:  </label>
-                                    <input class="form-control input-sm" id="documento" name="documento" type="text" readonly>
+                                    <label for="IDCliente">ID Cliente:  </label>
+                                    <input class="form-control input-sm" id="IDCliente" name="IDCliente" type="text" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label for="nombre">Tipo ID: </label>
-                                    <input class="form-control input-sm" id="nombre" type="text" readonly>
+                                    <label for="IDTipo">Tipo ID: </label>
+                                    <input class="form-control input-sm" id="IDTipo" type="text" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label for="aislamiento">Estado : </label>
-                                    <input class="form-control input-sm" id="aislamiento" type="text" readonly>
+                                    <label for="Estado">Estado : </label>
+                                    <input class="form-control input-sm" id="Estado" type="text" readonly>
                                 </div>
                                 <div class="form-group">
                                     <label for="usrname">Seleccione Estado: </label>
-                                    <select class="form-control input-sm" required name="selAisla" id="selAisla" name="selAisla">
+                                    <select class="form-control input-sm" required name="selEstado" id="selAisla" name="selEstado">
                                         <option value="">--Seleccione Opción--</option>
-                                        <option value='aerosoles'>En espera</option>
-                                        <option value='contacto'>En inventario</option>
-                                        <option value='gotas'>Cerrado</option>
+                                        <option value='ES1'>ON HOLD</option>
+                                        <option value='ES2'>IN STOCK</option>
+                                        <option value='ES3'>CLOSED</option>
 
                                     </select>
                                 </div>
@@ -163,11 +161,11 @@
                                         ¡Esta seguro de cambiar el estado!
                                     </p>
                                 </div>
-                                <input type="hidden" id="hidIngreso" name="hidIngreso" >
-                                <input type="hidden" id="hidTipoDocumento" name="hidTipoDocumento" >
-                                <input type="hidden" id="hidPabellon" name="hidPabellon" >
-                                <input type="hidden" id="hidInsertar" name="hidInsertar" value="Insertar">
-                                <input type="hidden" id="hidNomPab2" name="hidNomPab2">
+
+
+
+                                <input type="hidden" id="hidCambio" name="hidCambio" value="Cambio">
+
                                 <div class="row">
                                     <div class="col-md-5">
                                         <button type="submit" class="btn btn-danger btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
@@ -185,15 +183,11 @@
             </div>
 
             <script>
-                function btnDetalle(IDMErcancia, IDCliente, IDTipo, aislamiento, ingreso, tipodocumento, pabellon, nompab) {
-                    document.getElementById("cama").value = IDMErcancia;
-                    document.getElementById("documento").value = IDCliente;
-                    document.getElementById("nombre").value = IDTipo;
-                    document.getElementById("aislamiento").value = aislamiento;
-                    document.getElementById("hidIngreso").value = ingreso;
-                    document.getElementById("hidTipoDocumento").value = tipodocumento;
-                    document.getElementById("hidPabellon").value = pabellon;
-                    document.getElementById("hidNomPab2").value = nompab;
+                function btnDetalle(IDMercancia, IDCliente, IDTipo, Estado) {
+                    document.getElementById("IDMercancia").value = IDMercancia;
+                    document.getElementById("IDCliente").value = IDCliente;
+                    document.getElementById("IDTipo").value = IDTipo;
+                    document.getElementById("Estado").value = Estado;
                     $("#myModal").modal();
                 }
             </script>

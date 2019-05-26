@@ -17,20 +17,18 @@ public class Mercancia {
     String estado;
     String observaciones;
     String nPiezas;
-    
     String reservaIn;
     String reservaOut;
-    int valor;
+    Integer valor;
     String moneda;
 
-    public Mercancia(String idMercancia, String idCliente, String idTipo, String estado, String observaciones, String nPiezas,  String reservaIn, String reservaOut, int valor, String moneda) {
+    public Mercancia(String idMercancia, String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String reservaIn, String reservaOut, int valor, String moneda) {
         this.idMercancia = idMercancia;
         this.idCliente = idCliente;
         this.idTipo = idTipo;
         this.estado = estado;
         this.observaciones = observaciones;
         this.nPiezas = nPiezas;
-      
         this.reservaIn = reservaIn;
         this.reservaOut = reservaOut;
         this.valor = valor;
@@ -87,8 +85,6 @@ public class Mercancia {
     public void setnPiezas(String nPiezas) {
         this.nPiezas = nPiezas;
     }
-
-
 
     public String getReservaIn() {
         return reservaIn;
