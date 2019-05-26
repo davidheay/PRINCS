@@ -100,10 +100,10 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="consultamercancia.html">Consultar Mercancía</a>
+                                                        <a href="consultamercancia.jsp">Consultar Mercancía</a>
                                                     </li>
                                                     <li>
-                                                        <a href="menuinventario.html">Consultar Inventario</a>
+                                                        <a href="menuinventario.jsp">Consultar Inventario</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -115,19 +115,19 @@
                                                 </a>
                                                 <ul aria-expanded="false" class="collapse">
                                                     <li>
-                                                        <a href="analisisbodega.html">
+                                                        <a href="analisisbodega.jsp">
                                                             De Bodega
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="analisisflujo.html">
+                                                        <a href="analisisflujo.jsp">
                                                             Flujo de entrada y salida
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>
                                             </li>

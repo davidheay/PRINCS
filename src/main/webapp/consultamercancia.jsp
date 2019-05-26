@@ -96,10 +96,10 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="menuinventario.html">Consulta de Inventario</a>
+                                                        <a href="menuinventario.jsp">Consulta de Inventario</a>
                                                     </li>
                                                     <li>
-                                                        <a href="manalisis.html">Análisis de Inventario</a>
+                                                        <a href="manalisis.jsp">Análisis de Inventario</a>
                                                     </li>
 
                                                 </ul>

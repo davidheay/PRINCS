@@ -101,10 +101,10 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="consultamercancia.html">Consulta de Mercancía</a>
+                                                        <a href="consultamercancia.jsp">Consulta de Mercancía</a>
                                                     </li>
                                                     <li>
-                                                        <a href="manalisis.html">Análisis de Inventario</a>
+                                                        <a href="manalisis.jsp">Análisis de Inventario</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -116,14 +116,14 @@
                                                 </a>
                                                 <ul aria-expanded="false" class="collapse">
                                                     <li>
-                                                        <a href="inventariohistorico.html">
+                                                        <a href="inventariohistorico.jsp">
                                                             Inventario Histórico
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>
                                             </li>

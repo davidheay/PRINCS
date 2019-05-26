@@ -93,10 +93,10 @@
                                                         <a href="/PRINCS/consultaMercanciaController">Consulta de Mercancía</a>
                                                     </li>
                                                     <li>
-                                                        <a href="menuinventario.html">Consulta de Inventario</a>
+                                                        <a href="menuinventario.jsp">Consulta de Inventario</a>
                                                     </li>
                                                     <li>
-                                                        <a href="manalisis.html">Análisis Inventario</a>
+                                                        <a href="manalisis.jsp">Análisis Inventario</a>
                                                     </li>
                                                 </ul>
                                             </li>
