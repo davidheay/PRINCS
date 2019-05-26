@@ -47,7 +47,7 @@
                     <div class="nawbarMain  headerWrapper clearfix">
                         <div class="nawbarMainLeft ">
                             <div class="champion">
-                                <img src="img/championpeque.PNG" alt=""/ width=40%>
+                                <img src="img/championpeque.png" alt="" width=40%>
                             </div>
                             <!--mainLogo-->
                             <!--headerLogo-->
@@ -115,7 +115,7 @@
                                             <a href="menuverificacion.html">
                                                 <div class="inventario">
                                                     <center>
-                                                        <img src="img/inventario.png" alt=""/ >
+                                                        <img src="img/inventario.png" alt="" >
                                                     </center>
                                                 </div>
                                                 <br>
@@ -126,7 +126,7 @@
                                             <a href="inventariobodegaope.html">
                                                 <div class="mercancia">
                                                     <center>
-                                                        <img src="img/mercancia.png" alt=""/ >
+                                                        <img src="img/mercancia.png" alt="" >
                                                     </center>
                                                 </div>
                                                 <br>

@@ -22,29 +22,50 @@ public class LoginController extends HttpServlet {
         /**
          * Se valida las credenciales ingresadas para la posterior redireccion
          */
-        System.out.println("hola get login");
-        if (SecurityUtils.getSubject().isAuthenticated()) {
-            System.out.println(SecurityUtils.getSubject().getPrincipal());
-            request.getRequestDispatcher("menuAdmin.jsp").forward(request, response);
-        } else {
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+
+        try {
+
+            if (SecurityUtils.getSubject().isAuthenticated()) {
+                String client = (String) SecurityUtils.getSubject().getPrincipal();
+                System.out.println(client.equals("admin"));
+                if (client.equals("admin")) {
+                    request.getRequestDispatcher("menuAdmin.jsp").forward(request, response);
+                }
+                if (client.equals("user")) {
+                    request.getRequestDispatcher("menuoperario.jsp").forward(request, response);
+                }
+
+            } else {
+                request.getRequestDispatcher("login.jsp").forward(request, response);
+            }
+        } catch (Exception e) {
+            System.out.println(e);
         }
 
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         /**
          * Se valida las credenciales ingresadas para la posterior redireccion
          */
-        System.out.println("hola post login");
+        try {
 
-        if (SecurityUtils.getSubject().isAuthenticated()) {
-            System.out.println(SecurityUtils.getSubject().getPrincipal());
-            request.getRequestDispatcher("menuAdmin.jsp").forward(request, response);
-        } else {
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            if (SecurityUtils.getSubject().isAuthenticated()) {
+                String client = (String) SecurityUtils.getSubject().getPrincipal();
+                System.out.println(client.equals("admin"));
+                if (client.equals("admin")) {
+                    request.getRequestDispatcher("menuAdmin.jsp").forward(request, response);
+                }
+                if (client.equals("user")) {
+                    request.getRequestDispatcher("menuoperario.jsp").forward(request, response);
+                }
+
+            } else {
+                request.getRequestDispatcher("login.jsp").forward(request, response);
+            }
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
 

@@ -24,8 +24,9 @@ public class LogoutController extends HttpServlet {
         Session session = currentUser.getSession();
         String nomusuario = (String) currentUser.getPrincipal();
         currentUser.logout();
-        request.getRequestDispatcher("login.jsp").forward(request, response);
-        //response.sendRedirect("/PRINCS/");
+        SecurityUtils.getSecurityManager().logout(currentUser);
+        //request.getRequestDispatcher("login.jsp").forward(request, response);
+        response.sendRedirect("/PRINCS/");
     }
 
     @Override
@@ -37,8 +38,9 @@ public class LogoutController extends HttpServlet {
         String nomusuario = (String) currentUser.getPrincipal();
         currentUser.logout();
         SecurityUtils.getSubject().logout();
-        request.getRequestDispatcher("login.jsp").forward(request, response);
-        //response.sendRedirect("/PRINCS/");
+        SecurityUtils.getSecurityManager().logout(currentUser);
+        //request.getRequestDispatcher("login.jsp").forward(request, response);
+        response.sendRedirect("/PRINCS/");
     }
 
     @Override
