@@ -13,15 +13,28 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.sun.scenario.effect.ImageData;
+import com.itextpdf.io.image.*;
+import com.itextpdf.io.image.ImageDataFactory;
 import java.awt.Color;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+
+import com.itextpdf.io.image.ImageDataFactory;
+import com.itextpdf.text.Image;
+import java.net.MalformedURLException;
+
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+
+import com.itextpdf.io.image.ImageDataFactory;
+
+import com.itextpdf.text.BadElementException;
+import java.io.IOException;
 
 /**
  *
@@ -29,12 +42,10 @@ import javax.swing.JOptionPane;
  */
 public class Pdf {
 
-    public static final String Dest = "C:\\Users\\Usuario\\Documents\\NetBeansProjects\\PRINCS";
-
     /**
      * @param args the command line arguments
      */
-    public  void generar(String idReserva) throws FileNotFoundException, DocumentException {
+    public void generar(String idReserva) throws FileNotFoundException, DocumentException, MalformedURLException, BadElementException, IOException {
         FileOutputStream archivo = new FileOutputStream(idReserva + ".pdf");
         Document documento = new Document();
         PdfWriter.getInstance(documento, archivo);
@@ -56,7 +67,7 @@ public class Pdf {
         documento.add(new Paragraph("ID del empleado: " + reserva.getIdEmpleado() + "                                          "
                 + "            " + "Fecha: " + reserva.getFecha()));
         documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Transportadora: " + reserva.getIdTransportadora()+ "                                         "
+        documento.add(new Paragraph("Transportadora: " + reserva.getIdTransportadora() + "                                         "
                 + "               " + "Placa: " + reserva.getPlaca()));
         documento.add(new Paragraph("\n"));
         documento.add(new Paragraph("Lote: " + reserva.getIdLote() + "                             "
@@ -71,7 +82,12 @@ public class Pdf {
         documento.add(new Paragraph("Valor: " + reserva.getValor() + "                                          "
                 + "                             " + "Moneda: " + reserva.getMoneda()));
         documento.add(new Paragraph("\n"));
+
         documento.add(new Paragraph("Foto: " + reserva.getRegFotografico()));
+        String imageFile = reserva.getRegFotografico();
+        Image img = Image.getInstance("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\NetBeansProjects\\PRINCS\\src\\main\\webapp\\" + imageFile);
+
+        documento.add(img);
         documento.add(new Paragraph("\n"));
         documento.add(new Paragraph("Observaciones: " + reserva.getoobservaciones()));
         documento.add(new Paragraph("\n"));
