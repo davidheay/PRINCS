@@ -38,61 +38,65 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class actaController extends HttpServlet {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException, DocumentException {
-        response.setContentType("application/pdf");
-        OutputStream archivo = response.getOutputStream();
-        String idReserva = request.getParameter("idActa");
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            System.out.println("entre");
+            response.setContentType("application/pdf");
+            OutputStream archivo = response.getOutputStream();
+            String idReserva = request.getParameter("idActa");
 
-        Document documento = new Document();
-        PdfWriter.getInstance(documento, archivo);
-        documento.open();
-        ReservaDao reservaDao = new ReservaDaoImpl();
-        Reserva reserva = reservaDao.listarReserva(idReserva).get(0);
+            Document documento = new Document();
+            PdfWriter.getInstance(documento, archivo);
+            documento.open();
+            ReservaDao reservaDao = new ReservaDaoImpl();
+            Reserva reserva = reservaDao.listarReserva(idReserva).get(0);
 
-        Paragraph parrafo = new Paragraph("Acta de la Reserva");
-        parrafo.setAlignment(1);
-        documento.add(parrafo);
+            Paragraph parrafo = new Paragraph("Acta de la Reserva");
+            parrafo.setAlignment(1);
+            documento.add(parrafo);
 
-        documento.add(new Paragraph("ID Reserva: " + idReserva));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("ID MERCANCIA: " + reserva.getIdMercancia()));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("ID del Cliente: " + reserva.getIdCliente() + "                                   "
-                + "               " + "Nombre del Cliente: "));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("ID del empleado: " + reserva.getIdEmpleado() + "                                          "
-                + "            " + "Fecha: " + reserva.getFecha()));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Transportadora: " + reserva.getIdTransportadora() + "                                         "
-                + "               " + "Placa: " + reserva.getPlaca()));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Lote: " + reserva.getIdLote() + "                             "
-                + "                                            " + "Estiba: " + reserva.getEstiba()));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Nombre del Conductor: " + reserva.getNombreConductor()));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Cedula del Conductor: " + reserva.getCedulaConductor()));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Peso: " + reserva.getPeso()));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Valor: " + reserva.getValor() + "                                          "
-                + "                             " + "Moneda: " + reserva.getMoneda()));
-        documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("ID Reserva: " + idReserva));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("ID MERCANCIA: " + reserva.getIdMercancia()));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("ID del Cliente: " + reserva.getIdCliente() + "                                   "
+                    + "               " + "Nombre del Cliente: "));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("ID del empleado: " + reserva.getIdEmpleado() + "                                          "
+                    + "            " + "Fecha: " + reserva.getFecha()));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("Transportadora: " + reserva.getIdTransportadora() + "                                         "
+                    + "               " + "Placa: " + reserva.getPlaca()));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("Lote: " + reserva.getIdLote() + "                             "
+                    + "                                            " + "Estiba: " + reserva.getEstiba()));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("Nombre del Conductor: " + reserva.getNombreConductor()));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("Cedula del Conductor: " + reserva.getCedulaConductor()));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("Peso: " + reserva.getPeso()));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("Valor: " + reserva.getValor() + "                                          "
+                    + "                             " + "Moneda: " + reserva.getMoneda()));
+            documento.add(new Paragraph("\n"));
 
-        documento.add(new Paragraph("Foto: " + reserva.getRegFotografico()));
-        String imageFile = reserva.getRegFotografico();
-        Image img = Image.getInstance("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\NetBeansProjects\\PRINCS\\src\\main\\webapp\\" + imageFile);
+            documento.add(new Paragraph("Foto: " + reserva.getRegFotografico()));
+            String imageFile = reserva.getRegFotografico();
+            System.out.println(imageFile);
+            Image img = Image.getInstance("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\NetBeansProjects\\PRINCS\\src\\main\\webapp\\" + imageFile);
 
-        documento.add(img);
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Observaciones: " + reserva.getoobservaciones()));
-        documento.add(new Paragraph("\n"));
-        documento.add(new Paragraph("Firma: " + reserva.getFirma()));
+            documento.add(img);
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("Observaciones: " + reserva.getoobservaciones()));
+            documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("Firma: " + reserva.getFirma()));
 
-        documento.close();
-        System.out.println("se genero correctamente");
-
+            documento.close();
+            System.out.println("se genero correctamente");
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
     @Override
@@ -135,12 +139,8 @@ public class actaController extends HttpServlet {
 
             if (request.getParameter("pdf") != null) {
                 System.out.println("generar pdf");
-                try {
-                    processRequest(request, response);
-                    //
-                } catch (DocumentException ex) {
-                    System.out.println(ex);
-                }
+                processRequest(request, response);
+                //
             } else {
                 request.getRequestDispatcher("acta.jsp").forward(request, response);
             }
@@ -189,11 +189,7 @@ public class actaController extends HttpServlet {
 
             if (request.getParameter("pdf") != null) {
                 System.out.println("generar pdf");
-                try {
-                    processRequest(request, response);
-                } catch (DocumentException ex) {
-                    System.out.println(ex);
-                }
+                processRequest(request, response);
             } else {
                 request.getRequestDispatcher("acta.jsp").forward(request, response);
             }
