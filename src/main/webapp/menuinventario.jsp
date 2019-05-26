@@ -95,7 +95,7 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="consultamercancia.jsp">Consulta de Mercancia</a>
+                                                        <a href="/PRINCS/consultaMercanciaController">Consulta de Mercancia</a>
                                                     </li>
                                                     <li>
                                                         <a href="manalisis.jsp">Análisis de Inventario</a>

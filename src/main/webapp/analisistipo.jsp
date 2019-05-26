@@ -100,7 +100,7 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="consultamercancia.jsp">Consultar Mercancía</a>
+                                                        <a href="/PRINCS/consultaMercanciaController">Consultar Mercancía</a>
                                                     </li>
                                                     <li>
                                                         <a href="menuinventario.jsp">Consultar Inventario</a>
