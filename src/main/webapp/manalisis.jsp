@@ -100,15 +100,15 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="consultamercancia.html">Consultar Mercancía</a>
+                                                        <a href="/PRINCS/consultaMercanciaController">Consultar Mercancía</a>
                                                     </li>
                                                     <li>
-                                                        <a href="menuinventario.html">Consultar Inventario</a>
+                                                        <a href="menuinventario.jsp">Consultar Inventario</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>
                                             </li>

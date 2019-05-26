@@ -95,15 +95,15 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="consultamercancia.html">Consulta de Mercancia</a>
+                                                        <a href="/PRINCS/consultaMercanciaController">Consulta de Mercancia</a>
                                                     </li>
                                                     <li>
-                                                        <a href="manalisis.html">Análisis de Inventario</a>
+                                                        <a href="manalisis.jsp">Análisis de Inventario</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>
                                             </li>
