@@ -13,6 +13,7 @@ public class LoginController extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        SecurityUtils.getSubject().logout();
     }
 
     @Override
