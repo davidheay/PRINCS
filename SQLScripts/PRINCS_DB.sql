@@ -971,3 +971,313 @@ USE [master]
 GO
 ALTER DATABASE [PRINCS_DB] SET  READ_WRITE 
 GO
+
+-- Delete Transportadora
+CREATE PROCEDURE [dbo].[DeleteTransportadora]
+ (@ID_Transportadora varchar(5))
+ AS 
+
+ BEGIN TRANSACTION
+
+ BEGIN TRY
+
+ IF EXISTS ( select  ID_Transportadora from Transportadora where @ID_Transportadora = ID_Transportadora)
+	begin 
+		
+		delete from Transportadora where @ID_Transportadora = ID_Transportadora
+
+		save transaction DeleteCompleted
+
+	end
+ ELSE
+
+	begin 
+		
+		print 'No se ha encontrado el codigo a eliminar en la tabla transportadora'
+	end
+
+ COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+ rollback transaction
+ print 'ha ocurrido un error al Eliminar en la tabla Trasnportadora'
+
+ END CATCH
+GO
+USE [master]
+GO
+ALTER DATABASE [PRINCS_DB] SET  READ_WRITE 
+GO
+
+-- Delete Tipo
+
+CREATE PROCEDURE [dbo].[DeleteTipo]
+ (@ID_Tipo varchar(5))
+ AS 
+
+ BEGIN TRANSACTION
+
+ BEGIN TRY
+
+ IF EXISTS (select ID_Tipo from Tipo where ID_Tipo = @ID_Tipo)
+	begin 
+		
+		Delete from Tipo where ID_Tipo = @ID_Tipo
+
+		save transaction DeleteCompleted
+
+	end
+ ELSE
+
+	begin 
+		
+		print 'No se encontro el ID a eliminar'
+	end
+
+ COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+ rollback transaction
+ print 'ha ocurrido un error al eliminar en la tabla Tipo'
+
+ END CATCH
+GO
+
+--delete reserva
+
+CREATE PROCEDURE [dbo].[DeleteReserva]
+(@ID_Reserva varchar(5))
+ AS 
+
+ BEGIN TRANSACTION
+
+ BEGIN TRY
+ 
+ IF EXISTS ( select ID_Reserva from Reserva where ID_Reserva = @ID_Reserva)
+	begin 
+		
+		delete from Reserva where @ID_Reserva = ID_Reserva
+
+		
+		save transaction DeletionCompleted
+
+	end
+ ELSE
+
+	begin 
+		
+		print 'El ID no se ha encontrado en la tabla reserva'
+	end
+
+ COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+ rollback transaction
+ print 'ha ocurrido un error al Eliminar en la tabla RESERVA'
+
+ END CATCH
+GO
+
+-- Delete Mercancia
+
+CREATE PROCEDURE [dbo].[DeleteMercancia]
+ (@ID_Mercancia varchar(5))
+
+ AS 
+
+ BEGIN TRANSACTION
+
+ BEGIN TRY
+
+ IF exists ( select  ID_Mercancia from Mercancia where ID_Mercancia = @ID_Mercancia)
+	begin 
+		
+		delete from Mercancia where ID_Mercancia = @ID_Mercancia
+
+		save transaction DeletionCompleted
+
+	end
+ ELSE
+
+	begin 
+		
+		print 'El ID que ha intentado eliminar no se ha encontrado en la Tabla Mercancias'
+	end
+
+ COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+ rollback transaction
+ print 'ha ocurrido un error al eliminar en la tabla Mercancia'
+
+ END CATCH
+
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- Delete Cliente
+CREATE PROCEDURE [dbo].[DeleteCliente]
+ (@ID_Cliente varchar(5))
+ AS 
+
+ BEGIN TRANSACTION
+
+ BEGIN TRY
+
+ IF EXISTS (select ID_Cliente from Cliente where ID_Cliente = @ID_Cliente)
+	begin 
+		
+		delete from Cliente where ID_Cliente = @ID_Cliente
+
+		save transaction DeletionCompleted
+	end
+
+ ELSE
+
+	begin 
+	
+		print 'El ID que ha tratado de eliminar en la tabla Clientes no existe'
+	end
+
+ COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+ rollback transaction
+ print 'ha ocurrido un error al eliminar en la tabla Cliente'
+
+ END CATCH
+GO
+
+--Delete Empleado
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE  [dbo].[DeleteEmpleado]
+ (@ID_Empleado varchar(5))
+ AS 
+
+ BEGIN TRANSACTION
+
+ BEGIN TRY
+
+ IF EXISTS (select ID_Empleado from Empleado where ID_Empleado = @ID_Empleado)
+	begin 
+		delete from Empleado where @ID_Empleado = ID_Empleado
+
+		save transaction DeletedComplited
+	end
+ELSE
+	BEGIN
+		
+		print 'No se ha encontrado ningun registro con ese codigo en la tabla Empleado'
+	END 
+
+ COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+ rollback transaction
+ print 'ha ocurrido un error al elimnar en la tabla Empleado'
+
+ END CATCH
+GO
+
+
+-- Eliminar de la tabla Estado
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE  [dbo].[DeleteEstado]
+ (@ID_Estado VARCHAR(5))
+
+ AS 
+
+ BEGIN TRANSACTION
+
+ BEGIN TRY
+
+ IF EXISTS(select  ID_Estado from Estado where ID_Estado = @ID_Estado)
+	begin 
+
+		delete from Estado where ID_Estado = @ID_Estado
+
+	save transaction InsertComplited
+	end
+ELSE
+	BEGIN
+
+		print 'El ID en la tabla estado no existe'
+	END 
+
+ COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+ rollback transaction
+ print 'ha ocurrido un error al Eliminar en la tabla ESTADO'
+
+ END CATCH
+GO
+
+-- Eliminar Lote
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE  [dbo].[DeleteLote]
+ (@ID_Lote varchar(5))
+ AS 
+
+ BEGIN TRANSACTION
+
+ BEGIN TRY
+
+ IF EXISTS(select ID_Lote from Lote where ID_Lote = @ID_Lote) 
+	begin 
+
+		delete from Lote where ID_Lote = @ID_Lote
+
+		save transaction DeletionComplited
+	end
+ELSE
+	BEGIN
+	
+		print 'El ID no se ha encontrado en la tabla lote'
+	END 
+
+ COMMIT TRANSACTION
+
+ END TRY
+
+ BEGIN CATCH
+
+ rollback transaction
+ print 'ha ocurrido un error al eliminar en la tabla lote'
+
+ END CATCH
+GO
