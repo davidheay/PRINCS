@@ -128,7 +128,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-lg-3 alertWrapper">
-                                                <a href="manalisis.html">
+                                                <a href="manalisis.jsp">
                                                     <div class="analizar">
                                                         <center>
                                                             <img src="img/analisis.PNG" alt=""/>

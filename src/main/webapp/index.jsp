@@ -1,8 +1,4 @@
-<%--
-    Document   : index
-    Created on : 19/04/2017, 04:45:35 PM
-    Author     : wilsonfr
---%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
 <!DOCTYPE html>
