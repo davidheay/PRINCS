@@ -87,7 +87,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
     }
 
     @Override
-    public void insertarMercancia(String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String idLote, String reservaIn, String reservaOut, Integer valor, String moneda) {
+    public void insertarMercancia(String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String reservaIn, String reservaOut, Integer valor, String moneda) {
 
     }
 
