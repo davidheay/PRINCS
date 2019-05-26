@@ -99,15 +99,42 @@ public class MercanciaDaoImpl implements MercanciaDao {
             String sql = "exec ActualizarEstadoMercancia ?,?";
 
             PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
-            
+
             preparedStatement.setString(1, idMercancia);
             preparedStatement.setString(2, idTipo);
+
             preparedStatement.execute();
 
             preparedStatement.close();
 
         } catch (SQLException e) {
             logger.error(e + " " + e.getMessage());
+        }
+    }
+
+    @Override
+    public void actualizarMercancia(String idMercancia, String idTipo, String estado, String observaciones, String nPiezas, int valor, String moneda) {
+        Conn conexion = new Conn();
+        try {
+            System.out.println("hola actualizar");
+            String sql = "exec ActualizarMercancia ?,?,?,?,?,?,?";
+
+            PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
+
+            preparedStatement.setString(1, idMercancia);
+            preparedStatement.setString(2, idTipo);
+            preparedStatement.setString(3, estado);
+            preparedStatement.setString(4, observaciones);
+            preparedStatement.setString(5, nPiezas);
+            preparedStatement.setInt(6, valor);
+            preparedStatement.setString(7, moneda);
+
+            preparedStatement.execute();
+            System.out.println("se ejecuto");
+            preparedStatement.close();
+
+        } catch (Exception e) {
+            System.out.println("error" + e);
         }
     }
 

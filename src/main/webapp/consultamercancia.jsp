@@ -149,24 +149,8 @@
                             </div>
                         </div>
                         <div class="panel-body topSellingHeader">
-                            <br>
-                            <nav class="navbar navbar-default">
-                                <div class="container-fluid">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                                        <ul class="nav navbar-nav navbar-left">
-                                            <li class="active"><a href="#">WEEK <span class="sr-only">(current)</span></a></li>
-                                            <li><a href="#">MONTH</a></li>
-                                            <li><a href="#">YEAR</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- /.navbar-collapse -->
-                                </div>
-                                <!-- /.container-fluid -->
-                            </nav>
-                            <br>
-                            <br>
+
                             <div class="table-responsive">
                                 <table id="example" class="display tableWrapper">
                                     <thead>
@@ -202,181 +186,20 @@
 
 
                                                     <td class="text-center">
-                                                        <a href="especificacionmercancia.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                        </a>
-                                                        <a href="editormercancia.html">
-                                                            <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                        </a>
-                                                        <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
+                                                        <form action="/PRINCS/especificacionMercanciaController" method="POST">
+                                                            <input type="hidden" id="idMercancia" name="idMercancia" value=<c:out value="${item.getIdMercancia()}"></c:out>>
+                                                            <button type="submit" class="btn btn-info btn-sm  float-button-light">Ver</button>
+
+                                                        </form>
+                                                        <form action="/PRINCS/especificacionMercanciaController" method="POST">
+                                                            <input type="hidden" id="idMercancia" name="idMercancia" value=<c:out value="${item.getIdMercancia()}"></c:out>>
+                                                            <button type="submit" class="btn btn-success btn-sm  float-button-light">Editar</button>
+
+                                                        </form>
+                                                        <!--<button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>-->
                                                     </td>
                                                 </tr>
                                         </c:forEach>
-
-                                        <!--
-                                        <tr>
-                                            <td>2</td>
-                                            <td>12.09.2015</td>
-                                            <td>Test Customer</td>
-                                            <td>Test Customer</td>
-                                            <td class="text-center">
-                                                <span class="label label-default colorPink">Por Llegar</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="especificacionmercancia.html">
-                                                    <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </a>
-                                                <a href="editormercancia.html">
-                                                    <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                </a>
-                                                <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>12.09.2015</td>
-                                            <td>Test Customer</td>
-                                            <td>Test Customer</td>
-                                            <td class="text-center">
-                                                <span class="label label-default colorBlue">Enviado</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="especificacionmercancia.html">
-                                                    <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </a>
-                                                <a href="editormercancia.html">
-                                                    <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                </a>
-                                                <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>12.09.2015</td>
-                                            <td>Test Customer</td>
-                                            <td>Test Customer</td>
-                                            <td class="text-center">
-                                                <span class="label label-default colorYellow">En Bodega</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="especificacionmercancia.html">
-                                                    <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </a>
-                                                <a href="editormercancia.html">
-                                                    <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                </a>
-                                                <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>12.09.2015</td>
-                                            <td>Test Customer</td>
-                                            <td>Test Customer</td>
-                                            <td class="text-center">
-                                                <span class="label label-default colorPink">Por Llegar</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="especificacionmercancia.html">
-                                                    <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </a>
-                                                <a href="editormercancia.html">
-                                                    <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                </a>
-                                                <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>6</td>
-                                            <td>12.09.2015</td>
-                                            <td>Test Customer</td>
-                                            <td>Test Customer</td>
-                                            <td class="text-center">
-                                                <span class="label label-default colorPink">Por Llegar</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="especificacionmercancia.html">
-                                                    <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </a>
-                                                <a href="editormercancia.html">
-                                                    <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                </a>
-                                                <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>12.09.2015</td>
-                                            <td>Test Customer</td>
-                                            <td>Test Customer</td>
-                                            <td class="text-center">
-                                                <span class="label label-default colorYellow">En Bodega</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="especificacionmercancia.html">
-                                                    <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </a>
-                                                <a href="editormercancia.html">
-                                                    <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                </a>
-                                                <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>12.09.2015</td>
-                                            <td>Test Customer</td>
-                                            <td>Test Customer</td>
-                                            <td class="text-center">
-                                                <span class="label label-default colorBlue">Enviado</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="especificacionmercancia.html">
-                                                    <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </a>
-                                                <a href="editormercancia.html">
-                                                    <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                </a>
-                                                <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>12.09.2015</td>
-                                            <td>Test Customer</td>
-                                            <td>Test Customer</td>
-                                            <td class="text-center">
-                                                <span class="label label-default colorYellow">En Bodega</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="especificacionmercancia.html">
-                                                    <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </a>
-                                                <a href="editormercancia.html">
-                                                    <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                </a>
-                                                <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>12.09.2015</td>
-                                            <td>Test Customer</td>
-                                            <td>Test Customer</td>
-                                            <td class="text-center">
-                                                <span class="label label-default colorYellow">En Bodega</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="especificacionmercancia.html">
-                                                    <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </a>
-                                                <a href="editormercancia.html">
-                                                    <button type="button" class="btn btn-success btn-sm  float-button-light">Editar</button>
-                                                </a>
-                                                <button id="warningAttached" class="btn btn-primary btn-sm float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Eliminar</button>
-                                            </td>
-                                        </tr>-->
                                     </tbody>
                                 </table>
                                 <br>

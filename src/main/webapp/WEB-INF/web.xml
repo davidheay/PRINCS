@@ -38,6 +38,14 @@
         <servlet-name>menuAdminController</servlet-name>
         <servlet-class>app.champion.PRINCS.controlador.menuAdminController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>especificacionMercanciaController</servlet-name>
+        <servlet-class>app.champion.PRINCS.controlador.especificacionMercanciaController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>editorMercanciaController</servlet-name>
+        <servlet-class>app.champion.PRINCS.controlador.editorMercanciaController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/LoginController</url-pattern>
@@ -64,6 +72,14 @@
     <welcome-file-list>
         <welcome-file>LoginController</welcome-file>
     </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>especificacionMercanciaController</servlet-name>
+        <url-pattern>/especificacionMercanciaController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editorMercanciaController</servlet-name>
+        <url-pattern>/editorMercanciaController</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

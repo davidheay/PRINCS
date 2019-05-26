@@ -12,4 +12,6 @@ public interface MercanciaDao {
     public void insertarMercancia(String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String reservaIn, String reservaOut, Integer valor, String moneda);
 
     public void actualizarEstadoMercancia(String idMercancia, String idTipo);
+
+    public void actualizarMercancia(String idMercancia, String idTipo, String estado, String observaciones, String nPiezas, int valor, String moneda);
 }
