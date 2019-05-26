@@ -114,7 +114,7 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>
                                             </li>
@@ -163,7 +163,7 @@
                                             <tr>
                                                 <th>ID Mercancía</th>
                                                 <th>Cliente</th>
-                                                <th>Tipo de Mercancía</th>
+                                                <th>Placa</th>
                                                 <th>Acta</th>
                                                 <th>Fecha</th>
                                             </tr>
@@ -174,13 +174,15 @@
                                                 <tr>
                                                     <td><c:out value="${item.getIdMercancia()}"></c:out></td>
                                                     <td><c:out value="${item.getIdCliente()}"></c:out></td>
-                                                    <td><c:out value="${item.getTipoActa()}"></c:out></td>
+                                                    <td><c:out value="${item.getPlaca()}"></c:out></td>
                                                         <td class="text-center">
-                                                            <a href="acta.html">
-                                                                <button type="button" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                            </a>
-                                                        </td>
-                                                        <td><c:out value="${item.getFecha()}"></c:out></td>
+                                                            <form action="/PRINCS/actaController" method="POST">
+                                                                <input type="hidden" id="idActa" name="idActa" value="${item.getIdReserva()}" >
+                                                            <button type="submit" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                        </form>
+
+                                                    </td>
+                                                    <td><c:out value="${item.getFecha()}"></c:out></td>
                                                     </tr>
                                             </c:forEach>
                                         </tbody>
