@@ -76,7 +76,7 @@ public class editorMercanciaController extends HttpServlet {
             throws ServletException, IOException {
 
         MercanciaDao mercanciaDao = new MercanciaDaoImpl();
-        System.out.println("hola post");
+      
         String idMercancia = (String) request.getParameter("idMercancia");
         Mercancia mercancia = mercanciaDao.listarMercancia(idMercancia).get(0);
 

@@ -10,6 +10,7 @@ import app.champion.PRINCS.dao.ReservaDaoImpl;
 import app.champion.PRINCS.modelo.Reserva;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Date;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -39,12 +40,23 @@ public class creacionActaController extends HttpServlet {
             throws ServletException, IOException {
         ReservaDao reservaDao = new ReservaDaoImpl();
 
-        String idReserva = (String) request.getParameter("idActa");
+        String idReserva = "Valor auto numerico dado por el max de un query";
         String idMercancia = (String) request.getParameter("idMercancia");
         request.setAttribute("idActa", idReserva);
         request.setAttribute("idMercancia", idMercancia);
 
-        request.getRequestDispatcher("creacionacta.jsp").forward(request, response);
+        if (request.getParameter("crear") != null) {
+            System.out.println("crear");
+
+            idReserva = request.getParameter("idActa");
+            idMercancia = request.getParameter("idMercancia");
+            String tipoMercancia = request.getParameter("tipoMer");
+            System.out.println(idReserva + " " + idMercancia + " " + tipoMercancia);
+
+            response.sendRedirect("/PRINCS/verificacionEntradaController");
+        } else {
+            request.getRequestDispatcher("creacionacta.jsp").forward(request, response);
+        }
     }
 
     @Override
@@ -57,8 +69,38 @@ public class creacionActaController extends HttpServlet {
         String idMercancia = (String) request.getParameter("idMercancia");
         request.setAttribute("idActa", idReserva);
         request.setAttribute("idMercancia", idMercancia);
-        request.getRequestDispatcher("creacionacta.jsp").forward(request, response);
 
+        if (request.getParameter("crear") != null) {
+            idReserva = request.getParameter("idActa");
+            idMercancia = request.getParameter("idMercancia");
+            String tipoMercancia = request.getParameter("tipoMer");
+            String cliente = request.getParameter("cliente");
+
+            Integer nPiezas = Integer.parseInt(request.getParameter("nPiezas"));
+            String placa = request.getParameter("placa");
+            Integer valor = Integer.parseInt(request.getParameter("valor"));
+            Float peso = Float.parseFloat(request.getParameter("peso"));
+            Integer idembalaje = Integer.parseInt(request.getParameter("idembalaje"));
+            String nomCondu = request.getParameter("nomCondu");
+            String ccCondu = request.getParameter("ccCondu");
+            String docus = request.getParameter("docus");
+            String etiquetas = request.getParameter("etiquetas");
+            String fecha = request.getParameter("fecha");
+            String estiba = request.getParameter("estiba");
+            String bodega = request.getParameter("bodega");
+            String observaciones = request.getParameter("observaciones");
+            String ccOperario = request.getParameter("ccOperario");
+            String firOperario = request.getParameter("firOperario");
+            String transportadora = request.getParameter("transportadora");
+            String nomOperario = request.getParameter("nomOperario");
+            String moneda = request.getParameter("moneda");
+
+            reservaDao.insertarReserva(idReserva, idMercancia, "ENTRADA", cliente, ccOperario, fecha, placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
+
+            response.sendRedirect("/PRINCS/verificacionEntradaController");
+        } else {
+            request.getRequestDispatcher("creacionacta.jsp").forward(request, response);
+        }
     }
 
     @Override

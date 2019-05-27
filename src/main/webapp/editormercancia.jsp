@@ -190,7 +190,7 @@
                                                     <div class="seleccion pull-right">
                                                         <span class="select-default">
                                                             <select id="tipoMer" name="tipoMer">
-                                                                <option data-display="Seleccionar">Carga Seca</option>
+                                                                <option selected disabled hidden data-display="Seleccionar">Seleccione una opcion</option>
 
                                                                 <option value="T1">CARGA_SECA</option>
                                                                 <option value="T2">PERECEDEROS</option>

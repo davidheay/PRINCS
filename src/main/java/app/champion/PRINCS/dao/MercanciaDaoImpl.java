@@ -116,7 +116,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
     public void actualizarMercancia(String idMercancia, String idTipo, String estado, String observaciones, String nPiezas, int valor, String moneda) {
         Conn conexion = new Conn();
         try {
-            System.out.println("hola actualizar");
+            
             String sql = "exec ActualizarMercancia ?,?,?,?,?,?,?";
 
             PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
@@ -130,7 +130,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
             preparedStatement.setString(7, moneda);
 
             preparedStatement.execute();
-            System.out.println("se ejecuto");
+          
             preparedStatement.close();
 
         } catch (Exception e) {
