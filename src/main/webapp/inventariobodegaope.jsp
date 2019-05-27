@@ -80,7 +80,7 @@
 							</div>
 							<!--sideBarUserConteinerImg-->
 							<div class="sideBarUserConteinerText">
-								<span class="userInfo"><a href="user.html">Operario</a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+								<span class="userInfo"><a href="user.html">Operario</a><br><i class="fa fa-map-marker"></i> Bogota, COL </span>
 							</div>
 							<!--sideBarUserConteinerText-->
 						</div>
@@ -94,21 +94,21 @@
 										<li>
 											<a href="#" aria-expanded="true">
 												<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
-												<span class="sidebar-nav-item">Verificación de Mercancía</span>
+												<span class="sidebar-nav-item">Verificación de Mercancia</span>
 												<span class="fa arrow"></span>
 											</a>
 											<ul aria-expanded="true" class="collapse">
 												<li>
-													<a href="verificacionentrada.jsp">Verificación Entrada</a>
+													<a href="verificacionentrada.jsp">Verificacion Entrada</a>
 												</li>
 												<li>
-													<a href="verificacionsalida.jsp">Verificación Salida</a>
+													<a href="verificacionsalida.jsp">Verificacion Salida</a>
 												</li>
 											</ul>
 										</li>
 											<li>
 												<a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
-                                                Cerrar Sesión
+                                                Cerrar Sesion
                                             </a>
 											</li>
 									</ul>
