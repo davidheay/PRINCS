@@ -49,6 +49,103 @@
                             </form>
                         </div>
                     </div>
+<<<<<<< HEAD
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="mainWrapper">
+		<div id="sideBarWrapper">
+			<div id="sideBarContent">
+				<div id="bar" class="sideBar sideBarDark">
+					<!-- start sitebar-->
+					<div class="sideBarUser">
+						<div class="sideBarUserConteiner">
+							<div class="sideBarUserConteinerImg">
+								<img src="img/user.png" alt="UserInfo" class="userimg">
+							</div>
+							<div class="sideBarUserConteinerText">
+								<span class="userInfo"><a href="user.html">Administrador</a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+							</div>
+						</div>
+					</div>
+					<div id="menuContent">
+						<div id="menuSize">
+							<aside class="sidebar">
+								<nav class="sidebar-nav">
+									<ul class="metismenu" id="menu">
+										<li>
+											<a href="#" aria-expanded="true">
+												<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+												<span class="sidebar-nav-item">Menú Principal</span>
+												<span class="fa arrow"></span>
+											</a>
+											<ul aria-expanded="true" class="collapse">
+												<li>
+													<a href="/PRINCS/consultaMercanciaController">Consultar Mercancía</a>
+												</li>
+												<li>
+													<a href="menuinventario.jsp">Consultar Inventario</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#" aria-expanded="true">
+												<span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+												<span class="sidebar-nav-item">Análisis</span>
+												<span class="fa arrow"></span>
+											</a>
+											<ul aria-expanded="false" class="collapse">
+												<li>
+													<a href="analisisbodega.jsp">
+                                                      De Bodega
+                                                    </a>
+												</li>
+												<li>
+													<a href="analisistipo.jsp">
+                                                    Tipo de carga
+                                                    </a>
+												</li>
+											</ul>
+										</li>
+											<li>
+												<a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
+                                                Cerrar Sesión
+                                            </a>
+											</li>
+									</ul>
+								</nav>
+							</aside>
+						</div>
+					</div>
+					<div class="timeWrapper colorTheme">
+						<div class="menuTime2">
+							<span class="current-time2"></span>
+						</div>
+						<div class="menuTime">
+							<span class="current-time"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mainWrapper" class="mainConteiner column">
+		<div class="mainConteinerConten">
+			<div class="container-fluid footerfix">
+				<div class="row">
+					<div class="col-lg-12 ">
+						<div class="panel panel-default">
+							<div class="panel-heading clearfix">
+								<div class="titulo">
+									       <h3 style="text-align:-webkit-center">Flujo de entrada y salida</h3>
+                                    <br>
+                                    <br>                               
+								</div>
+							</div>
+                            <div class="descripcion" style="padding-left:30px">
+                             <h8 align="center">A continuación podrá ver la gráfica de flujos, donde las unidades del eje "Y" se dan en unidades de mercancia.</h8> 
+=======
                 </div>
             </div>
         </header>
@@ -122,6 +219,7 @@
                             </div>
                             <div class="menuTime">
                                 <span class="current-time"></span>
+>>>>>>> a8962330fe27d3d5beeaa8420d8da644dfae2ed1
                             </div>
                         </div>
                     </div>

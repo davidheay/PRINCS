@@ -137,6 +137,118 @@
             </div>
             <!--sideBarContent-->
         </div>
+<<<<<<< HEAD
+		<!--headerMain -->
+	</header>
+	
+	<div class="mainWrapper">
+		<div id="sideBarWrapper">
+			<div id="sideBarContent">
+				<div id="bar" class="sideBar sideBarDark">
+					<!-- start sitebar-->
+					<div class="sideBarUser">
+						<div class="sideBarUserConteiner">
+							<div class="sideBarUserConteinerImg">
+								<img src="img/user.png" alt="UserInfo" class="userimg">
+							</div>
+							<!--sideBarUserConteinerImg-->
+							<div class="sideBarUserConteinerText">
+								<span class="userInfo"><a href="user.html">Operario</a><br><i class="fa fa-map-marker"></i> Bogota, COL </span>
+							</div>
+							<!--sideBarUserConteinerText-->
+						</div>
+						<!--sideBarUserConteiner-->
+					</div>
+					<div id="menuContent">
+						<div id="menuSize">
+							<aside class="sidebar">
+								<nav class="sidebar-nav">
+									<ul class="metismenu" id="menu">
+										<li>
+											<a href="#" aria-expanded="true">
+												<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+												<span class="sidebar-nav-item">Verificación de Mercancia</span>
+												<span class="fa arrow"></span>
+											</a>
+											<ul aria-expanded="true" class="collapse">
+												<li>
+													<a href="verificacionentrada.jsp">Verificacion Entrada</a>
+												</li>
+												<li>
+													<a href="verificacionsalida.jsp">Verificacion Salida</a>
+												</li>
+											</ul>
+										</li>
+											<li>
+												<a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
+                                                Cerrar Sesion
+                                            </a>
+											</li>
+									</ul>
+								</nav>
+							</aside>
+						</div>
+						<!--menuSize-->
+					</div>
+					<!--	menuContent-->
+
+
+					<div class="timeWrapper colorTheme">
+						<div class="menuTime2">
+							<span class="current-time2"></span>
+						</div>
+						<div class="menuTime">
+							<span class="current-time"></span>
+						</div>
+					</div>
+				</div>
+				<!--menuSize-->
+			</div>
+			<!--sideBar-->
+		</div>
+		<!--sideBarContent-->
+	</div>
+	<!--sideBarWrapper--> 	
+	<div id="mainWrapper" class="mainConteiner column">
+		<!--start nainconteiner-->
+		<div class="mainConteinerConten">
+			
+				<!--	MEIN CONTENT  -->
+				<div class="row">
+					<div class="col-lg-12 ">
+						<div class="panel panel-default">
+							<div class="panel-heading clearfix">
+								<div class="titulo">
+									<h3 style="text-align:-webkit-center">Inventario en Bodega</h3>
+								</div>
+								
+							</div>
+							
+							<div class="panel-body">
+								<div class="dataTableWrapper">
+									<table id="example1" class="display tableWrapper">
+										<thead>
+											<tr>
+												<th>ID Mercancía</th>
+												<th>Cliente</th>
+												<th>Tipo de Mercancía</th>
+												<th>Estiba</th>
+												
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th>Id Mercancía</th>
+												<th>Cliente</th>
+												<th>Tipo de Mercancía</th>
+												<th>Estiba</th>
+												
+												
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+=======
         <!--sideBarWrapper-->
         <div id="mainWrapper" class="mainConteiner column">
             <!--start nainconteiner-->
@@ -167,6 +279,180 @@
                                         </thead>
 
                                         <tbody>
+<<<<<<< HEAD
+=======
+                                            <tr>
+>>>>>>> a8962330fe27d3d5beeaa8420d8da644dfae2ed1
+                                                <td><a href="especificacionmercanciao.html">Tiger Nixon</a></td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Garrett Winters</a></td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Ashton Cox</a></td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Cedric Kelly</a></td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Airi Satou</a></td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Brielle Williamson</a></td>
+                                                <td>Integration Specialist</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Herrod Chandler</a></td>
+                                                <td>Sales Assistant</td>
+                                                <td>San Francisco</td>
+                                                <td>59</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Rhona Davidson</a></td>
+                                                <td>Integration Specialist</td>
+                                                <td>Tokyo</td>
+                                                <td>55</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Colleen Hurst</a></td>
+                                                <td>Javascript Developer</td>
+                                                <td>San Francisco</td>
+                                                <td>39</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Sonya Frost</a></td>
+                                                <td>Software Engineer</td>
+                                                <td>Edinburgh</td>
+                                                <td>23</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Jena Gaines</a></td>
+                                                <td>Office Manager</td>
+                                                <td>London</td>
+                                                <td>30</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Quinn Flynn</a></td>
+                                                <td>Support Lead</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Charde Marshall</a></td>
+                                                <td>Regional Director</td>
+                                                <td>San Francisco</td>
+                                                <td>36</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Haley Kennedy</a></td>
+                                                <td>Senior Marketing Designer</td>
+                                                <td>London</td>
+                                                <td>43</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Tatyana Fitzpatrick</a></td>
+                                                <td>Regional Director</td>
+                                                <td>London</td>
+                                                <td>19</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Michael Silva</a></td>
+                                                <td>Marketing Designer</td>
+                                                <td>London</td>
+                                                <td>66</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Paul Byrd</a></td>
+                                                <td>Chief Financial Officer (CFO)</td>
+                                                <td>New York</td>
+                                                <td>64</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Gloria Little</a></td>
+                                                <td>Systems Administrator</td>
+                                                <td>New York</td>
+                                                <td>59</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Bradley Greer</a></td>
+                                                <td>Software Engineer</td>
+                                                <td>London</td>
+                                                <td>41</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Dai Rios</a></td>
+                                                <td>Personnel Lead</td>
+                                                <td>Edinburgh</td>
+                                                <td>35</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Jenette Caldwell</a></td>
+                                                <td>Development Lead</td>
+                                                <td>New York</td>
+                                                <td>30</td>
+                                            <tr>
+                                                <td><a href="especificacionmercanciao.html">Tiger Nixon</a></td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+
+>>>>>>> c4f8edb08f020400c9442c72f2e835b1169a28db
 
                                             <c:forEach var="item" items="${lstMercancias}">
 

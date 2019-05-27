@@ -452,8 +452,12 @@
                                 <br>
                                 <br>
                                 <div class="seleccion pull-right" style="padding-top: 10px">
+								
+							
                                     <button  onclick="document.getElementById('crear').value = 'crear'" type="submit"  class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" >Crear</button>
-                                </div>
+                              
+							   
+							   </div>
                             </div>
                         </div>
                     </div>
