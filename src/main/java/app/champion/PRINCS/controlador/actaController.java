@@ -40,7 +40,7 @@ public class actaController extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) {
         try {
-            System.out.println("entre");
+            
             response.setContentType("application/pdf");
             OutputStream archivo = response.getOutputStream();
             String idReserva = request.getParameter("idActa");
@@ -69,7 +69,7 @@ public class actaController extends HttpServlet {
                     + "               " + "Placa: " + reserva.getPlaca()));
             documento.add(new Paragraph("\n"));
             documento.add(new Paragraph("Lote: " + reserva.getIdLote() + "                             "
-                    + "                                            " + "Estiba: " + reserva.getEstiba()));
+                    + "                                               " + "Estiba: " + reserva.getEstiba()));
             documento.add(new Paragraph("\n"));
             documento.add(new Paragraph("Nombre del Conductor: " + reserva.getNombreConductor()));
             documento.add(new Paragraph("\n"));
@@ -78,7 +78,7 @@ public class actaController extends HttpServlet {
             documento.add(new Paragraph("Peso: " + reserva.getPeso()));
             documento.add(new Paragraph("\n"));
             documento.add(new Paragraph("Valor: " + reserva.getValor() + "                                          "
-                    + "                             " + "Moneda: " + reserva.getMoneda()));
+                    + "                          " + "Moneda: " + reserva.getMoneda()));
             documento.add(new Paragraph("\n"));
 
             documento.add(new Paragraph("Foto: " + reserva.getRegFotografico()));
@@ -93,7 +93,7 @@ public class actaController extends HttpServlet {
             documento.add(new Paragraph("Firma: " + reserva.getFirma()));
 
             documento.close();
-            System.out.println("se genero correctamente");
+           
         } catch (Exception e) {
             System.out.println(e);
         }
