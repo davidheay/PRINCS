@@ -1,7 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
 <!DOCTYPE html>
-
 <html lang="en">
 
     <head>
@@ -11,7 +10,7 @@
         <meta name="description" content="bootstrap admin template">
         <meta name="author" content="">
 
-        <title>Menú Operario </title>
+        <title>Menú Verificación Mercancia </title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -47,13 +46,9 @@
                     <div class="nawbarMain  headerWrapper clearfix">
                         <div class="nawbarMainLeft ">
                             <div class="champion">
-                                <img src="img/championpeque.png" alt="" width=40%>
+                                <img src="img/championpeque.png" alt="" width=30%>
                             </div>
-                            <!--mainLogo-->
-                            <!--headerLogo-->
                         </div>
-                        <!--nawbarMainLeft-->
-                        <!--nawbarMainRight-->
                         <div id="sb-search" class="sb-search" style="visibility: hidden">
                             <form>
                                 <input class="sb-search-input" placeholder="Enter search" type="search" value="" name="search" id="search">
@@ -73,7 +68,51 @@
         <div class="mainWrapper">
             <div id="sideBarWrapper">
                 <div id="sideBarContent">
-
+                    <div id="bar" class="sideBar sideBarDark">
+                        <!-- start sitebar-->
+                        <div class="sideBarUser">
+                            <div class="sideBarUserConteiner">
+                                <div class="sideBarUserConteinerImg">
+                                    <img src="img/user.png" alt="UserInfo" class="userimg">
+                                </div>
+                                <!--sideBarUserConteinerImg-->
+                                <div class="sideBarUserConteinerText">
+                                    <span class="userInfo"><a href="user.html">Operario </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+                                </div>
+                                <!--sideBarUserConteinerText-->
+                            </div>
+                            <!--sideBarUserConteiner-->
+                        </div>
+                        <div id="menuContent">
+                            <div id="menuSize">
+                                <aside class="sidebar">
+                                    <nav class="sidebar-nav">
+                                        <ul class="metismenu" id="menu">
+                                            <li>
+                                                <a href="inventariobodegaope.jsp"><span class="glyphicon glyphicon-th-large"></span>
+                                                    Consulta de Inventario en Bodega
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                    Cerrar Sesión
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </aside>
+                            </div>
+                            <!--menuSize-->
+                        </div>
+                        <div class="timeWrapper colorTheme">
+                            <div class="menuTime2">
+                                <span class="current-time2"></span>
+                            </div>
+                            <div class="menuTime">
+                                <span class="current-time"></span>
+                            </div>
+                        </div>
+                    </div>
                     <!--menuSize-->
                 </div>
                 <!--sideBar-->
@@ -87,69 +126,66 @@
                 <div class="container-fluid footerfix">
 
                     <!--	MEIN CONTENT  -->
-                    <div class="row" >
-                        <div class="col-lg-12 " >
+                    <div class="row">
+                        <div class="col-lg-12 ">
                             <div class="panel panel-default">
                                 <div class="panel-heading clearfix">
                                     <div class="panel-heading-title pull-left">
-                                        <h3>Bienvenido Operario</h3>
-                                        <h8>Por favor seleccione una operación</h8>
+                                        <h3>Verificación de Mercancía</h3>
+                                        <h8>Por favor seleccione una opción</h8>
                                     </div>
-                                    <!--panel-heading-title-->
-                                    <div class="panel-heading-buttons pull-right">
-                                        <div class="bs-example">
-                                            <ul class="clearfix">
-
-
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!--panel-heading-buttons-->
                                 </div>
                                 <!--panel-->
                                 <div class="panel-body">
                                     <div class="row">
-
-                                        <div class="col-lg-3 alertWrapper clerfix " >
-                                            <a href="menuverificacion.jsp">
-                                                <div class="inventario">
+                                        <div class="col-lg-3 alertWrapper clerfix">
+                                            <a href="/PRINCS/verificacionEntradaController">
+                                                <div class="in">
                                                     <center>
-                                                        <img src="img/inventario.png" alt="" >
+                                                        <img src="img/in.jpg" alt="" >
                                                     </center>
                                                 </div>
                                                 <br>
-                                                <button id="basic" class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Verificar Mercancia</button>
+                                                <button id="basic" class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1"> Mercancía Entrada</button>
                                             </a>
                                         </div>
+
                                         <div class="col-lg-3 alertWrapper">
-                                            <a href="inventariobodegaope.html">
-                                                <div class="mercancia">
+                                            <a href="verificacionsalida.html">
+                                                <div class="salida">
                                                     <center>
-                                                        <img src="img/mercancia.png" alt="" >
+                                                        <img src="img/out.jpg" alt="" >
                                                     </center>
                                                 </div>
                                                 <br>
-                                                <button id="titleWithText" class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Consultar Inventario en Bodega</button>
+                                                <button id="titleWithText" class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1"> Mercancía Salida</button>
                                             </a>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--panel-body-->
-                        </div>
-                    </div>
 
+                                    </div>
+
+                                </div>
+                                <!--panel-body-->
+                            </div>
+                        </div>
+                        <!--row-->
+
+                        <!--row-->
+
+                        <!--panel-->
+
+                    </div>
+                    <!--panel-body-->
                 </div>
-                <!--container-fluid-->
             </div>
-            <!--mainConteinerConten-->
+            <!--row-->
+            <!--MEIN CONTENT-->
             <div class="fotterWrapper">
                 © 2019 Copyright.
             </div>
             <!--fotterWrapper-->
         </div>
-        <!--mainConteinerConten-->
+
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="lib/sparklineChart/sparkline.min.js"></script>

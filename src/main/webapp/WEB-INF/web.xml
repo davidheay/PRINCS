@@ -58,6 +58,14 @@
         <servlet-name>inventarioBodegaController</servlet-name>
         <servlet-class>app.champion.PRINCS.controlador.inventarioBodegaController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>verificacionEntradaController</servlet-name>
+        <servlet-class>app.champion.PRINCS.controlador.verificacionEntradaController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>creacionActaController</servlet-name>
+        <servlet-class>app.champion.PRINCS.controlador.creacionActaController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/LoginController</url-pattern>
@@ -103,6 +111,14 @@
     <servlet-mapping>
         <servlet-name>inventarioBodegaController</servlet-name>
         <url-pattern>/inventarioBodegaController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>verificacionEntradaController</servlet-name>
+        <url-pattern>/verificacionEntradaController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>creacionActaController</servlet-name>
+        <url-pattern>/creacionActaController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
