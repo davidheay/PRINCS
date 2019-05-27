@@ -39,12 +39,23 @@ public class creacionActaController extends HttpServlet {
             throws ServletException, IOException {
         ReservaDao reservaDao = new ReservaDaoImpl();
 
-        String idReserva = (String) request.getParameter("idActa");
+        String idReserva = "Valor auto numerico dado por el max de un query";
         String idMercancia = (String) request.getParameter("idMercancia");
         request.setAttribute("idActa", idReserva);
         request.setAttribute("idMercancia", idMercancia);
 
-        request.getRequestDispatcher("creacionacta.jsp").forward(request, response);
+        if (request.getParameter("crear") != null) {
+            System.out.println("crear");
+
+            idReserva = request.getParameter("idActa");
+            idMercancia = request.getParameter("idMercancia");
+            String tipoMercancia = request.getParameter("tipoMer");
+            System.out.println(idReserva + " " + idMercancia + " " + tipoMercancia);
+
+            response.sendRedirect("/PRINCS/verificacionEntradaController");
+        } else {
+            request.getRequestDispatcher("creacionacta.jsp").forward(request, response);
+        }
     }
 
     @Override
@@ -57,8 +68,18 @@ public class creacionActaController extends HttpServlet {
         String idMercancia = (String) request.getParameter("idMercancia");
         request.setAttribute("idActa", idReserva);
         request.setAttribute("idMercancia", idMercancia);
-        request.getRequestDispatcher("creacionacta.jsp").forward(request, response);
 
+        if (request.getParameter("crear") != null) {
+            System.out.println("crear");
+
+            idReserva = request.getParameter("idActa");
+            idMercancia = request.getParameter("idMercancia");
+            String tipoMercancia = request.getParameter("tipoMer");
+
+            response.sendRedirect("/PRINCS/verificacionEntradaController");
+        } else {
+            request.getRequestDispatcher("creacionacta.jsp").forward(request, response);
+        }
     }
 
     @Override
