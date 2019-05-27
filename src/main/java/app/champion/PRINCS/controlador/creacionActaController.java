@@ -38,6 +38,7 @@ public class creacionActaController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         ReservaDao reservaDao = new ReservaDaoImpl();
 
         String idReserva = "Valor auto numerico dado por el max de un query";
@@ -46,12 +47,32 @@ public class creacionActaController extends HttpServlet {
         request.setAttribute("idMercancia", idMercancia);
 
         if (request.getParameter("crear") != null) {
-            System.out.println("crear");
-
+            System.out.println("a crear");
             idReserva = request.getParameter("idActa");
             idMercancia = request.getParameter("idMercancia");
             String tipoMercancia = request.getParameter("tipoMer");
-            System.out.println(idReserva + " " + idMercancia + " " + tipoMercancia);
+            String cliente = request.getParameter("cliente");
+
+            Integer nPiezas = Integer.parseInt(request.getParameter("nPiezas"));
+            String placa = request.getParameter("placa");
+            Integer valor = Integer.parseInt(request.getParameter("valor"));
+            Float peso = Float.parseFloat(request.getParameter("peso"));
+            Integer idembalaje = Integer.parseInt(request.getParameter("idembalaje"));
+            String nomCondu = request.getParameter("nomCondu");
+            String ccCondu = request.getParameter("ccCondu");
+            String docus = request.getParameter("docus");
+            String etiquetas = request.getParameter("etiquetas");
+            String fecha = request.getParameter("fecha");
+            String estiba = request.getParameter("estiba");
+            String bodega = request.getParameter("bodega");
+            String observaciones = request.getParameter("observaciones");
+            String ccOperario = request.getParameter("ccOperario");
+            String firOperario = request.getParameter("firOperario");
+            String transportadora = request.getParameter("transportadora");
+            String nomOperario = request.getParameter("nomOperario");
+            String moneda = request.getParameter("moneda");
+
+            reservaDao.insertarReserva(idReserva, idMercancia, "ENTRADA", cliente, ccOperario, fecha, placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
 
             response.sendRedirect("/PRINCS/verificacionEntradaController");
         } else {
@@ -71,6 +92,7 @@ public class creacionActaController extends HttpServlet {
         request.setAttribute("idMercancia", idMercancia);
 
         if (request.getParameter("crear") != null) {
+            System.out.println("a crear");
             idReserva = request.getParameter("idActa");
             idMercancia = request.getParameter("idMercancia");
             String tipoMercancia = request.getParameter("tipoMer");
