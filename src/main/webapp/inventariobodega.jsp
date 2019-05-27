@@ -82,7 +82,7 @@
                                 </div>
                                 <!--sideBarUserConteinerImg-->
                                 <div class="sideBarUserConteinerText">
-                                    <span class="userInfo"><a href="user.html">Administrador</a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+                                    <span class="userInfo"><a href="/PRINCS/LoginController">Administrador</a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
                                 </div>
                                 <!--sideBarUserConteinerText-->
                             </div>
@@ -184,20 +184,25 @@
                                         <tbody>
 
                                             <c:forEach var="item" items="${lstMercancias}">
-                                                <tr>
-                                                    <td><c:out value="${item.getIdMercancia()}"></c:out></td>
-                                                    <td><c:out value="${item.getIdCliente()}"></c:out></td>
-                                                    <td><c:out value="${item.getIdTipo()}"></c:out></td>
-                                                        <td>
-                                                            <form action="/PRINCS/actaController" method="POST">
-                                                                <input type="hidden" id="idActa" name="idActa" value="${item.getReservaIn()}" >
-                                                            <button type="submit" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                        </form>
-                                                    </td>
-                                                    <td><c:out value="${item.getnPiezas()}"></c:out></td>
+                                                <c:set var="esta" value="${item.getEstado()}"></c:set>
+                                                <c:set var="actain" value="${item.getReservaIn()}"></c:set>
+
+                                                <c:if test="${actain ne 'NULL' }">
+                                                    <tr>
+                                                        <td><c:out value="${item.getIdMercancia()}"></c:out></td>
+                                                        <td><c:out value="${item.getIdCliente()}"></c:out></td>
+                                                        <td><c:out value="${item.getIdTipo()}"></c:out></td>
+                                                            <td>
+                                                                <form action="/PRINCS/actaController" method="POST">
+                                                                    <input type="hidden" id="idActa" name="idActa" value="${item.getReservaIn()}" >
+                                                                <button type="submit" class="btn btn-info btn-sm  float-button-light">Ver</button>
+                                                            </form>
+                                                        </td>
+                                                        <td><c:out value="${item.getnPiezas()}"></c:out></td>
 
 
-                                                    </tr>
+                                                        </tr>
+                                                </c:if>
                                             </c:forEach>
 
 

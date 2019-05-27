@@ -77,7 +77,7 @@
                                 </div>
                                 <!--sideBarUserConteinerImg-->
                                 <div class="sideBarUserConteinerText">
-                                    <span class="userInfo"><a href="user.html">Administrador </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+                                    <span class="userInfo"><a href="/PRINCS/LoginController">Administrador </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
                                 </div>
                                 <!--sideBarUserConteinerText-->
                             </div>
@@ -173,9 +173,9 @@
                                                 <td><c:out value="${item.getIdCliente()}"></c:out></td>
                                                 <td><c:out value="${item.getIdTipo()}"></c:out></td>
                                                 <td> <span <c:choose>
-                                                            <c:when test="${estado == 'IN STOCK'}"> class="label label-default colorYellow"</c:when>
-                                                            <c:when test="${estado == 'ON HOLD'}"> class="label label-default colorPink"</c:when>
-                                                            <c:when test="${estado == 'CLOSED'}">   class="label label-default colorBlue"  </c:when>
+                                                            <c:when test="${estado == 'POR LLEGAR'}"> class="label label-default colorYellow"</c:when>
+                                                            <c:when test="${estado == 'EN BODEGA'}"> class="label label-default colorPink"</c:when>
+                                                            <c:when test="${estado == 'ENVIADO'}">   class="label label-default colorBlue"  </c:when>
                                                             <c:otherwise>  </c:otherwise>
                                                         </c:choose>>
                                                         <c:out value="${item.getEstado()}"></c:out>
@@ -191,7 +191,7 @@
                                                             <button type="submit" class="btn btn-info btn-sm  float-button-light">Ver</button>
 
                                                         </form>
-                                                        <form action="/PRINCS/especificacionMercanciaController" method="POST">
+                                                        <form action="/PRINCS/editorMercanciaController" method="POST">
                                                             <input type="hidden" id="idMercancia" name="idMercancia" value=<c:out value="${item.getIdMercancia()}"></c:out>>
                                                             <button type="submit" class="btn btn-success btn-sm  float-button-light">Editar</button>
 

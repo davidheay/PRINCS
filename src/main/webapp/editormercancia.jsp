@@ -85,7 +85,7 @@
                                 </div>
                                 <!--sideBarUserConteinerImg-->
                                 <div class="sideBarUserConteinerText">
-                                    <span class="userInfo"><a href="user.html">Administrador </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+                                    <span class="userInfo"><a href="/PRINCS/LoginController">Administrador </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
                                 </div>
                                 <!--sideBarUserConteinerText-->
                             </div>
@@ -185,11 +185,15 @@
 
                                                 <div class="buttonWrapper" style="padding: inherit" >
                                                     <div class="TIPO pull-left" style="padding-top: 10px;padding-left: 1px">
-                                                        <label>TIPO DE MERCANCÍA</label>
+                                                        <label>TIPO DE MERCANCÍA : </label>
+                                                        <br>
+                                                        <label><%= request.getAttribute("tipo")%></label>
                                                     </div>
+
                                                     <div class="seleccion pull-right">
                                                         <span class="select-default">
-                                                            <select id="tipoMer" name="tipoMer">
+
+                                                            <select required id="tipoMer" name="tipoMer">
                                                                 <option selected disabled hidden data-display="Seleccionar">Seleccione una opcion</option>
 
                                                                 <option value="T1">CARGA_SECA</option>
@@ -200,19 +204,25 @@
                                                             </select>
                                                         </span>
                                                     </div>
-                                                    <br>
+
                                                 </div>
+                                                <br>
+                                                <br>
                                                 <div class="buttonWrapper" style="padding: inherit" >
                                                     <div class="Estado pull-left" style="padding-top: 10px;padding-left: 1px">
-                                                        <label>Estado</label>
+                                                        <label>Estado:</label>
+                                                        <br>
+                                                        <label><%= request.getAttribute("estado")%></label>
+
                                                     </div>
                                                     <div class="seleccion pull-right">
                                                         <span class="select-primary">
-                                                            <select id="estado" name="estado" value="<%= request.getAttribute("estado")%>">
+                                                            <select required id="estado" name="estado">
                                                                 <option selected disabled hidden data-display="Seleccionar">Seleccione una opcion</option>
-                                                                <option value="ES1">ON HOLD</option>
-                                                                <option value="ES2">IN STOCK</option>
-                                                                <option value="ES3">CLOSED</option>
+                                                                <option value="ES1">POR LLEGAR</option>
+                                                                <option value="ES2">EN BODEGA</option>
+                                                                <option value="ES3">ENVIADO</option>
+                                                                <option value="ES4">NO APLICA</option>
 
                                                             </select>
                                                         </span>
@@ -265,7 +275,7 @@
                                     </div>
                                     <div class="col-lg-3 alertWrapper" style="align-items: right">
                                         <input type="hidden" id="cambio" name="cambio">
-                                        <button type="submit" onclick="document.getElementById('cambio').value = cambio" id="createMessage" class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Añadir Cambios</button>
+                                        <button type="submit" onclick="document.getElementById('cambio').value = cambio"  class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" >Añadir Cambios</button>
 
                                     </div>
 
