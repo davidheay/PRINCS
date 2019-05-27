@@ -128,9 +128,50 @@ public class ReservaDaoImpl implements ReservaDao {
 
     @Override
     public void insertarReserva(String idReserva, String idMercancia, String tipoActa, String idCliente,
-            String idEmpleado, Date fecha, String placa, String idTransportadora, Integer nPiezas, String Id_Lote, String Estiba,
+            String idEmpleado, String fecha, String placa, String idTransportadora, Integer nPiezas, String Id_Lote, String Estiba,
             String nombreConductor, String cedulaConductor, String documentos, Float peso, Integer valor, Integer idEmbalaje, String Etiquetas,
             String Reg_Fotografico, String ID_Estado, String observaciones, String Firma, String Entrega_Nom, String cc_Entrega, String Moneda) {
+
+        Conn conexion = new Conn();
+        try {
+
+            String sql = "insert into Reserva Values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+
+            PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
+
+            preparedStatement.setString(1, idReserva);
+            preparedStatement.setString(2, idMercancia);
+            preparedStatement.setString(3, tipoActa);
+            preparedStatement.setString(4, idCliente);
+            preparedStatement.setString(5, idEmpleado);
+            preparedStatement.setString(6, fecha);
+            preparedStatement.setString(7, placa);
+            preparedStatement.setString(8, idTransportadora);
+            preparedStatement.setInt(9, nPiezas);
+            preparedStatement.setString(10, Id_Lote);
+            preparedStatement.setString(11, Estiba);
+            preparedStatement.setString(12, nombreConductor);
+            preparedStatement.setString(13, cedulaConductor);
+            preparedStatement.setString(14, documentos);
+            preparedStatement.setFloat(15, peso);
+            preparedStatement.setInt(16, valor);
+            preparedStatement.setInt(17, idEmbalaje);
+            preparedStatement.setString(18, Etiquetas);
+            preparedStatement.setString(19, Reg_Fotografico);
+            preparedStatement.setString(20, ID_Estado);
+            preparedStatement.setString(21, observaciones);
+            preparedStatement.setString(22, Firma);
+            preparedStatement.setString(23, Entrega_Nom);
+            preparedStatement.setString(24, cc_Entrega);
+            preparedStatement.setString(25, Moneda);
+
+            preparedStatement.execute();
+
+            preparedStatement.close();
+
+        } catch (SQLException e) {
+            logger.error(e + " " + e.getMessage());
+        }
 
     }
 

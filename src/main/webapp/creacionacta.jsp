@@ -187,7 +187,7 @@
                                         <LABEL>ID MERCANCÍA</LABEL>
                                         <div class="input-group input-default">
                                             <span class="input-group-addon border-left" id="basic-addon3"></span>
-                                            <input required name="idMercancia"  value="<%= request.getAttribute("idMercancia")%>" name="idMercancia" type="text" readonly=»readonly» class="form-control" placeholder="ID Mercancía" aria-describedby="basic-addon1">
+                                            <input required name="idMercancia"  value="<%= request.getAttribute("idMercancia")%>"  type="text" readonly=»readonly» class="form-control" placeholder="ID Mercancía" aria-describedby="basic-addon1">
                                         </div>
                                         <br>
                                         <div class="panel-body" style="padding-top: 5px; padding-right: 10px">
@@ -315,7 +315,7 @@
                                                 </div>
                                                 <div class="seleccion pull-right">
                                                     <span class="select-default">
-                                                        <select>
+                                                        <select  required name="transportadora" >
                                                             <option selected disabled hidden data-display="Seleccionar">Seleccione una opcion</option>
                                                             <option value="TR1">ENVIA</option>
                                                             <option value="TR2">DEPRISA</option>
