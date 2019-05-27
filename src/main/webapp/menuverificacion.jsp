@@ -89,7 +89,7 @@
                                     <nav class="sidebar-nav">
                                         <ul class="metismenu" id="menu">
                                             <li>
-                                                <a href="inventariobodegaope.html"><span class="glyphicon glyphicon-th-large"></span>
+                                                <a href="inventariobodegaope.jsp"><span class="glyphicon glyphicon-th-large"></span>
                                                     Consulta de Inventario en Bodega
                                                 </a>
                                             </li>
