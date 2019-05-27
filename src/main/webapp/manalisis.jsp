@@ -81,7 +81,7 @@
                                 </div>
                                 <!--sideBarUserConteinerImg-->
                                 <div class="sideBarUserConteinerText">
-                                    <span class="userInfo"><a href="user.html">Administrador </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+                                    <span class="userInfo"><a href="/PRINCS/LoginController">Administrador </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
                                 </div>
                                 <!--sideBarUserConteinerText-->
                             </div>
@@ -108,6 +108,7 @@
                                                 </ul>
                                             </li>
                                             <li>
+
                                                 <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>

@@ -34,7 +34,7 @@ public class inventarioHistoricoController extends HttpServlet {
         ReservaDao reservaDao = new ReservaDaoImpl();
         MercanciaDao mercanciaDao = new MercanciaDaoImpl();
         request.setAttribute("lstReservas", reservaDao.listarReservas());
-        request.setAttribute("lstMercancias", mercanciaDao.listarMercancia(reservaDao.listarReservas().get(0).getIdMercancia()));
+
         request.getRequestDispatcher("inventariohistorico.jsp").forward(request, response);
     }
 

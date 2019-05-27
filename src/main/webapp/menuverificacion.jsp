@@ -77,7 +77,7 @@
                                 </div>
                                 <!--sideBarUserConteinerImg-->
                                 <div class="sideBarUserConteinerText">
-                                    <span class="userInfo"><a href="user.html">Operario </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
+                                    <span class="userInfo"><a href="/PRINCS/LoginController">Operario </a><br><i class="fa fa-map-marker"></i> Bogotá, COL </span>
                                 </div>
                                 <!--sideBarUserConteinerText-->
                             </div>
@@ -94,7 +94,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>
                                             </li>

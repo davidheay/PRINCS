@@ -109,7 +109,7 @@
                                                 <a href="/PRINCS/consultaMercanciaController">
                                                     <div class="mercancia">
                                                         <center>
-                                                            <img src="img/mercancia.PNG" alt=""/>
+                                                            <img src="img/mercancia.png" alt=""/>
                                                         </center>
                                                     </div>
                                                     <br>
@@ -120,7 +120,7 @@
                                                 <a href="menuinventario.jsp">
                                                     <div class="inventario">
                                                         <center>
-                                                            <img src="img/inventario.PNG" alt=""/>
+                                                            <img src="img/inventario.png" alt=""/>
                                                         </center>
                                                     </div>
                                                     <br>
@@ -131,7 +131,7 @@
                                                 <a href="manalisis.jsp">
                                                     <div class="analizar">
                                                         <center>
-                                                            <img src="img/analisis.PNG" alt=""/>
+                                                            <img src="img/analisis.png" alt=""/>
                                                         </center>
                                                     </div>
                                                     <br>
