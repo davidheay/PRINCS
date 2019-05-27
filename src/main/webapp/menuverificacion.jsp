@@ -151,7 +151,7 @@
                                         </div>
 
                                         <div class="col-lg-3 alertWrapper">
-                                            <a href="verificacionsalida.html">
+                                            <a href="/PRINCS/verificacionSalidaController">
                                                 <div class="salida">
                                                     <center>
                                                         <img src="img/out.jpg" alt="" >

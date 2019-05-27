@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="windows-1252"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +10,7 @@
         <meta name="description" content="bootstrap admin template">
         <meta name="author" content="">
 
-        <title>Verificaci√≥n Salida</title>
+        <title>VerificaciÛn Salida</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -46,7 +48,7 @@
                     <div class="nawbarMain  headerWrapper clearfix">
                         <div class="nawbarMainLeft ">
                             <div class="champion">
-                                <img src="img/championpeque.png" alt=""/ width=30%>
+                                <img src="img/championpeque.png" alt="" width=30%>
                             </div>
                             <!--mainLogo-->
                             <!--headerLogo-->
@@ -81,7 +83,7 @@
                                 </div>
                                 <!--sideBarUserConteinerImg-->
                                 <div class="sideBarUserConteinerText">
-                                    <span class="userInfo"><a href="/PRINCS/LoginController"> Operario</a><br><i class="fa fa-map-marker"></i> Bogot√°, COL </span>
+                                    <span class="userInfo"><a href="/PRINCS/LoginController"> Operario</a><br><i class="fa fa-map-marker"></i> Bogot·, COL </span>
                                 </div>
                                 <!--sideBarUserConteinerText-->
                             </div>
@@ -95,24 +97,24 @@
                                             <li>
                                                 <a href="#" aria-expanded="true">
                                                     <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
-                                                    <span class="sidebar-nav-item">Verificaci√≥n de Mercanc√≠a</span>
+                                                    <span class="sidebar-nav-item">VerificaciÛn de MercancÌa</span>
                                                     <span class="fa arrow"></span>
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="verificacionentrada.jsp">Verificaci√≥n Entrada</a>
+                                                        <a href="verificacionentrada.html">VerificaciÛn Entrada</a>
                                                     </li>
                                                 </ul>
 
                                             </li>
                                             <li>
-                                                <a href="inventariobodegaope.jsp"><span class="glyphicon glyphicon-th-large"></span>
+                                                <a href="inventariobodegaope.html"><span class="glyphicon glyphicon-th-large"></span>
                                                     Consultar Inventario en Bodega
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
-                                                    Cerrar Sesi√≥n
+                                                    Cerrar SesiÛn
                                                 </a>
                                             </li>
                                         </ul>
@@ -164,7 +166,7 @@
                                                 </button>
                                             </div>
                                             <div class="titulo">
-                                                <h3 style="text-align:-webkit-center">Verificaci√≥n Salida</h3>
+                                                <h3 style="text-align:-webkit-center">VerificaciÛn Salida</h3>
                                             </div>
                                             <!-- /.navbar-collapse -->
                                         </div>
@@ -177,126 +179,36 @@
                                             <thead>
                                                 <tr class="selectedTableHeader">
                                                     <td class="selectedTableOrders" style="width: 50px">ID MERCANCIA</td>
-                                                    <td class="selectedTablePurcahsed">TIPO DE MERCANC√çA</td>
+                                                    <td class="selectedTablePurcahsed">TIPO DE MERCANCÕA</td>
                                                     <td class="selectedTableCustomer">CLIENTE</td>
                                                     <td class="selectedTableStatus">OBSERVACIONES</td>
                                                     <td class="selectedTableActions">ACTA</td>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">1</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
-                                                    <td> </td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">2</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
-                                                    <td></td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">3</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
-                                                    <td></td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">4</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
-                                                    <td></td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">5</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
-                                                    <td></td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">6</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
-                                                    <td></td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">7</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
-                                                    <td></td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">8</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
-                                                    <td></td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">9</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
 
-                                                    <td></td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="especificacionmercanciao.html">10</a></td>
-                                                    <td>12.09.2015</td>
-                                                    <td>Test Customer</td>
+                                                <c:forEach var="item" items="${lstMercancias}">
+                                                    <c:set var="actain" value="${item.getReservaIn()}"></c:set>
+                                                    <c:set var="actaout" value="${item.getReservaOut()}"></c:set>
+
+                                                    <c:if test="${actain ne 'NULL' && actaout eq 'NULL' }">
+                                                        <tr>
+                                                            <td><c:out value="${item.getIdMercancia()}"></c:out></td>
+                                                            <td><c:out value="${item.getIdTipo()}"></c:out></td>
+                                                            <td><c:out value="${item.getIdCliente()}"></c:out></td>
+                                                            <td><c:out value="${item.getObservaciones()}"></c:out></td>
+                                                                <td class="text-center">
+                                                                    <form action="/PRINCS/creacionActaController" method="POST">
+                                                                        <input type="hidden" id="idMercancia" name="idMercancia" value=<c:out value="${item.getIdMercancia()}"></c:out>>
+                                                                        <input type="hidden" id="tActa" name="tActa" value="OUT">
+                                                                        <button type="submit" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
+                                                                    </form>
+                                                                </td>
 
 
-                                                    <td></td>
-                                                    <td class="text-center">
-                                                        <a href="creacionacta.html">
-                                                            <button type="button" class="btn btn-info btn-sm  float-button-light">Crear Acta OUT</button>
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                                            </tr>
+                                                    </c:if>
+                                                </c:forEach>
                                             </tbody>
                                         </table>
                                         <br>
@@ -315,7 +227,7 @@
             </div>
             <!--mainConteinerConten-->
             <div class="fotterWrapper">
-                ¬© 2019 Copyright.
+                © 2019 Copyright.
             </div>
             <!--fotterWrapper-->
         </div>

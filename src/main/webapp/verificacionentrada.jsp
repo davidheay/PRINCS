@@ -108,7 +108,7 @@
 
                                             </li>
                                             <li>
-                                                <a href="inventariobodegaope.jsp"><span class="glyphicon glyphicon-th-large"></span>
+                                                <a href="/PRINCS/inventarioBodegaOpeController"><span class="glyphicon glyphicon-th-large"></span>
                                                     Consultar Inventario en Bodega
                                                 </a>
                                             </li>
@@ -201,7 +201,7 @@
                                                                 <td class="text-center">
                                                                     <form action="/PRINCS/creacionActaController" method="POST">
                                                                         <input type="hidden" id="idMercancia" name="idMercancia" value=<c:out value="${item.getIdMercancia()}"></c:out>>
-
+                                                                        <input type="hidden" id="tActa" name="tActa" value="IN">
                                                                         <button type="submit" class="btn btn-info btn-sm  float-button-light">Crear Acta IN</button>
                                                                     </form>
                                                                 </td>
