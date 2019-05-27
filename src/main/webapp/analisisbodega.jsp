@@ -158,58 +158,28 @@
         </div>
         <!--sideBarWrapper-->
         <div id="mainWrapper" class="mainConteiner column">
-            <!--start nainconteiner-->
-            <div class="mainConteinerConten">
-                <div class="container-fluid footerfix">
-
-                    <!--MEIN CONTENT-->
-                    <div class="row">
-                        <div class=""col-lg-12 "">
-                             <div class="panel panel-default">
-                                <div class="panel-heading clearfix">
-                                    <div class="titulo">
-                                        <h3 style="text-align:-webkit-center">Análisis de Bodega</h3>
-                                    </div>
-                                </div>
-                                <!--panel-->
-                                <div class="panel-body">
-                                    <div class="panel">
-                                        <div class="morisChartsWrapper">
-                                            <div id="chart8"></div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 text-center">
-                                            <div class="taskKomplitedAnt colorCyan img-circle text-center">
-                                                60%
-                                            </div>
-                                            <span>Ocupado
-                                            </span>
-                                        </div>
-                                        <div class="col-md-6 text-center">
-                                            <div class="taskKomplitedAnt colorTheme img-circle text-center">
-                                                40%
-                                            </div>
-                                            <span>Disponible</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--panel-body-->
-                        </div>
-                    </div>
-                    <!--row-->
-
-                </div>
-                <!--container-fluid-->
-            </div>
-            <!--mainConteinerConten-->
-            <div class="fotterWrapper">
-                © 2019 Copyright.
-            </div>
-            <!--fotterWrapper-->
-        </div>
-        <!--mainConteinerConten-->
+		<div class="mainConteinerConten">
+			<div class="container-fluid footerfix">
+				<div class="row">
+					<div class=""col-lg-12 "">
+						<div class="panel panel-default">
+							<div class="panel-heading clearfix">
+								<div class="titulo">
+									       <h3 style="text-align:-webkit-center">Análisis Estado de Bodega</h3>
+								</div>
+							</div>
+							<div class="bodega">
+								<iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiYmIyMDdjNmUtZTM4Mi00NDQwLWFjYWYtYzcyZjhkNzBhNjAwIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fotterWrapper">
+			© 2019 Copyright.
+		</div>
+	</div>
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="lib/sparklineChart/sparkline.min.js"></script>
