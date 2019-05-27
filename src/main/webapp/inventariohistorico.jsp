@@ -107,7 +107,7 @@
                                                 </a>
                                                 <ul aria-expanded="false" class="collapse">
                                                     <li>
-                                                        <a href="inventarioactual.html">
+                                                        <a href="/PRINCS/inventarioBodegaController">
                                                             Inventario actual
                                                         </a>
                                                     </li>

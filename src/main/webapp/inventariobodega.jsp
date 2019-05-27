@@ -116,7 +116,7 @@
                                                 </a>
                                                 <ul aria-expanded="false" class="collapse">
                                                     <li>
-                                                        <a href="inventariohistorico.jsp">
+                                                        <a href="/PRINCS/inventarioHistoricoController">
                                                             Inventario Histórico
                                                         </a>
                                                     </li>
