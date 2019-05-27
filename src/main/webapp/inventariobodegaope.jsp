@@ -104,7 +104,7 @@
                                                         <a href="/PRINCS/verificacionEntradaController">Verificación Entrada</a>
                                                     </li>
                                                     <li>
-                                                        <a href="verificacionsalida.html">Verificación Salida</a>
+                                                        <a href="/PRINCS/verificacionSalidaController">Verificación Salida</a>
                                                     </li>
                                                 </ul>
                                             </li>

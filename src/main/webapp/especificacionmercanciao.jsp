@@ -102,13 +102,13 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="verificacionsalida.jsp">Verificación Salida</a>
+                                                        <a href="/PRINCS/verificacionSalidaController">Verificación Salida</a>
                                                     </li>
                                                 </ul>
 
                                             </li>
                                             <li>
-                                                <a href="inventariobodegaope.jsp"><span class="glyphicon glyphicon-th-large"></span>
+                                                <a href="/PRINCS/inventarioBodegaOpeController"><span class="glyphicon glyphicon-th-large"></span>
                                                     Consultar Inventario en Bodega
                                                 </a>
                                             </li>

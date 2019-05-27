@@ -102,7 +102,7 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="verificacionsalida.jsp">Verificación Salida</a>
+                                                        <a href="/PRINCS/verificacionSalidaController">Verificación Salida</a>
                                                     </li>
                                                 </ul>
 
