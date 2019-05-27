@@ -99,7 +99,7 @@
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="inventarioactual.html">Consulta de Inventario</a>
+                                                        <a href="inventariobodegaope.jsp">Consulta de Inventario</a>
                                                     </li>
                                                     <li>
                                                         <a href="#" aria-expanded="true">
@@ -109,21 +109,21 @@
                                                         </a>
                                                         <ul aria-expanded="true" class="collapse">
                                                             <li>
-                                                                <a href="verificacionentrada.html">Inventario Entrando</a>
+                                                                <a href="verificacionentrada.jsp">Inventario Entrando</a>
                                                             </li>
 
 
                                                         </ul>
                                                         <ul aria-expanded="true" class="collapse">
                                                             <li>
-                                                                <a href="verificacionsalida.html">Inventario Saliendo</a>
+                                                                <a href="verificacionsalida.jsp">Inventario Saliendo</a>
                                                             </li>
                                                         </ul>
                                                 </ul>
 
                                             </li>
                                             <li>
-                                                <a href="login.html"><span class="glyphicon glyphicon-check"></span>
+                                                <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
                                                     Cerrar Sesión
                                                 </a>
                                             </li>
