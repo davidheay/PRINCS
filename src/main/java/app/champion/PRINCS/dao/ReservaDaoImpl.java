@@ -81,7 +81,7 @@ public class ReservaDaoImpl implements ReservaDao {
 
         List<Reserva> Reservas = new ArrayList<>();
         try {
-            System.out.println("hola listar reserva");
+            
             String sql = "select * from Reserva where ID_Reserva=?";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             prepareStatemente.setString(1, idReserva);
