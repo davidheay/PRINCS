@@ -1,6 +1,6 @@
-﻿USE [master]
+USE [master]
 GO
-/****** Object:  Database [PRINCS_DB]    Script Date: 26/05/2019 4:15:04 p. m. ******/
+/****** Object:  Database [PRINCS_DB]    Script Date: 26/05/2019 07:07:09 p. m. ******/
 CREATE DATABASE [PRINCS_DB]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -77,27 +77,7 @@ ALTER DATABASE [PRINCS_DB] SET QUERY_STORE = OFF
 GO
 USE [PRINCS_DB]
 GO
-ALTER DATABASE SCOPED CONFIGURATION SET IDENTITY_CACHE = ON;
-GO
-ALTER DATABASE SCOPED CONFIGURATION SET LEGACY_CARDINALITY_ESTIMATION = OFF;
-GO
-ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET LEGACY_CARDINALITY_ESTIMATION = PRIMARY;
-GO
-ALTER DATABASE SCOPED CONFIGURATION SET MAXDOP = 0;
-GO
-ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET MAXDOP = PRIMARY;
-GO
-ALTER DATABASE SCOPED CONFIGURATION SET PARAMETER_SNIFFING = ON;
-GO
-ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET PARAMETER_SNIFFING = PRIMARY;
-GO
-ALTER DATABASE SCOPED CONFIGURATION SET QUERY_OPTIMIZER_HOTFIXES = OFF;
-GO
-ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET QUERY_OPTIMIZER_HOTFIXES = PRIMARY;
-GO
-USE [PRINCS_DB]
-GO
-/****** Object:  Table [dbo].[Cliente]    Script Date: 26/05/2019 4:15:04 p. m. ******/
+/****** Object:  Table [dbo].[Cliente]    Script Date: 26/05/2019 07:07:11 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -113,7 +93,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Empleado]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  Table [dbo].[Empleado]    Script Date: 26/05/2019 07:07:12 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -131,7 +111,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Estado]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  Table [dbo].[Estado]    Script Date: 26/05/2019 07:07:12 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -145,7 +125,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Lote]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  Table [dbo].[Lote]    Script Date: 26/05/2019 07:07:12 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -161,7 +141,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Mercancia]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  Table [dbo].[Mercancia]    Script Date: 26/05/2019 07:07:12 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -183,7 +163,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Reserva]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  Table [dbo].[Reserva]    Script Date: 26/05/2019 07:07:12 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -220,7 +200,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Tipo]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  Table [dbo].[Tipo]    Script Date: 26/05/2019 07:07:12 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -234,7 +214,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Transportadora]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  Table [dbo].[Transportadora]    Script Date: 26/05/2019 07:07:12 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -289,33 +269,33 @@ INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [ob
 INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M018', N'C10', N'T4', N'ES2', N'SALIDA EL DIA 01/06/2019 EN LA TARDE', 33, N'R20', N'NULL', 4000000, N'COP')
 INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M019', N'C11', N'T2', N'ES1', N'LLEGADA EL DIA 08/06/2019 EN LA MAÑANA', 56, N'NULL', N'NULL', 56000000, N'COP')
 INSERT [dbo].[Mercancia] ([ID_Mercancia], [ID_CLIENTE], [ID_Tipo], [estado], [observaciones], [N_Piezas], [RESERVA_IN], [RESERVA_OUT], [valor], [moneda]) VALUES (N'M020', N'C8', N'T2', N'ES3', N'SALIDA EL DIA 19/05/2019 EN LA TARDE', 35, N'R21', N'R22', 7500000, N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R1', N'M003', N'INGRESO', N'C10', N'E5', CAST(N'2019-04-17' AS Date), N'BKU897', N'T1', 70, N'L2', N'1', N'PEPITO PEREZ', N'419846784', N'Guia de Transporte', 20, 15000000, 1, N'INTERNACIONAL', N'FOTO1.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R10', N'M010', N'INGRESO', N'C9', N'E4', CAST(N'2019-04-29' AS Date), N'OAL836', N'T2', 40, N'L2', N'5', N'CAMILO CIFUENTES', N'70984782', N'Facturas', 190, 8000000, 1, N'INTERNACIONAL', N'FOTO10.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NGP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R12', N'M012', N'INGRESO', N'C1', N'E5', CAST(N'2019-05-15' AS Date), N'AME936', N'T5', 15, N'L2', N'6', N'NICOLAS FORERO', N'1019876456', N'Facturas', 76, 1500000, 2, N'INTERNACIONAL', N'FOTO12.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R13', N'M013', N'INGRESO', N'C4', N'E5', CAST(N'2019-04-25' AS Date), N'OKS897', N'T2', 25, N'L1', N'4', N'DANIEL QUINTERO', N'876522093', N'N/A', 100, 4500000, 2, N'NACIONAL', N'FOTO13.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R14', N'M014', N'INGRESO', N'C7', N'E3', CAST(N'2019-05-12' AS Date), N'FHY084', N'T5', 24, N'L1', N'5', N'FRANCISCO ALVARADO', N'56930875', N'Facturas', 61, 7000000, 2, N'INTERNACIONAL', N'FOTO14.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R15', N'M014', N'SALIDA', N'C7', N'E3', CAST(N'2019-05-23' AS Date), N'FHY084', N'T5', 24, N'L1', N'5', N'FRANCISCO ALVARADO', N'56930875', N'Facturas', 61, 7000000, 2, N'INTERNACIONAL', N'FOTO15.JPEG', N'ES4', N'SALE EN LAS HORAS DE LA NOCHE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R16', N'M015', N'INGRESO', N'C5', N'E5', CAST(N'2019-04-06' AS Date), N'SMNE084', N'T4', 41, N'L2', N'7', N'JAIRO LOPEZ', N'55730875', N'N/A', 260, 140000000, 3, N'INTERNACIONAL', N'FOTO16.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA TARDE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R17', N'M016', N'INGRESO', N'C7', N'E4', CAST(N'2019-04-09' AS Date), N'SEO983', N'T1', 55, N'L2', N'8', N'HERNAN AGUDELO', N'80470875', N'N/A', 390, 50000000, 1, N'INTERNACIONAL', N'FOTO17.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'NGP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R18', N'M016', N'SALIDA', N'C7', N'E4', CAST(N'2019-05-09' AS Date), N'SEO983', N'T1', 55, N'L2', N'8', N'HERNAN AGUDELO', N'80470875', N'N/A', 390, 50000000, 1, N'INTERNACIONAL', N'FOTO18.JPEG', N'ES4', N'SALE EN LAS HORAS DE LA TARDE', N'NGP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R19', N'M017', N'INGRESO', N'C6', N'E4', CAST(N'2019-05-24' AS Date), N'UEL739', N'T3', 70, N'L2', N'9', N'ENRIQUE FLORES', N'86070875', N'Facturas', 9, 2500000, 1, N'INTERNACIONAL', N'FOTO19.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'NGP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R2', N'M004', N'INGRESO', N'C3', N'E3', CAST(N'2019-04-01' AS Date), N'NDK028', N'T2', 20, N'L1', N'1', N'JUAN MARTINEZ', N'59804496', N'Lista de empaque', 75, 7000000, 2, N'NACIONAL', N'FOTO2.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA TARDE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R20', N'M018', N'INGRESO', N'C10', N'E3', CAST(N'2019-05-09' AS Date), N'TRL985', N'T2', 33, N'L2', N'10', N'DIOMEDES GARZON', N'87671235', N'N/A', 111, 4000000, 2, N'NACIONAL', N'FOTO20.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R21', N'M020', N'INGRESO', N'C8', N'E5', CAST(N'2019-04-23' AS Date), N'BTU817', N'T4', 35, N'L1', N'6', N'PEPITO PEREZ', N'419846784', N'Facturas', 20, 7500000, 1, N'INTERNACIONAL', N'FOTO21.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R22', N'M020', N'SALIDA', N'C8', N'E5', CAST(N'2019-05-25' AS Date), N'BTU817', N'T4', 35, N'L1', N'6', N'PEPITO PEREZ', N'419846784', N'Facturas', 20, 7500000, 1, N'INTERNACIONAL', N'FOTO22.JPEG', N'ES4', N'SALE EN LAS HORAS DE LA NOCHE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R23', N'M021', N'INGRESO', N'C2', N'E4', CAST(N'2019-03-01' AS Date), N'REG465', N'T3', 40, N'L2', N'11', N'IVAN LOPEZ', N'4679390276', N'Facturas', 67, 5500000, 2, N'INTERNACIONAL', N'FOTO23.JPEG', N'ES4', N'ENTRA EN LA MAÑANA', N'NFP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R24', N'M021', N'SALIDA', N'C2', N'E4', CAST(N'2019-03-29' AS Date), N'RGDS932', N'T2', 40, N'L2', N'11', N'SANTIAGO TOVAR', N'493772922', N'Facturas', 67, 5500000, 2, N'INTERNACIONAL', N'FOTO24.JPEG', N'ES4', N'SALE EN LA NOCHE', N'NFP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R25', N'M022', N'INGRESO', N'C3', N'E3', CAST(N'2019-03-04' AS Date), N'YDM673', N'T5', 50, N'L1', N'7', N'HUGO CORREA', N'76384443', N'Facturas', 105, 3800000, 1, N'NACIONAL', N'FOTO25.JPEG', N'ES4', N'SALE EN LA MAÑANA', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R26', N'M022', N'SALIDA', N'C3', N'E3', CAST(N'2019-04-04' AS Date), N'TRD937', N'T1', 50, N'L1', N'7', N'HUGO CORREA', N'76384443', N'Lista de empaque', 105, 3800000, 1, N'NACIONAL', N'FOTO26.JPEG', N'ES4', N'SALE EN LA MAÑANA', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R27', N'M023', N'INGRESO', N'C6', N'E5', CAST(N'2019-03-18' AS Date), N'FTJ865', N'T3', 69, N'L2', N'12', N'RAFAEL FAJARDO', N'34576543', N'N/A', 365, 260, 3, N'INTERNACIONAL', N'FOTO27.JPEG', N'ES4', N'ENTRA EN LA NOCHE', N'NC1', N'NICOLE CERNIZA', N'5679832', N'USD')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R28', N'M023', N'SALIDA', N'C6', N'E5', CAST(N'2019-04-14' AS Date), N'FTJ857', N'T3', 69, N'L2', N'12', N'RAFAEL SARMIENTO', N'235345677', N'N/A', 365, 260, 3, N'INTERNACIONAL', N'FOTO28.JPEG', N'ES4', N'SALE EN LA MAÑANA', N'NC1', N'NICOLE CERNIZA', N'5679832', N'USD')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R3', N'M004', N'SALIDA', N'C3', N'E4', CAST(N'2019-05-25' AS Date), N'NDK028', N'T2', 20, N'L1', N'1', N'JUAN MARTINEZ', N'59804496', N'Lista de empaque', 75, 7000000, 2, N'NACIONAL', N'FOTO3.JPEG', N'ES4', N'SALE EN LAS HORAS DE LA TARDE', N'NFP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R4', N'M005', N'INGRESO', N'C2', N'E3', CAST(N'2019-05-26' AS Date), N'KDSB493', N'T5', 60, N'L2', N'2', N'FERNANDO FERNANDEZ', N'19141876', N'Facturas', 150, 17000000, 1, N'NACIONAL', N'FOTO4.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA TARDE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R5', N'M007', N'INGRESO', N'C6', N'E5', CAST(N'2019-05-01' AS Date), N'SEMB972', N'T3', 150, N'L2', N'3', N'LUIS CARVAJAL', N'76523907', N'N/A', 450, 10000000, 3, N'INTERNACIONAL', N'FOTO5.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA TARDE', N'NC1', N'NICOLE CERNIZA', N'5679832', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R6', N'M007', N'SALIDA', N'C6', N'E5', CAST(N'2019-05-01' AS Date), N'SEMB972', N'T3', 150, N'L2', N'3', N'LUIS CARVAJAL', N'76523907', N'N/A', 450, 10000000, 3, N'INTERNACIONAL', N'FOTO6.JPEG', N'ES4', N'SALE EN LAS HORAS DE LA TARDE', N'NC1', N'NICOLE CERNIZA', N'5679832', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R7', N'M008', N'INGRESO', N'C7', N'E4', CAST(N'2019-03-01' AS Date), N'OWN936', N'T5', 200, N'L1', N'2', N'MIGUEL PUENTES', N'2004286905', N'Facturas', 638, 11000000, 2, N'INTERNACIONAL', N'FOTO7.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NFP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R8', N'M009', N'INGRESO', N'C8', N'E3', CAST(N'2019-05-11' AS Date), N'WNWB009', N'T4', 80, N'L2', N'4', N'PABLO MEJIA', N'45789632', N'Lista de empaque', 80, 3000000, 3, N'NACIONAL', N'FOTO8.JPEG', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
-INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R9', N'M009', N'SALIDA', N'C8', N'E3', CAST(N'2019-05-29' AS Date), N'WNWB009', N'T4', 80, N'L2', N'4', N'PABLO MEJIA', N'45789632', N'Lista de empaque', 80, 3000000, 3, N'NACIONAL', N'FOTO9.JPEG', N'ES4', N'SALE EN LAS HORAS DE LA NOCHE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R1', N'M003', N'INGRESO', N'C10', N'E5', CAST(N'2019-04-17' AS Date), N'BKU897', N'T1', 70, N'L2', N'1', N'PEPITO PEREZ', N'419846784', N'Guia de Transporte', 20, 15000000, 1, N'INTERNACIONAL', N'img\CaribbeanExotics.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R10', N'M010', N'INGRESO', N'C9', N'E4', CAST(N'2019-04-29' AS Date), N'OAL836', N'T2', 40, N'L2', N'5', N'CAMILO CIFUENTES', N'70984782', N'Facturas', 190, 8000000, 1, N'INTERNACIONAL', N'img\VIVECAFE.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NGP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R12', N'M012', N'INGRESO', N'C1', N'E5', CAST(N'2019-05-15' AS Date), N'AME936', N'T5', 15, N'L2', N'6', N'NICOLAS FORERO', N'1019876456', N'Facturas', 76, 1500000, 2, N'INTERNACIONAL', N'img\OMA.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R13', N'M013', N'INGRESO', N'C4', N'E5', CAST(N'2019-04-25' AS Date), N'OKS897', N'T2', 25, N'L1', N'4', N'DANIEL QUINTERO', N'876522093', N'N/A', 100, 4500000, 2, N'NACIONAL', N'img\FLOWERS.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R14', N'M014', N'INGRESO', N'C7', N'E3', CAST(N'2019-05-12' AS Date), N'FHY084', N'T5', 24, N'L1', N'5', N'FRANCISCO ALVARADO', N'56930875', N'Facturas', 61, 7000000, 2, N'INTERNACIONAL', N'img\AGRIFRESH.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R15', N'M014', N'SALIDA', N'C7', N'E3', CAST(N'2019-05-23' AS Date), N'FHY084', N'T5', 24, N'L1', N'5', N'FRANCISCO ALVARADO', N'56930875', N'Facturas', 61, 7000000, 2, N'INTERNACIONAL', N'img\AGRIFRESH.jpg', N'ES4', N'SALE EN LAS HORAS DE LA NOCHE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R16', N'M015', N'INGRESO', N'C5', N'E5', CAST(N'2019-04-06' AS Date), N'SMNE084', N'T4', 41, N'L2', N'7', N'JAIRO LOPEZ', N'55730875', N'N/A', 260, 140000000, 3, N'INTERNACIONAL', N'img\IMAPAR.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA TARDE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R17', N'M016', N'INGRESO', N'C7', N'E4', CAST(N'2019-04-09' AS Date), N'SEO983', N'T1', 55, N'L2', N'8', N'HERNAN AGUDELO', N'80470875', N'N/A', 390, 50000000, 1, N'INTERNACIONAL', N'img\AGRIFRESH.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'NGP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R18', N'M016', N'SALIDA', N'C7', N'E4', CAST(N'2019-05-09' AS Date), N'SEO983', N'T1', 55, N'L2', N'8', N'HERNAN AGUDELO', N'80470875', N'N/A', 390, 50000000, 1, N'INTERNACIONAL', N'img\AGRIFRESH.jpg', N'ES4', N'SALE EN LAS HORAS DE LA TARDE', N'NGP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R19', N'M017', N'INGRESO', N'C6', N'E4', CAST(N'2019-05-24' AS Date), N'UEL739', N'T3', 70, N'L2', N'9', N'ENRIQUE FLORES', N'86070875', N'Facturas', 9, 2500000, 1, N'INTERNACIONAL', N'img\FLORESCOLON.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'NGP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R2', N'M004', N'INGRESO', N'C3', N'E3', CAST(N'2019-04-01' AS Date), N'NDK028', N'T2', 20, N'L1', N'1', N'JUAN MARTINEZ', N'59804496', N'Lista de empaque', 75, 7000000, 2, N'NACIONAL', N'img\RESTCAFE.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA TARDE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R20', N'M018', N'INGRESO', N'C10', N'E3', CAST(N'2019-05-09' AS Date), N'TRL985', N'T2', 33, N'L2', N'10', N'DIOMEDES GARZON', N'87671235', N'N/A', 111, 4000000, 2, N'NACIONAL', N'img\CaribbeanExotics.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R21', N'M020', N'INGRESO', N'C8', N'E5', CAST(N'2019-04-23' AS Date), N'BTU817', N'T4', 35, N'L1', N'6', N'PEPITO PEREZ', N'419846784', N'Facturas', 20, 7500000, 1, N'INTERNACIONAL', N'img\THEFARMFRESH.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R22', N'M020', N'SALIDA', N'C8', N'E5', CAST(N'2019-05-25' AS Date), N'BTU817', N'T4', 35, N'L1', N'6', N'PEPITO PEREZ', N'419846784', N'Facturas', 20, 7500000, 1, N'INTERNACIONAL', N'img\THEFARMFRESH.jpg', N'ES4', N'SALE EN LAS HORAS DE LA NOCHE', N'NC1', N'NICOLE CERINZA', N'5679832', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R23', N'M021', N'INGRESO', N'C2', N'E4', CAST(N'2019-03-01' AS Date), N'REG465', N'T3', 40, N'L2', N'11', N'IVAN LOPEZ', N'4679390276', N'Facturas', 67, 5500000, 2, N'INTERNACIONAL', N'img\JUANVALDEZ.jpg', N'ES4', N'ENTRA EN LA MAÑANA', N'NFP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R24', N'M021', N'SALIDA', N'C2', N'E4', CAST(N'2019-03-29' AS Date), N'RGDS932', N'T2', 40, N'L2', N'11', N'SANTIAGO TOVAR', N'493772922', N'Facturas', 67, 5500000, 2, N'INTERNACIONAL', N'img\JUANVALDEZ.jpg', N'ES4', N'SALE EN LA NOCHE', N'NFP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R25', N'M022', N'INGRESO', N'C3', N'E3', CAST(N'2019-03-04' AS Date), N'YDM673', N'T5', 50, N'L1', N'7', N'HUGO CORREA', N'76384443', N'Facturas', 105, 3800000, 1, N'NACIONAL', N'img\RESTCAFE.jpg', N'ES4', N'SALE EN LA MAÑANA', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R26', N'M022', N'SALIDA', N'C3', N'E3', CAST(N'2019-04-04' AS Date), N'TRD937', N'T1', 50, N'L1', N'7', N'HUGO CORREA', N'76384443', N'Lista de empaque', 105, 3800000, 1, N'NACIONAL', N'img\RESTCAFE.jpg', N'ES4', N'SALE EN LA MAÑANA', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R27', N'M023', N'INGRESO', N'C6', N'E5', CAST(N'2019-03-18' AS Date), N'FTJ865', N'T3', 69, N'L2', N'12', N'RAFAEL FAJARDO', N'34576543', N'N/A', 365, 260, 3, N'INTERNACIONAL', N'img\FLORESCOLON.jpg', N'ES4', N'ENTRA EN LA NOCHE', N'NC1', N'NICOLE CERNIZA', N'5679832', N'USD')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R28', N'M023', N'SALIDA', N'C6', N'E5', CAST(N'2019-04-14' AS Date), N'FTJ857', N'T3', 69, N'L2', N'12', N'RAFAEL SARMIENTO', N'235345677', N'N/A', 365, 260, 3, N'INTERNACIONAL', N'img\FLORESCOLON.jpg', N'ES4', N'SALE EN LA MAÑANA', N'NC1', N'NICOLE CERNIZA', N'5679832', N'USD')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R3', N'M004', N'SALIDA', N'C3', N'E4', CAST(N'2019-05-25' AS Date), N'NDK028', N'T2', 20, N'L1', N'1', N'JUAN MARTINEZ', N'59804496', N'Lista de empaque', 75, 7000000, 2, N'NACIONAL', N'img\RESTCAFE.jpg', N'ES4', N'SALE EN LAS HORAS DE LA TARDE', N'NFP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R4', N'M005', N'INGRESO', N'C2', N'E3', CAST(N'2019-05-26' AS Date), N'KDSB493', N'T5', 60, N'L2', N'2', N'FERNANDO FERNANDEZ', N'19141876', N'Facturas', 150, 17000000, 1, N'NACIONAL', N'img\JUANVALDEZ.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA TARDE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R5', N'M007', N'INGRESO', N'C6', N'E5', CAST(N'2019-05-01' AS Date), N'SEMB972', N'T3', 150, N'L2', N'3', N'LUIS CARVAJAL', N'76523907', N'N/A', 450, 10000000, 3, N'INTERNACIONAL', N'img\FLORESCOLON.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA TARDE', N'NC1', N'NICOLE CERNIZA', N'5679832', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R6', N'M007', N'SALIDA', N'C6', N'E5', CAST(N'2019-05-01' AS Date), N'SEMB972', N'T3', 150, N'L2', N'3', N'LUIS CARVAJAL', N'76523907', N'N/A', 450, 10000000, 3, N'INTERNACIONAL', N'img\FLORESCOLON.jpg', N'ES4', N'SALE EN LAS HORAS DE LA TARDE', N'NC1', N'NICOLE CERNIZA', N'5679832', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R7', N'M008', N'INGRESO', N'C7', N'E4', CAST(N'2019-03-01' AS Date), N'OWN936', N'T5', 200, N'L1', N'2', N'MIGUEL PUENTES', N'2004286905', N'Facturas', 638, 11000000, 2, N'INTERNACIONAL', N'img\AGRIFRESH.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA NOCHE', N'NFP1', N'NESTOR FERNANDO PORRAS', N'52416096', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R8', N'M009', N'INGRESO', N'C8', N'E3', CAST(N'2019-05-11' AS Date), N'WNWB009', N'T4', 80, N'L2', N'4', N'PABLO MEJIA', N'45789632', N'Lista de empaque', 80, 3000000, 3, N'NACIONAL', N'img\THEFARMFRESH.jpg', N'ES4', N'ENTRA EN LAS HORAS DE LA MAÑANA', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
+INSERT [dbo].[Reserva] ([ID_Reserva], [ID_Mercancia], [tipo_Acta], [ID_Cliente], [ID_Empleado], [fecha], [placa], [ID_Transportadora], [N_Piezas], [ID_Lote], [Estiba], [Nombre_Conductor], [cedula_Conductor], [documentos], [peso], [valor], [ID_Embalaje], [etiquetas], [reg_Fotografico], [ID_Estado], [observaciones], [firma], [Entrega_NOM], [cc_entrega], [moneda]) VALUES (N'R9', N'M009', N'SALIDA', N'C8', N'E3', CAST(N'2019-05-29' AS Date), N'WNWB009', N'T4', 80, N'L2', N'4', N'PABLO MEJIA', N'45789632', N'Lista de empaque', 80, 3000000, 3, N'NACIONAL', N'img\THEFARMFRESH.jpg', N'ES4', N'SALE EN LAS HORAS DE LA NOCHE', N'AV1', N'ANDRES VILLARREAL', N'41587458', N'COP')
 INSERT [dbo].[Tipo] ([ID_Tipo], [Nombre]) VALUES (N'T1', N'CARGA_SECA')
 INSERT [dbo].[Tipo] ([ID_Tipo], [Nombre]) VALUES (N'T2', N'PERECEDEROS')
 INSERT [dbo].[Tipo] ([ID_Tipo], [Nombre]) VALUES (N'T3', N'CARGA FRAGIL')
@@ -326,7 +306,7 @@ INSERT [dbo].[Transportadora] ([ID_Transportadora], [Nombre]) VALUES (N'TR2', N'
 INSERT [dbo].[Transportadora] ([ID_Transportadora], [Nombre]) VALUES (N'TR3', N'INTER RAPIDISIMO')
 INSERT [dbo].[Transportadora] ([ID_Transportadora], [Nombre]) VALUES (N'TR4', N'DHL')
 INSERT [dbo].[Transportadora] ([ID_Transportadora], [Nombre]) VALUES (N'TR5', N'SERVIENTREGA')
-/****** Object:  StoredProcedure [dbo].[ActualizarEstadoMercancia]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[ActualizarEstadoMercancia]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -364,7 +344,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[ActualizarMercancia]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[ActualizarMercancia]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -408,7 +388,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteCliente]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[DeleteCliente]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -449,7 +429,7 @@ CREATE PROCEDURE [dbo].[DeleteCliente]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteEmpleado]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[DeleteEmpleado]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -485,7 +465,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteEstado]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[DeleteEstado]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -523,7 +503,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteLote]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[DeleteLote]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -560,7 +540,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteMercancia]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[DeleteMercancia]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -604,7 +584,7 @@ CREATE PROCEDURE [dbo].[DeleteMercancia]
  END CATCH
 
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteReserva]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[DeleteReserva]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -647,7 +627,7 @@ CREATE PROCEDURE [dbo].[DeleteReserva]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteTipo]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[DeleteTipo]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -689,7 +669,7 @@ CREATE PROCEDURE [dbo].[DeleteTipo]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteTransportadora]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[DeleteTransportadora]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -730,7 +710,7 @@ CREATE PROCEDURE [dbo].[DeleteTransportadora]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetCliente]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetCliente]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -757,7 +737,7 @@ CREATE PROCEDURE [dbo].[GetCliente]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetClientes]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetClientes]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -767,7 +747,7 @@ as begin
 select * from Cliente
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetEmpleado]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetEmpleado]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -794,7 +774,7 @@ CREATE PROCEDURE  [dbo].[GetEmpleado]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetEstado]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetEstado]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -820,7 +800,7 @@ CREATE PROCEDURE  [dbo].[GetEstado]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetEstados]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetEstados]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -830,7 +810,7 @@ GO
  select * from Estado
  end
 GO
-/****** Object:  StoredProcedure [dbo].[GetLote]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetLote]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -857,7 +837,7 @@ CREATE PROCEDURE  [dbo].[GetLote]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetLotes]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetLotes]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -868,7 +848,7 @@ as begin
 select * from Lote
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetMercancia]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetMercancia]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -894,7 +874,7 @@ CREATE PROCEDURE  [dbo].[GetMercancia]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetMercancias]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetMercancias]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -904,7 +884,7 @@ as begin
 select Mercancia.ID_Mercancia,Cliente.Nombre,Tipo.Nombre,Estado.estado,observaciones,N_Piezas,RESERVA_IN,RESERVA_OUT,valor,moneda from Mercancia,Cliente,Tipo,Estado where Mercancia.ID_CLIENTE=Cliente.ID_Cliente and Mercancia.ID_Tipo=Tipo.ID_Tipo and Mercancia.estado=Estado.ID_Estado
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetReserva]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetReserva]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -933,7 +913,7 @@ CREATE PROCEDURE  [dbo].[GetReserva]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetReservas]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetReservas]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -943,7 +923,7 @@ as begin
 select * from Reserva
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetTipo]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetTipo]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -970,7 +950,7 @@ CREATE PROCEDURE  [dbo].[GetTipo]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetTipos]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetTipos]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -980,7 +960,7 @@ as begin
 select * from Tipo
 end
 GO
-/****** Object:  StoredProcedure [dbo].[GetTransportadora]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetTransportadora]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1007,7 +987,7 @@ CREATE PROCEDURE  [dbo].[GetTransportadora]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[GetTransportadoras]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[GetTransportadoras]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1017,7 +997,7 @@ GO
  select  * from Transportadora
  end
 GO
-/****** Object:  StoredProcedure [dbo].[InsertCliente]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertCliente]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1063,7 +1043,7 @@ CREATE PROCEDURE [dbo].[InsertCliente]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertEmpleado]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertEmpleado]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1108,7 +1088,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertEstado]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertEstado]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1150,7 +1130,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertLote]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertLote]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1193,7 +1173,7 @@ ELSE
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertMercancia]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertMercancia]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1249,7 +1229,7 @@ CREATE PROCEDURE [dbo].[InsertMercancia]
  END CATCH
 
 GO
-/****** Object:  StoredProcedure [dbo].[InsertReserva]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertReserva]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1326,7 +1306,7 @@ CREATE PROCEDURE [dbo].[InsertReserva]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertTipo]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertTipo]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1370,7 +1350,7 @@ CREATE PROCEDURE [dbo].[InsertTipo]
 
  END CATCH
 GO
-/****** Object:  StoredProcedure [dbo].[InsertTransportadora]    Script Date: 26/05/2019 4:15:05 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[InsertTransportadora]    Script Date: 26/05/2019 07:07:13 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1418,3 +1398,4 @@ USE [master]
 GO
 ALTER DATABASE [PRINCS_DB] SET  READ_WRITE 
 GO
+
