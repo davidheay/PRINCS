@@ -157,42 +157,74 @@
         </div>
         <!--sideBarWrapper-->
         <div id="mainWrapper" class="mainConteiner column">
-            <!--start nainconteiner-->
-            <div class="mainConteinerConten">
-                <div class="container-fluid footerfix">
+		<!--start nainconteiner-->
+		<div class="mainConteinerConten">
+			<div class="container-fluid footerfix">
+				<div class="row">
+					<div class="col-lg-12 ">
+						<div class="panel panel-default">
+							<div class="panel-heading clearfix">
+								<div class="titulo">
+								    <h3 style="text-align:-webkit-center">Análisis de Tipo de Mercancía</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-default">
+							<div class="tipo">
+								<iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiY2VhNjlkYWYtYmJlOC00NDhmLWI3YTItOTcyNDU3ODkzYTQ3IiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+                    <div class="panel panel-default">
+					<div class="col-lg-6">
 
-                    <!--MEIN CONTENT-->
-                    <div class="row">
-                        <div class="col-lg-12 ">
-                            <div class="panel panel-default">
-                                <div class="panel-heading clearfix">
-                                    <div class="titulo">
-                                        <h3 style="text-align:-webkit-center">Análisis de Tipo de Mercancía</h3>
-                                    </div>
-                                </div>
-                                <!--panel-->
-                                <div class="panel-body">
-                                    <div class="chartjsWrapper">
-                                        <canvas id="canvas2"></canvas>
-                                    </div>
-                                    <!--chartjsWrapper-->
-                                </div>
-                            </div>
-                            <!--panel-body-->
-                        </div>
-                    </div>
-                    <!--row-->
-
-                </div>
-                <!--container-fluid-->
-            </div>
-            <!--mainConteinerConten-->
-            <div class="fotterWrapper">
-                © 2019 Copyright.
-            </div>
-            <!--fotterWrapper-->
-        </div>
-        <!--mainConteinerConten-->
+							<div class="tipo">
+								<iframe width="680" height="510" src="https://app.powerbi.com/view?r=eyJrIjoiNmZhYTUwZWEtZDc3My00ODkwLThmMDEtZTAxMGIxY2FjMTFmIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+							</div>
+						
+					</div>
+                    <div class="col-lg-6">
+						
+							<div class="tipo">
+								<iframe width="680" height="510" src="https://app.powerbi.com/view?r=eyJrIjoiODc1ZmM5MDUtZThkZi00MDc4LThhZDQtOTAzMjA2MGIzMzMxIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+							</div>
+						
+					</div>
+                    <div class="col-lg-6">
+						
+							<div class="tipo">
+								<iframe width="680" height="510" src="https://app.powerbi.com/view?r=eyJrIjoiYjRmOTNjYzgtNTFjNS00MWU1LThmYzMtMDdjZTA4YjBkOWM3IiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+							</div>
+						
+					</div>
+                    <div class="col-lg-6">
+						
+							<div class="tipo">
+								<iframe width="680" height="510" src="https://app.powerbi.com/view?r=eyJrIjoiZmE5MTZmZTUtMjcxNS00ZTRkLWI2Y2ItNDA4Y2FlMDRkN2U0IiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+							</div>
+						
+					</div>
+                    <div class="col-lg-6">
+						
+							<div class="tipo">
+								<iframe width="680" height="510" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2OTY0YjgtMzQ2ZC00N2I4LTg1NjktNjRmY2Y0MGQ2ZjMxIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fotterWrapper">
+			© 2019 Copyright.
+		</div>
+	</div>
+    </div>
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="lib/sparklineChart/sparkline.min.js"></script>
