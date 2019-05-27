@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="windows-1252" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +47,7 @@
                     <div class="nawbarMain  headerWrapper clearfix">
                         <div class="nawbarMainLeft ">
                             <div class="champion">
-                                <img src="img/championpeque.png" alt=""/ width=30%>
+                                <img src="img/championpeque.png" alt="" width=30%>
                             </div>
                             <!--mainLogo-->
                             <!--headerLogo-->
@@ -80,7 +82,7 @@
                                 </div>
                                 <!--sideBarUserConteinerImg-->
                                 <div class="sideBarUserConteinerText">
-                                    <span class="userInfo"><a href="/PRINCS/LoginController">Operario</a><br><i class="fa fa-map-marker"></i> Bogot√°, COL </span>
+                                    <span class="userInfo"><a href="user.html">Operario</a><br><i class="fa fa-map-marker"></i> Bogot·, COL </span>
                                 </div>
                                 <!--sideBarUserConteinerText-->
                             </div>
@@ -94,21 +96,21 @@
                                             <li>
                                                 <a href="#" aria-expanded="true">
                                                     <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
-                                                    <span class="sidebar-nav-item">Verificaci√≥n de Mercanc√≠a</span>
+                                                    <span class="sidebar-nav-item">VerificaciÛn de MercancÌa</span>
                                                     <span class="fa arrow"></span>
                                                 </a>
                                                 <ul aria-expanded="true" class="collapse">
                                                     <li>
-                                                        <a href="verificacionentrada.jsp">Verificaci√≥n Entrada</a>
+                                                        <a href="verificacionentrada.html">VerificaciÛn Entrada</a>
                                                     </li>
                                                     <li>
-                                                        <a href="verificacionsalida.jsp">Verificaci√≥n Salida</a>
+                                                        <a href="verificacionsalida.html">VerificaciÛn Salida</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <a href="/PRINCS/LogoutController"><span class="glyphicon glyphicon-check"></span>
-                                                    Cerrar Sesi√≥n
+                                                    Cerrar SesiÛn
                                                 </a>
                                             </li>
                                         </ul>
@@ -156,228 +158,32 @@
                                     <table id="example1" class="display tableWrapper">
                                         <thead>
                                             <tr>
-                                                <th>ID Mercanc√≠a</th>
+                                                <th>ID MercancÌa</th>
                                                 <th>Cliente</th>
-                                                <th>Tipo de Mercanc√≠a</th>
+                                                <th>Tipo de MercancÌa</th>
                                                 <th>Estiba</th>
 
                                             </tr>
                                         </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Id Mercanc√≠a</th>
-                                                <th>Cliente</th>
-                                                <th>Tipo de Mercanc√≠a</th>
-                                                <th>Estiba</th>
 
-
-                                            </tr>
-                                        </tfoot>
                                         <tbody>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Tiger Nixon</a></td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
+
+                                            <c:forEach var="item" items="${lstMercancias}">
 
 
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Garrett Winters</a></td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
 
 
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Ashton Cox</a></td>
-                                                <td>Junior Technical Author</td>
-                                                <td>San Francisco</td>
-                                                <td>66</td>
+                                                <tr>
+                                                    <td><c:out value="${item.getIdMercancia()}"></c:out></td>
+                                                    <td><c:out value="${item.getIdCliente()}"></c:out></td>
+                                                    <td><c:out value="${item.getIdTipo()}"></c:out></td>
+                                                    <td><c:out value="${item.getValor()}"></c:out></td>
+
+                                                    </tr>
+
+                                            </c:forEach>
 
 
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Cedric Kelly</a></td>
-                                                <td>Senior Javascript Developer</td>
-                                                <td>Edinburgh</td>
-                                                <td>22</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Airi Satou</a></td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>33</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Brielle Williamson</a></td>
-                                                <td>Integration Specialist</td>
-                                                <td>New York</td>
-                                                <td>61</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Herrod Chandler</a></td>
-                                                <td>Sales Assistant</td>
-                                                <td>San Francisco</td>
-                                                <td>59</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Rhona Davidson</a></td>
-                                                <td>Integration Specialist</td>
-                                                <td>Tokyo</td>
-                                                <td>55</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Colleen Hurst</a></td>
-                                                <td>Javascript Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>39</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Sonya Frost</a></td>
-                                                <td>Software Engineer</td>
-                                                <td>Edinburgh</td>
-                                                <td>23</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Jena Gaines</a></td>
-                                                <td>Office Manager</td>
-                                                <td>London</td>
-                                                <td>30</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Quinn Flynn</a></td>
-                                                <td>Support Lead</td>
-                                                <td>Edinburgh</td>
-                                                <td>22</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Charde Marshall</a></td>
-                                                <td>Regional Director</td>
-                                                <td>San Francisco</td>
-                                                <td>36</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Haley Kennedy</a></td>
-                                                <td>Senior Marketing Designer</td>
-                                                <td>London</td>
-                                                <td>43</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Tatyana Fitzpatrick</a></td>
-                                                <td>Regional Director</td>
-                                                <td>London</td>
-                                                <td>19</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Michael Silva</a></td>
-                                                <td>Marketing Designer</td>
-                                                <td>London</td>
-                                                <td>66</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Paul Byrd</a></td>
-                                                <td>Chief Financial Officer (CFO)</td>
-                                                <td>New York</td>
-                                                <td>64</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Gloria Little</a></td>
-                                                <td>Systems Administrator</td>
-                                                <td>New York</td>
-                                                <td>59</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Bradley Greer</a></td>
-                                                <td>Software Engineer</td>
-                                                <td>London</td>
-                                                <td>41</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Dai Rios</a></td>
-                                                <td>Personnel Lead</td>
-                                                <td>Edinburgh</td>
-                                                <td>35</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Jenette Caldwell</a></td>
-                                                <td>Development Lead</td>
-                                                <td>New York</td>
-                                                <td>30</td>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Tiger Nixon</a></td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Garrett Winters</a></td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Ashton Cox</a></td>
-                                                <td>Junior Technical Author</td>
-                                                <td>San Francisco</td>
-                                                <td>66</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Cedric Kelly</a></td>
-                                                <td>Senior Javascript Developer</td>
-                                                <td>Edinburgh</td>
-                                                <td>22</td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="especificacionmercanciao.html">Airi Satou</a></td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>33</td>
-
-
-                                            </tr>
 
                                         </tbody>
                                     </table>
@@ -392,7 +198,7 @@
                 <!--MEIN CONTENT-->
             </div>
             <div class="fotterWrapper">
-                ¬© 2019 Copyright.
+                © 2019 Copyright.
             </div>
             <!--fotterWrapper-->
         </div>

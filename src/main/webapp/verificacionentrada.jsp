@@ -190,8 +190,9 @@
                                             <tbody>
                                                 <c:forEach var="item" items="${lstMercancias}">
                                                     <c:set var="actain" value="${item.getReservaIn()}"></c:set>
+                                                    <c:set var="actaout" value="${item.getReservaOut()}"></c:set>
 
-                                                    <c:if test="${actain eq 'NULL'}">
+                                                    <c:if test="${actain eq 'NULL' && actaout eq 'NULL' }">
                                                         <tr>
                                                             <td><c:out value="${item.getIdMercancia()}"></c:out></td>
                                                             <td><c:out value="${item.getIdTipo()}"></c:out></td>

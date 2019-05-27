@@ -116,7 +116,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
     public void actualizarMercancia(String idMercancia, String idTipo, String estado, String observaciones, String nPiezas, int valor, String moneda) {
         Conn conexion = new Conn();
         try {
-            
+
             String sql = "exec ActualizarMercancia ?,?,?,?,?,?,?";
 
             PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
@@ -130,12 +130,43 @@ public class MercanciaDaoImpl implements MercanciaDao {
             preparedStatement.setString(7, moneda);
 
             preparedStatement.execute();
-          
+
             preparedStatement.close();
 
         } catch (Exception e) {
             System.out.println("error" + e);
         }
+    }
+
+    @Override
+    public List<Mercancia> listarMercanciasEstiba() {
+        Conn conexion = new Conn();
+
+        List<Mercancia> mercancias = new ArrayList<>();
+        try {
+
+            //String sql = "select * from Mercancia";
+            String sql = "select Mercancia.ID_Mercancia,Cliente.Nombre,Tipo.Nombre,Reserva.Estiba from Reserva,Cliente,Mercancia,Tipo where Mercancia.ID_Mercancia=Reserva.ID_Mercancia and Reserva.ID_Cliente=Cliente.ID_Cliente and Mercancia.ID_Tipo=Tipo.Id_Tipo and Reserva.tipo_Acta='INGRESO' and Mercancia.RESERVA_IN != 'NULL' and Mercancia.RESERVA_OUT = 'NULL' order by 1";
+
+            PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
+            ResultSet resultSet = prepareStatemente.executeQuery();
+            while (resultSet.next()) {
+                Mercancia mercancia = new Mercancia();
+                mercancia.setIdMercancia(resultSet.getString(1));
+                mercancia.setIdCliente(resultSet.getString(2));
+                mercancia.setIdTipo(resultSet.getString(3));
+                mercancia.setValor(resultSet.getInt(4));
+
+                mercancias.add(mercancia);
+            }
+            prepareStatemente.close();
+            resultSet.close();
+        } catch (Exception ex) {
+            logger.error(ex.getMessage());
+        } finally {
+            conexion.cerrarConexion();
+        }
+        return mercancias;
     }
 
 }
