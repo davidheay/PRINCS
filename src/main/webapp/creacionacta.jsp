@@ -144,10 +144,10 @@
                 </div>
             </div>
         </div>
-        <div id="mainWrapper" class="mainConteiner column">>
+        <div id="mainWrapper" class="mainConteiner column">
             <div class="mainConteinerConten">
                 <form action="/PRINCS/creacionActaController" method="POST">
-                    <input type="hidden" id="crear" name="crear" value="">>
+                    <input type="hidden" id="crear" name="crear" value="">
                     <div class="container-fluid footerfix">
                         <div class="row">
                             <div class="col-lg-12 ">

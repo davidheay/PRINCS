@@ -123,7 +123,7 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-3 alertWrapper">
-                                            <a href="inventariobodegaope.html">
+                                            <a href="/PRINCS/inventarioBodegaOpeController">
                                                 <div class="mercancia">
                                                     <center>
                                                         <img src="img/mercancia.png" alt="" >
