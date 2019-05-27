@@ -36,11 +36,9 @@ public class Reserva {
     String Entrega_Nom;
     String cc_Entrega;
     String Moneda;
+    String tipoMercancia;
 
-    public Reserva(String idReserva, String idMercancia, String tipoActa, String idCliente,
-            String idEmpleado, String fecha, String placa, String idTransportadora, Integer nPiezas, String Id_Lote, String Estiba,
-            String nombreConductor, String cedulaConductor, String documentos, Float peso, Integer valor, Integer idEmbalaje, String Etiquetas,
-            String Reg_Fotografico, String ID_Estado, String observaciones, String Firma, String Entrega_Nom, String cc_Entrega, String Moneda) {
+    public Reserva(String idReserva, String idMercancia, String tipoActa, String idCliente, String idEmpleado, String fecha, String placa, String idTransportadora, Integer nPiezas, String Id_Lote, String Estiba, String nombreConductor, String cedulaConductor, String documentos, Float peso, Integer valor, Integer idEmbalaje, String Etiquetas, String Reg_Fotografico, String ID_Estado, String observaciones, String Firma, String Entrega_Nom, String cc_Entrega, String Moneda, String tipoMercancia) {
         this.idReserva = idReserva;
         this.idMercancia = idMercancia;
         this.tipoActa = tipoActa;
@@ -66,7 +64,7 @@ public class Reserva {
         this.Entrega_Nom = Entrega_Nom;
         this.cc_Entrega = cc_Entrega;
         this.Moneda = Moneda;
-
+        this.tipoMercancia = tipoMercancia;
     }
 
     public Reserva() {
@@ -144,11 +142,11 @@ public class Reserva {
         this.nPiezas = nPiezas;
     }
 
-    public String getIdLote() {
+    public String getId_Lote() {
         return Id_Lote;
     }
 
-    public void setIdLote(String Id_Lote) {
+    public void setId_Lote(String Id_Lote) {
         this.Id_Lote = Id_Lote;
     }
 
@@ -216,27 +214,27 @@ public class Reserva {
         this.Etiquetas = Etiquetas;
     }
 
-    public String getRegFotografico() {
+    public String getReg_Fotografico() {
         return Reg_Fotografico;
     }
 
-    public void setRegFotografico(String Reg_Fotografico) {
+    public void setReg_Fotografico(String Reg_Fotografico) {
         this.Reg_Fotografico = Reg_Fotografico;
     }
 
-    public String getIDEstado() {
+    public String getID_Estado() {
         return ID_Estado;
     }
 
-    public void setIDEstado(String ID_Estado) {
+    public void setID_Estado(String ID_Estado) {
         this.ID_Estado = ID_Estado;
     }
 
-    public String getoobservaciones() {
+    public String getObservaciones() {
         return observaciones;
     }
 
-    public void setobservaciones(String observaciones) {
+    public void setObservaciones(String observaciones) {
         this.observaciones = observaciones;
     }
 
@@ -248,19 +246,19 @@ public class Reserva {
         this.Firma = Firma;
     }
 
-    public String getEntregaNom() {
+    public String getEntrega_Nom() {
         return Entrega_Nom;
     }
 
-    public void setEntregaNom(String Entrega_Nom) {
+    public void setEntrega_Nom(String Entrega_Nom) {
         this.Entrega_Nom = Entrega_Nom;
     }
 
-    public String getccEntrega() {
+    public String getCc_Entrega() {
         return cc_Entrega;
     }
 
-    public void setccEntrega(String cc_Entrega) {
+    public void setCc_Entrega(String cc_Entrega) {
         this.cc_Entrega = cc_Entrega;
     }
 
@@ -272,13 +270,12 @@ public class Reserva {
         this.Moneda = Moneda;
     }
 
-    @Override
-    public String toString() {
-        return "Reserva{" + "idReserva=" + idReserva + ", idMercancia=" + idMercancia + ", tipoActa=" + tipoActa + ", idCliente=" + idCliente
-                + ", idEmpleado=" + idEmpleado + ", fecha=" + fecha + ", placa=" + placa + ", idTransportadora=" + idTransportadora + ", nPiezas=" + nPiezas + ", Id_Lote=" + Id_Lote
-                + ", Estiba=" + Estiba + ", nombreConductor=" + nombreConductor + ", cedulaConductor=" + cedulaConductor + ", documentos=" + documentos + ", peso=" + peso + ", valor=" + valor
-                + ", idEmbalaje=" + idEmbalaje + ", Etiquetas=" + Etiquetas + ", Reg_Fotografico=" + Reg_Fotografico + ", ID_Estado=" + ID_Estado + ", observaciones=" + observaciones + ", Firma=" + Firma
-                + ", Entrega_Nom=" + Entrega_Nom + ", cc_Entrega=" + cc_Entrega + ", Moneda=" + Moneda + '}';
+    public String getTipoMercancia() {
+        return tipoMercancia;
+    }
+
+    public void setTipoMercancia(String tipoMercancia) {
+        this.tipoMercancia = tipoMercancia;
     }
 
 }

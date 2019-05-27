@@ -40,7 +40,7 @@ public class actaController extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) {
         try {
-            
+
             response.setContentType("application/pdf");
             OutputStream archivo = response.getOutputStream();
             String idReserva = request.getParameter("idActa");
@@ -55,13 +55,13 @@ public class actaController extends HttpServlet {
             parrafo.setAlignment(1);
             documento.add(parrafo);
             documento.add(new Paragraph("\n"));
-             documento.add(new Paragraph("\n"));
+            documento.add(new Paragraph("\n"));
             documento.add(new Paragraph("ID Reserva: " + idReserva));
             documento.add(new Paragraph("\n"));
             documento.add(new Paragraph("ID MERCANCIA: " + reserva.getIdMercancia()));
             documento.add(new Paragraph("\n"));
-              documento.add(new Paragraph("Foto: " + reserva.getRegFotografico()));
-            String imageFile = reserva.getRegFotografico();
+            documento.add(new Paragraph("Foto: " + reserva.getReg_Fotografico()));
+            String imageFile = reserva.getReg_Fotografico();
             System.out.println(imageFile);
             Image img = Image.getInstance("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\NetBeansProjects\\PRINCS\\src\\main\\webapp\\" + imageFile);
 
@@ -76,7 +76,7 @@ public class actaController extends HttpServlet {
             documento.add(new Paragraph("Transportadora: " + reserva.getIdTransportadora() + "                                         "
                     + "               " + "Placa: " + reserva.getPlaca()));
             documento.add(new Paragraph("\n"));
-            documento.add(new Paragraph("Lote: " + reserva.getIdLote() + "                             "
+            documento.add(new Paragraph("Lote: " + reserva.getId_Lote() + "                             "
                     + "                                             " + "Estiba: " + reserva.getEstiba()));
             documento.add(new Paragraph("\n"));
             documento.add(new Paragraph("Nombre del Conductor: " + reserva.getNombreConductor()));
@@ -89,13 +89,12 @@ public class actaController extends HttpServlet {
                     + "                  " + "Moneda: " + reserva.getMoneda()));
             documento.add(new Paragraph("\n"));
 
-          
-            documento.add(new Paragraph("Observaciones: " + reserva.getoobservaciones()));
+            documento.add(new Paragraph("Observaciones: " + reserva.getObservaciones()));
             documento.add(new Paragraph("\n"));
             documento.add(new Paragraph("Firma: " + reserva.getFirma()));
 
             documento.close();
-           
+
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -110,7 +109,7 @@ public class actaController extends HttpServlet {
         String idReserva = (String) request.getParameter("idActa");
         try {
 
-            Reserva reserva = reservaDao.listarReserva(idReserva).get(0);
+            Reserva reserva = reservaDao.listarReservaTrans(idReserva).get(0);
 
             request.setAttribute("reserva", reserva);
             request.setAttribute("idReserva", reserva.getIdReserva());
@@ -122,7 +121,7 @@ public class actaController extends HttpServlet {
             request.setAttribute("placa", reserva.getPlaca());
             request.setAttribute("idTransportadora", reserva.getIdTransportadora());
             request.setAttribute("nPiezas", reserva.getnPiezas());
-            request.setAttribute("idLote", reserva.getIdLote());
+            request.setAttribute("idLote", reserva.getId_Lote());
             request.setAttribute("estiba", reserva.getEstiba());
             request.setAttribute("nombreConductor", reserva.getNombreConductor());
             request.setAttribute("ccConducotr", reserva.getCedulaConductor());
@@ -131,13 +130,14 @@ public class actaController extends HttpServlet {
             request.setAttribute("valor", reserva.getValor());
             request.setAttribute("idEmbalaje", reserva.getIdEmbalaje());
             request.setAttribute("etiquetas", reserva.getEtiquetas());
-            request.setAttribute("foto", reserva.getRegFotografico());
-            request.setAttribute("estado", reserva.getIDEstado());
-            request.setAttribute("observaciones", reserva.getoobservaciones());
-            request.setAttribute("entregaNom", reserva.getEntregaNom());
-            request.setAttribute("ccEntrega", reserva.getccEntrega());
+            request.setAttribute("foto", reserva.getReg_Fotografico());
+            request.setAttribute("estado", reserva.getID_Estado());
+            request.setAttribute("observaciones", reserva.getObservaciones());
+            request.setAttribute("entregaNom", reserva.getEntrega_Nom());
+            request.setAttribute("ccEntrega", reserva.getCc_Entrega());
             request.setAttribute("moneda", reserva.getMoneda());
             request.setAttribute("frima", reserva.getFirma());
+            request.setAttribute("tipoMer", reserva.getTipoMercancia());
 
             if (request.getParameter("pdf") != null) {
                 System.out.println("generar pdf");
@@ -160,7 +160,7 @@ public class actaController extends HttpServlet {
         String idReserva = (String) request.getParameter("idActa");
         try {
 
-            Reserva reserva = reservaDao.listarReserva(idReserva).get(0);
+            Reserva reserva = reservaDao.listarReservaTrans(idReserva).get(0);
 
             request.setAttribute("reserva", reserva);
             request.setAttribute("idReserva", reserva.getIdReserva());
@@ -172,7 +172,7 @@ public class actaController extends HttpServlet {
             request.setAttribute("placa", reserva.getPlaca());
             request.setAttribute("idTransportadora", reserva.getIdTransportadora());
             request.setAttribute("nPiezas", reserva.getnPiezas());
-            request.setAttribute("idLote", reserva.getIdLote());
+            request.setAttribute("idLote", reserva.getId_Lote());
             request.setAttribute("estiba", reserva.getEstiba());
             request.setAttribute("nombreConductor", reserva.getNombreConductor());
             request.setAttribute("ccConducotr", reserva.getCedulaConductor());
@@ -181,13 +181,14 @@ public class actaController extends HttpServlet {
             request.setAttribute("valor", reserva.getValor());
             request.setAttribute("idEmbalaje", reserva.getIdEmbalaje());
             request.setAttribute("etiquetas", reserva.getEtiquetas());
-            request.setAttribute("foto", reserva.getRegFotografico());
-            request.setAttribute("estado", reserva.getIDEstado());
-            request.setAttribute("observaciones", reserva.getoobservaciones());
-            request.setAttribute("entregaNom", reserva.getEntregaNom());
-            request.setAttribute("ccEntrega", reserva.getccEntrega());
+            request.setAttribute("foto", reserva.getReg_Fotografico());
+            request.setAttribute("estado", reserva.getID_Estado());
+            request.setAttribute("observaciones", reserva.getObservaciones());
+            request.setAttribute("entregaNom", reserva.getEntrega_Nom());
+            request.setAttribute("ccEntrega", reserva.getCc_Entrega());
             request.setAttribute("moneda", reserva.getMoneda());
             request.setAttribute("frima", reserva.getFirma());
+            request.setAttribute("tipoMer", reserva.getTipoMercancia());
 
             if (request.getParameter("pdf") != null) {
                 System.out.println("generar pdf");

@@ -13,7 +13,11 @@ public interface ReservaDao {
 
     public List<Reserva> listarReservas();
 
+    public List<Reserva> listarReservasHistoria();
+
     public List<Reserva> listarReserva(String idReserva);
+
+    public List<Reserva> listarReservaTrans(String idReserva);
 
     public void insertarReserva(String idReserva, String idMercancia, String tipoActa, String idCliente,
             String idEmpleado, String fecha, String placa, String idTransportadora, Integer nPiezas, String Id_Lote, String Estiba,

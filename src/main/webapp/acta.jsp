@@ -205,7 +205,7 @@
                                     <LABEL>TIPO DE MARCANCÍA</LABEL>
                                     <div class="input-group input-default">
                                         <span class="input-group-addon border-left" id="basic-addon3"></span>
-                                        <input type="text" value="<%= request.getAttribute("tipoActa")%>" readonly=»readonly» class="form-control" placeholder="Tipo" aria-describedby="basic-addon1">
+                                        <input type="text" value="<%= request.getAttribute("tipoMer")%>" readonly=»readonly» class="form-control" placeholder="Tipo" aria-describedby="basic-addon1">
                                     </div>
                                     <br>
                                     <LABEL>CLIENTE</LABEL>

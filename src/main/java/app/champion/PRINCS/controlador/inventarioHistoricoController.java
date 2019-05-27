@@ -23,7 +23,7 @@ public class inventarioHistoricoController extends HttpServlet {
             throws ServletException, IOException {
         ReservaDao reservaDao = new ReservaDaoImpl();
 
-        request.setAttribute("lstReservas", reservaDao.listarReservas());
+        request.setAttribute("lstReservas", reservaDao.listarReservasHistoria());
 
         request.getRequestDispatcher("inventariohistorico.jsp").forward(request, response);
     }
@@ -33,7 +33,7 @@ public class inventarioHistoricoController extends HttpServlet {
             throws ServletException, IOException {
         ReservaDao reservaDao = new ReservaDaoImpl();
         MercanciaDao mercanciaDao = new MercanciaDaoImpl();
-        request.setAttribute("lstReservas", reservaDao.listarReservas());
+        request.setAttribute("lstReservas", reservaDao.listarReservasHistoria());
 
         request.getRequestDispatcher("inventariohistorico.jsp").forward(request, response);
     }

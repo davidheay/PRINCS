@@ -163,7 +163,8 @@
                                             <tr>
                                                 <th>ID Mercancía</th>
                                                 <th>Cliente</th>
-                                                <th>Placa</th>
+                                                <th>Tipo mercancia</th>
+                                                <th>Tipo de acta</th>>
                                                 <th>Acta</th>
                                                 <th>Fecha</th>
                                             </tr>
@@ -174,7 +175,8 @@
                                                 <tr>
                                                     <td><c:out value="${item.getIdMercancia()}"></c:out></td>
                                                     <td><c:out value="${item.getIdCliente()}"></c:out></td>
-                                                    <td><c:out value="${item.getPlaca()}"></c:out></td>
+                                                    <td><c:out value="${item.getObservaciones()}"></c:out></td>
+                                                    <td><c:out value="${item.getTipoActa()}"></c:out></td>
                                                         <td class="text-center">
                                                             <form action="/PRINCS/actaController" method="POST">
                                                                 <input type="hidden" id="idActa" name="idActa" value="${item.getIdReserva()}" >
