@@ -60,6 +60,11 @@ public class Pdf {
         documento.add(new Paragraph("ID Reserva: " + idReserva));
         documento.add(new Paragraph("\n"));
         documento.add(new Paragraph("ID MERCANCIA: " + reserva.getIdMercancia()));
+             documento.add(new Paragraph("Foto: " + reserva.getRegFotografico()));
+        String imageFile = reserva.getRegFotografico();
+        Image img = Image.getInstance("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\NetBeansProjects\\PRINCS\\src\\main\\webapp\\" + imageFile);
+
+        documento.add(img);
         documento.add(new Paragraph("\n"));
         documento.add(new Paragraph("ID del Cliente: " + reserva.getIdCliente() + "                                   "
                 + "               " + "Nombre del Cliente: "));
@@ -71,7 +76,7 @@ public class Pdf {
                 + "               " + "Placa: " + reserva.getPlaca()));
         documento.add(new Paragraph("\n"));
         documento.add(new Paragraph("Lote: " + reserva.getIdLote() + "                             "
-                + "                                            " + "Estiba: " + reserva.getEstiba()));
+                + "                                              " + "Estiba: " + reserva.getEstiba()));
         documento.add(new Paragraph("\n"));
         documento.add(new Paragraph("Nombre del Conductor: " + reserva.getNombreConductor()));
         documento.add(new Paragraph("\n"));
@@ -80,14 +85,10 @@ public class Pdf {
         documento.add(new Paragraph("Peso: " + reserva.getPeso()));
         documento.add(new Paragraph("\n"));
         documento.add(new Paragraph("Valor: " + reserva.getValor() + "                                          "
-                + "                             " + "Moneda: " + reserva.getMoneda()));
+                + "                          " + "Moneda: " + reserva.getMoneda()));
         documento.add(new Paragraph("\n"));
 
-        documento.add(new Paragraph("Foto: " + reserva.getRegFotografico()));
-        String imageFile = reserva.getRegFotografico();
-        Image img = Image.getInstance("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\NetBeansProjects\\PRINCS\\src\\main\\webapp\\" + imageFile);
-
-        documento.add(img);
+   
         documento.add(new Paragraph("\n"));
         documento.add(new Paragraph("Observaciones: " + reserva.getoobservaciones()));
         documento.add(new Paragraph("\n"));
