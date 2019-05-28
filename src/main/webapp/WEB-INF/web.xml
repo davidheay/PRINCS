@@ -74,6 +74,10 @@
         <servlet-name>verificacionSalidaController</servlet-name>
         <servlet-class>app.champion.PRINCS.controlador.verificacionSalidaController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>creacionmercanciaController</servlet-name>
+        <servlet-class>app.champion.PRINCS.controlador.creacionmercanciaController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/LoginController</url-pattern>
@@ -135,6 +139,10 @@
     <servlet-mapping>
         <servlet-name>verificacionSalidaController</servlet-name>
         <url-pattern>/verificacionSalidaController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>creacionmercanciaController</servlet-name>
+        <url-pattern>/creacionmercanciaController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

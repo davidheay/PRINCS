@@ -167,7 +167,7 @@
 
                                                 <div class="seleccion pull-right">
                                                     <div class="btn-group" role="group" aria-label="...">
-                                                        <button type="button" class="btn btn-primary btn-df">IN</button>
+                                                        <button type="button" class="btn btn-primary btn-df"><%= request.getAttribute("tActa")%></button>
 
                                                     </div>
                                                 </div>
@@ -439,7 +439,7 @@
                                     <br>
                                     <div class="input-group input-success">
                                         <span class="input-group-addon border-left" id="basic-addon14"></span>
-                                        <input required name="ccOperario"  type="text"   class="form-control" placeholder="" aria-describedby="basic-addon14">
+                                        <input maxlength="2" required name="ccOperario"  type="text"   class="form-control" placeholder="" aria-describedby="basic-addon14">
                                     </div>
                                     <br>
                                     <LABEL>FIRMA OPERARIO</LABEL>
@@ -452,12 +452,12 @@
                                 <br>
                                 <br>
                                 <div class="seleccion pull-right" style="padding-top: 10px">
-								
-							
+
+
                                     <button  onclick="document.getElementById('crear').value = 'crear'" type="submit"  class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" >Crear</button>
-                              
-							   
-							   </div>
+
+
+                                </div>
                             </div>
                         </div>
                     </div>

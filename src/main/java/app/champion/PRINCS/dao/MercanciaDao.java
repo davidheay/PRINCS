@@ -9,9 +9,11 @@ public interface MercanciaDao {
 
     public List<Mercancia> listarMercanciasEstiba();
 
+    public String idMax();
+
     public List<Mercancia> listarMercancia(String idMercancia);
 
-    public void insertarMercancia(String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String reservaIn, String reservaOut, Integer valor, String moneda);
+    public void insertarMercancia(String idMercancia, String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String reservaIn, String reservaOut, Integer valor, String moneda);
 
     public void actualizarEstadoMercancia(String idMercancia, String idTipo);
 

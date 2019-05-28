@@ -15,6 +15,8 @@ public interface ReservaDao {
 
     public List<Reserva> listarReservasHistoria();
 
+    public String idMax();
+
     public List<Reserva> listarReserva(String idReserva);
 
     public List<Reserva> listarReservaTrans(String idReserva);

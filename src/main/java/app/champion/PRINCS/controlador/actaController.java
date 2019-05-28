@@ -11,7 +11,7 @@ import app.champion.PRINCS.dao.ReservaDao;
 import app.champion.PRINCS.dao.ReservaDaoImpl;
 import app.champion.PRINCS.modelo.Mercancia;
 import app.champion.PRINCS.modelo.Reserva;
-import app.champion.PRINCS.util.Pdf;
+
 import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;

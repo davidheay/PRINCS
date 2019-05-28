@@ -206,7 +206,7 @@
                                 <br>
 
                                 <div class="buttonWrapper">
-                                    <a href="creacionmercancia.html">
+                                    <a href="/PRINCS/creacionmercanciaController">
                                         <button type="button" class="btn btn-danger btn-df float-button-light">Añadir</button>
                                     </a>
                                 </div>

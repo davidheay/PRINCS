@@ -87,7 +87,32 @@ public class MercanciaDaoImpl implements MercanciaDao {
     }
 
     @Override
-    public void insertarMercancia(String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String reservaIn, String reservaOut, Integer valor, String moneda) {
+    public void insertarMercancia(String idMercancia, String idCliente, String idTipo, String estado, String observaciones, String nPiezas, String reservaIn, String reservaOut, Integer valor, String moneda) {
+        Conn conexion = new Conn();
+        try {
+
+            String sql = "insert into Mercancia  values (?,?,?,?,?,?,?,?,?,?)";
+
+            PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
+
+            preparedStatement.setString(1, idMercancia);
+            preparedStatement.setString(2, idCliente);
+            preparedStatement.setString(3, idTipo);
+            preparedStatement.setString(4, estado);
+            preparedStatement.setString(5, observaciones);
+            preparedStatement.setString(6, nPiezas);
+            preparedStatement.setString(7, reservaIn);
+            preparedStatement.setString(8, reservaOut);
+            preparedStatement.setInt(9, valor);
+            preparedStatement.setString(10, moneda);
+
+            preparedStatement.execute();
+
+            preparedStatement.close();
+
+        } catch (Exception e) {
+            System.out.println("error" + e);
+        }
 
     }
 
@@ -167,6 +192,31 @@ public class MercanciaDaoImpl implements MercanciaDao {
             conexion.cerrarConexion();
         }
         return mercancias;
+    }
+
+    @Override
+    public String idMax() {
+        Conn conexion = new Conn();
+
+        String id = null;
+        try {
+
+            //String sql = "select * from Mercancia";
+            String sql = "exec IdSig";
+
+            PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
+            ResultSet resultSet = prepareStatemente.executeQuery();
+            while (resultSet.next()) {
+                id = resultSet.getString(1);
+            }
+            prepareStatemente.close();
+            resultSet.close();
+        } catch (Exception ex) {
+            logger.error(ex.getMessage());
+        } finally {
+            conexion.cerrarConexion();
+        }
+        return id;
     }
 
 }

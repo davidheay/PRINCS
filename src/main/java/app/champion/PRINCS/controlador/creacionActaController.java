@@ -41,18 +41,18 @@ public class creacionActaController extends HttpServlet {
 
         ReservaDao reservaDao = new ReservaDaoImpl();
 
-        String idReserva = "Valor auto numerico dado por el max de un query";
+        String idReserva = reservaDao.idMax();
         String idMercancia = (String) request.getParameter("idMercancia");
         request.setAttribute("idActa", idReserva);
+        request.setAttribute("tActa", request.getParameter("tActa"));
         request.setAttribute("idMercancia", idMercancia);
 
         if (request.getParameter("crear") != null) {
             System.out.println("a crear");
-            idReserva = request.getParameter("idActa");
+            idReserva = reservaDao.idMax();
             idMercancia = request.getParameter("idMercancia");
             String tipoMercancia = request.getParameter("tipoMer");
             String cliente = request.getParameter("cliente");
-
             Integer nPiezas = Integer.parseInt(request.getParameter("nPiezas"));
             String placa = request.getParameter("placa");
             Integer valor = Integer.parseInt(request.getParameter("valor"));
@@ -71,8 +71,13 @@ public class creacionActaController extends HttpServlet {
             String transportadora = request.getParameter("transportadora");
             String nomOperario = request.getParameter("nomOperario");
             String moneda = request.getParameter("moneda");
-
-            reservaDao.insertarReserva(idReserva, idMercancia, "ENTRADA", cliente, ccOperario, fecha, placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
+            System.out.println("a metodo");
+            if (request.getParameter("tActa") == "IN") {
+                reservaDao.insertarReserva(idReserva, idMercancia, "INGRESO", cliente, ccOperario, "2019-04-17", placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
+            }
+            if (request.getParameter("tActa") == "OUT") {
+                reservaDao.insertarReserva(idReserva, idMercancia, "SALIDA", cliente, ccOperario, "2019-04-17", placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
+            }
 
             response.sendRedirect("/PRINCS/verificacionEntradaController");
         } else {
@@ -86,18 +91,18 @@ public class creacionActaController extends HttpServlet {
 
         ReservaDao reservaDao = new ReservaDaoImpl();
 
-        String idReserva = "Valor auto numerico dado por el max de un query";
+        String idReserva = reservaDao.idMax();
         String idMercancia = (String) request.getParameter("idMercancia");
         request.setAttribute("idActa", idReserva);
+        request.setAttribute("tActa", request.getParameter("tActa"));
         request.setAttribute("idMercancia", idMercancia);
 
         if (request.getParameter("crear") != null) {
             System.out.println("a crear");
-            idReserva = request.getParameter("idActa");
+            idReserva = reservaDao.idMax();
             idMercancia = request.getParameter("idMercancia");
             String tipoMercancia = request.getParameter("tipoMer");
             String cliente = request.getParameter("cliente");
-
             Integer nPiezas = Integer.parseInt(request.getParameter("nPiezas"));
             String placa = request.getParameter("placa");
             Integer valor = Integer.parseInt(request.getParameter("valor"));
@@ -116,8 +121,13 @@ public class creacionActaController extends HttpServlet {
             String transportadora = request.getParameter("transportadora");
             String nomOperario = request.getParameter("nomOperario");
             String moneda = request.getParameter("moneda");
-
-            reservaDao.insertarReserva(idReserva, idMercancia, "ENTRADA", cliente, ccOperario, fecha, placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
+            System.out.println("a metodo");
+            if (request.getParameter("tActa") == "IN") {
+                reservaDao.insertarReserva(idReserva, idMercancia, "INGRESO", cliente, ccOperario, "2019-04-17", placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
+            }
+            if (request.getParameter("tActa") == "OUT") {
+                reservaDao.insertarReserva(idReserva, idMercancia, "SALIDA", cliente, ccOperario, "2019-04-17", placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
+            }
 
             response.sendRedirect("/PRINCS/verificacionEntradaController");
         } else {

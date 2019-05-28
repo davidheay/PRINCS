@@ -203,22 +203,28 @@
                                                     <label>Acta Ingreso &nbsp; &nbsp; </label>
                                                 </div>
 
-                                                <form action="/PRINCS/actaController" method="POST">
-                                                    <input type="hidden" id="idActa" name="idActa" value="<%= request.getAttribute("reservaIn")%> " >
+                                                <c:set var="variable" scope="session" value="${reservaIn}"/>
+                                                <c:if test = "${variable != 'NULL'}">
+                                                    <form action="/PRINCS/actaController" method="POST">
+                                                        <input type="hidden" id="idActa" name="idActa" value="<%= request.getAttribute("reservaIn")%> " >
 
-                                                    <button type="submit" class="btn btn-info btn-df  float-button-light"> Ver</button>
+                                                        <button type="submit" class="btn btn-info btn-df  float-button-light"> Ver</button>
 
-                                                </form>
+                                                    </form>
+                                                </c:if>
                                                 <br>
                                             </div>
                                             <div class="buttonWrapper" style="padding: inherit" >
                                                 <div class="Estado pull-left" style="padding-top: 10px;padding-left: 1px">
                                                     <label>Acta Salida &nbsp; &nbsp; </label>
                                                 </div>
-                                                <form action="/PRINCS/actaController" method="POST">
-                                                    <input type="hidden" id="idActa" name="idActa" value="${item.getIdReserva()}" >
-                                                    <button type="submit" class="btn btn-info btn-sm  float-button-light">Ver</button>
-                                                </form>
+                                                <c:set var="variable1" scope="session" value="${reservaOut}"/>
+                                                <c:if test = "${variable1 != 'NULL'}">
+                                                    <form action="/PRINCS/actaController" method="POST">
+                                                        <input type="hidden" id="idActa" name="idActa" value="<%= request.getAttribute("reservaOut")%> " >
+                                                        <button type="submit" class="btn btn-info btn-df  float-button-light">Ver</button>
+                                                    </form>
+                                                </c:if>
                                                 <br>
                                             </div>
 

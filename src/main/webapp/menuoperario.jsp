@@ -46,10 +46,19 @@
                 <div id="header">
                     <div class="nawbarMain  headerWrapper clearfix">
                         <div class="nawbarMainLeft ">
-                            <div class="champion">
+                            <div class="mercancia">
                                 <img src="img/championpeque.png" alt="" width=40%>
+
                             </div>
                             <!--mainLogo-->
+                            <div class="nawbarMainButtonWrapper">
+
+                                <span></span>
+
+                            </div>
+                            <div class="headerLogo">
+
+                            </div>
                             <!--headerLogo-->
                         </div>
                         <!--nawbarMainLeft-->
@@ -60,110 +69,117 @@
                                 <input class="sb-search-submit" type="submit" value="">
                                 <span class="sb-icon-search"></span>
                             </form>
+
+                        </div>
+                        <div id="sb-search" class="sb-search"  style="width: auto">
+                            <a href="/PRINCS/LogoutController"  class="btn btn-xs btn-danger pull-right"> Cerrar Sesión </a>
+
                         </div>
 
-                        <!--nawbarMain-->
+
                     </div>
-                    <!--header-->
+                    <!--nawbarMain-->
                 </div>
+                <!--header-->
             </div>
-            <!--headerMain -->
-        </header>
-
-        <div class="mainWrapper">
-            <div id="sideBarWrapper">
-                <div id="sideBarContent">
-
-                    <!--menuSize-->
-                </div>
-                <!--sideBar-->
-            </div>
-            <!--sideBarContent-->
         </div>
-        <!--sideBarWrapper-->
-        <div id="mainWrapper" class="mainConteiner column">
-            <!--start nainconteiner-->
-            <div class="mainConteinerConten">
-                <div class="container-fluid footerfix">
+        <!--headerMain -->
+    </header>
 
-                    <!--	MEIN CONTENT  -->
-                    <div class="row" >
-                        <div class="col-lg-12 " >
-                            <div class="panel panel-default">
-                                <div class="panel-heading clearfix">
-                                    <div class="panel-heading-title pull-left">
-                                        <h3>Bienvenido Operario</h3>
-                                        <h8>Por favor seleccione una operación</h8>
-                                    </div>
-                                    <!--panel-heading-title-->
-                                    <div class="panel-heading-buttons pull-right">
-                                        <div class="bs-example">
-                                            <ul class="clearfix">
+    <div class="mainWrapper">
+        <div id="sideBarWrapper">
+            <div id="sideBarContent">
 
+                <!--menuSize-->
+            </div>
+            <!--sideBar-->
+        </div>
+        <!--sideBarContent-->
+    </div>
+    <!--sideBarWrapper-->
+    <div id="mainWrapper" class="mainConteiner column">
+        <!--start nainconteiner-->
+        <div class="mainConteinerConten">
+            <div class="container-fluid footerfix">
 
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!--panel-heading-buttons-->
+                <!--	MEIN CONTENT  -->
+                <div class="row" >
+                    <div class="col-lg-12 " >
+                        <div class="panel panel-default">
+                            <div class="panel-heading clearfix">
+                                <div class="panel-heading-title pull-left">
+                                    <h3>Bienvenido Operario</h3>
+                                    <h8>Por favor seleccione una operación</h8>
                                 </div>
-                                <!--panel-->
-                                <div class="panel-body">
-                                    <div class="row">
+                                <!--panel-heading-title-->
+                                <div class="panel-heading-buttons pull-right">
+                                    <div class="bs-example">
+                                        <ul class="clearfix">
 
-                                        <div class="col-lg-3 alertWrapper clerfix " >
-                                            <a href="menuverificacion.jsp">
-                                                <div class="inventario">
-                                                    <center>
-                                                        <img src="img/inventario.png" alt="" >
-                                                    </center>
-                                                </div>
-                                                <br>
-                                                <button id="basic" class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Verificar Mercancia</button>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-3 alertWrapper">
-                                            <a href="/PRINCS/inventarioBodegaOpeController">
-                                                <div class="mercancia">
-                                                    <center>
-                                                        <img src="img/mercancia.png" alt="" >
-                                                    </center>
-                                                </div>
-                                                <br>
-                                                <button id="titleWithText" class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Consultar Inventario en Bodega</button>
-                                            </a>
-                                        </div>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--panel-heading-buttons-->
+                            </div>
+                            <!--panel-->
+                            <div class="panel-body">
+                                <div class="row">
+
+                                    <div class="col-lg-3 alertWrapper clerfix " >
+                                        <a href="menuverificacion.jsp">
+                                            <div class="inventario">
+                                                <center>
+                                                    <img src="img/inventario.png" alt="" >
+                                                </center>
+                                            </div>
+                                            <br>
+                                            <button id="basic" class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Verificar Mercancia</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 alertWrapper">
+                                        <a href="/PRINCS/inventarioBodegaOpeController">
+                                            <div class="mercancia">
+                                                <center>
+                                                    <img src="img/mercancia.png" alt="" >
+                                                </center>
+                                            </div>
+                                            <br>
+                                            <button id="titleWithText" class="btn btn-primary btn-df float-button-light md-trigger waves-effect waves-button waves-float waves-light" data-modal="modal-1">Consultar Inventario en Bodega</button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <!--panel-body-->
                         </div>
+                        <!--panel-body-->
                     </div>
-
                 </div>
-                <!--container-fluid-->
+
             </div>
-            <!--mainConteinerConten-->
-            <div class="fotterWrapper">
-                © 2019 Copyright.
-            </div>
-            <!--fotterWrapper-->
+            <!--container-fluid-->
         </div>
         <!--mainConteinerConten-->
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="lib/sparklineChart/sparkline.min.js"></script>
-        <script type="text/javascript" src="lib/sparklineChart/sparklineant.js"></script>
-        <script type="text/javascript" src="lib/expandingSearchBar/uisearch.js"></script>
-        <script type="text/javascript" src="lib/expandingSearchBar/classie.js"></script>
-        <script type="text/javascript" src="lib/slimscroll/jquery.slimscroll.min.js"></script>
-        <script type="text/javascript" src="lib/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script type="text/javascript" src="lib/metisMenu/metisMenu.min.js"></script>
-        <script type="text/javascript" src="lib/momentjs/moment.min.js"></script>
-        <script type="text/javascript" src="lib/waves/waves.min.js"></script>
-        <script type="text/javascript" src="lib/sweetalert/sweetalert.min.js"></script>
-        <script type="text/javascript" src="js/alertsFunctions.js"></script>
-        <script type="text/javascript" src="js/functions.js"></script>
-    </body>
+        <div class="fotterWrapper">
+            © 2019 Copyright.
+        </div>
+        <!--fotterWrapper-->
+    </div>
+    <!--mainConteinerConten-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/sparklineChart/sparkline.min.js"></script>
+    <script type="text/javascript" src="lib/sparklineChart/sparklineant.js"></script>
+    <script type="text/javascript" src="lib/expandingSearchBar/uisearch.js"></script>
+    <script type="text/javascript" src="lib/expandingSearchBar/classie.js"></script>
+    <script type="text/javascript" src="lib/slimscroll/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="lib/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="lib/metisMenu/metisMenu.min.js"></script>
+    <script type="text/javascript" src="lib/momentjs/moment.min.js"></script>
+    <script type="text/javascript" src="lib/waves/waves.min.js"></script>
+    <script type="text/javascript" src="lib/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/alertsFunctions.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</body>
 
 </html>

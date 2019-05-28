@@ -139,7 +139,7 @@ public class ReservaDaoImpl implements ReservaDao {
             String sql = "insert into Reserva Values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
             PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
-
+            System.out.println(idReserva + "," + idMercancia + "," + tipoActa + "," + idCliente + "," + idEmpleado + "," + fecha + "," + placa + "," + idTransportadora + "," + nPiezas + "," + Id_Lote + "," + Estiba + "," + nombreConductor + "," + cedulaConductor + "," + documentos + "," + peso + "," + valor + "," + idEmbalaje + "," + Etiquetas + "," + Reg_Fotografico + "," + ID_Estado + "," + observaciones + "," + Firma + "," + Entrega_Nom + "," + cc_Entrega + "," + Moneda);
             preparedStatement.setString(1, idReserva);
             preparedStatement.setString(2, idMercancia);
             preparedStatement.setString(3, tipoActa);
@@ -165,9 +165,9 @@ public class ReservaDaoImpl implements ReservaDao {
             preparedStatement.setString(23, Entrega_Nom);
             preparedStatement.setString(24, cc_Entrega);
             preparedStatement.setString(25, Moneda);
-
+            System.out.println("se realizo");
             preparedStatement.execute();
-
+            System.out.println("se realizo 1");
             preparedStatement.close();
 
         } catch (SQLException e) {
@@ -258,6 +258,31 @@ public class ReservaDaoImpl implements ReservaDao {
             conexion.cerrarConexion();
         }
         return reservas;
+    }
+
+    @Override
+    public String idMax() {
+        Conn conexion = new Conn();
+
+        String id = null;
+        try {
+
+            //String sql = "select * from Mercancia";
+            String sql = "exec IdReserSig";
+
+            PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
+            ResultSet resultSet = prepareStatemente.executeQuery();
+            while (resultSet.next()) {
+                id = resultSet.getString(1);
+            }
+            prepareStatemente.close();
+            resultSet.close();
+        } catch (Exception ex) {
+            logger.error(ex.getMessage());
+        } finally {
+            conexion.cerrarConexion();
+        }
+        return id;
     }
 
 }
