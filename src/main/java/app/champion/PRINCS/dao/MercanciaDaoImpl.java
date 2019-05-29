@@ -91,7 +91,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
         Conn conexion = new Conn();
         try {
 
-            String sql = "insert into Mercancia  values (?,?,?,?,?,?,?,?,?,?)";
+            String sql = "exec InsertMercancia ?,?,?,?,?,?,?,?,?,?";
 
             PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
 
@@ -171,7 +171,7 @@ public class MercanciaDaoImpl implements MercanciaDao {
         try {
 
             //String sql = "select * from Mercancia";
-            String sql = "select Mercancia.ID_Mercancia,Cliente.Nombre,Tipo.Nombre,Reserva.Estiba from Reserva,Cliente,Mercancia,Tipo where Mercancia.ID_Mercancia=Reserva.ID_Mercancia and Reserva.ID_Cliente=Cliente.ID_Cliente and Mercancia.ID_Tipo=Tipo.Id_Tipo and Reserva.tipo_Acta='INGRESO' and Mercancia.RESERVA_IN != 'NULL' and Mercancia.RESERVA_OUT = 'NULL' order by 1";
+            String sql = " exec GetMercanciasEstiba ";
 
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             ResultSet resultSet = prepareStatemente.executeQuery();
