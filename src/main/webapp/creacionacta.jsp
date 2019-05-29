@@ -167,6 +167,7 @@
 
                                                 <div class="seleccion pull-right">
                                                     <div class="btn-group" role="group" aria-label="...">
+                                                        <input type="hidden" name="tActa" value="<%= request.getAttribute("tActa")%>">
                                                         <button type="button" class="btn btn-primary btn-df"><%= request.getAttribute("tActa")%></button>
 
                                                     </div>

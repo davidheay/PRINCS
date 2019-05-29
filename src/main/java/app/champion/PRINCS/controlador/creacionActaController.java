@@ -122,10 +122,13 @@ public class creacionActaController extends HttpServlet {
             String nomOperario = request.getParameter("nomOperario");
             String moneda = request.getParameter("moneda");
             System.out.println("a metodo");
-            if (request.getParameter("tActa") == "IN") {
+
+            if (request.getParameter("tActa").equals("IN")) {
+
                 reservaDao.insertarReserva(idReserva, idMercancia, "INGRESO", cliente, ccOperario, "2019-04-17", placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
             }
-            if (request.getParameter("tActa") == "OUT") {
+            if (request.getParameter("tActa").equals("OUT")) {
+
                 reservaDao.insertarReserva(idReserva, idMercancia, "SALIDA", cliente, ccOperario, "2019-04-17", placa, transportadora, nPiezas, bodega, estiba, nomCondu, ccCondu, docus, peso, valor, idembalaje, etiquetas, "img/user.png", "ES2", observaciones, firOperario, nomOperario, ccOperario, moneda);
             }
 

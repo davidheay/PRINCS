@@ -83,7 +83,7 @@ public class ReservaDaoImpl implements ReservaDao {
         List<Reserva> Reservas = new ArrayList<>();
         try {
 
-            String sql = "select * from Reserva where ID_Reserva=?";
+            String sql = "exec GetReserva ? ";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             prepareStatemente.setString(1, idReserva);
             ResultSet resultSet = prepareStatemente.executeQuery();
@@ -136,7 +136,7 @@ public class ReservaDaoImpl implements ReservaDao {
         Conn conexion = new Conn();
         try {
             System.out.println("a insertar");
-            String sql = "insert into Reserva Values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String sql = "exec InsertReserva ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?";
 
             PreparedStatement preparedStatement = conexion.getConexion().prepareStatement(sql);
             System.out.println(idReserva + "," + idMercancia + "," + tipoActa + "," + idCliente + "," + idEmpleado + "," + fecha + "," + placa + "," + idTransportadora + "," + nPiezas + "," + Id_Lote + "," + Estiba + "," + nombreConductor + "," + cedulaConductor + "," + documentos + "," + peso + "," + valor + "," + idEmbalaje + "," + Etiquetas + "," + Reg_Fotografico + "," + ID_Estado + "," + observaciones + "," + Firma + "," + Entrega_Nom + "," + cc_Entrega + "," + Moneda);
@@ -171,7 +171,7 @@ public class ReservaDaoImpl implements ReservaDao {
             preparedStatement.close();
 
         } catch (SQLException e) {
-            logger.error(e + " " + e.getMessage());
+            System.out.println(e);
         }
 
     }
@@ -184,7 +184,7 @@ public class ReservaDaoImpl implements ReservaDao {
         try {
 
             //String sql = "select * from Mercancia";
-            String sql = "select Mercancia.ID_Mercancia,Cliente.Nombre,Tipo.Nombre,Reserva.tipo_Acta,Reserva.ID_Reserva,Reserva.fecha from Reserva,Cliente,Mercancia,Tipo where Mercancia.ID_Mercancia=Reserva.ID_Mercancia and Reserva.ID_Cliente=Cliente.ID_Cliente and Mercancia.ID_Tipo=Tipo.Id_Tipo  ";
+            String sql = "exec GetReservaHistoria";
 
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             ResultSet resultSet = prepareStatemente.executeQuery();
@@ -216,7 +216,7 @@ public class ReservaDaoImpl implements ReservaDao {
         List<Reserva> reservas = new ArrayList<>();
         try {
 
-            String sql = "select Reserva.ID_Reserva,Mercancia.ID_Mercancia,Reserva.tipo_Acta,Cliente.Nombre,Empleado.nombre,Reserva.fecha,Reserva.placa,Transportadora.Nombre, Reserva.N_Piezas,Reserva.ID_Lote,Reserva.Estiba,Reserva.Nombre_Conductor,Reserva.cedula_Conductor,Reserva.documentos,Reserva.peso,Reserva.valor,Reserva.ID_Embalaje,Reserva.etiquetas,Reserva.reg_Fotografico,Estado.estado,Reserva.observaciones,Reserva.firma,Reserva.Entrega_NOM,Reserva.cc_entrega,Reserva.moneda,TIpo.Nombre from Reserva,Estado,Mercancia,Tipo,Cliente,Empleado,Transportadora where Mercancia.ID_Mercancia=Reserva.ID_Mercancia and Mercancia.ID_Tipo=Tipo.ID_Tipo and Reserva.ID_Cliente=Cliente.ID_Cliente and Reserva.ID_Empleado=Empleado.ID_Empleado and Reserva.ID_Transportadora=Transportadora.ID_Transportadora and Reserva.ID_Estado=Estado.ID_Estado and Reserva.ID_Reserva=?";
+            String sql = "exec GetReservaTraducida ?";
             PreparedStatement prepareStatemente = (PreparedStatement) conexion.getConexion().prepareStatement(sql);
             prepareStatemente.setString(1, idReserva);
             ResultSet resultSet = prepareStatemente.executeQuery();
