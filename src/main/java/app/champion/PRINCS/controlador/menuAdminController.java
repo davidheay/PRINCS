@@ -1,7 +1,5 @@
 package app.champion.PRINCS.controlador;
 
-import app.champion.PRINCS.dao.AislamientoDao;
-import app.champion.PRINCS.dao.AislamientoDaoImpl;
 import app.champion.PRINCS.dao.MercanciaDao;
 import app.champion.PRINCS.dao.MercanciaDaoImpl;
 import java.io.IOException;
